@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name mallard)(type Legacy)(uri ${KIPRJMOD}/mallard.lib)(options "")(descr ""))
+)
