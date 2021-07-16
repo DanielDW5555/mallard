@@ -43,7 +43,11 @@
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef hlpuart1;
 
+RTC_HandleTypeDef hrtc;
+
 /* USER CODE BEGIN PV */
+
+uint8_t alarm = 0;
 
 /* USER CODE END PV */
 
@@ -51,6 +55,7 @@ UART_HandleTypeDef hlpuart1;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_LPUART1_UART_Init(void);
+static void MX_RTC_Init(void);
 void MX_USB_HOST_Process(void);
 
 /* USER CODE BEGIN PFP */
@@ -59,7 +64,61 @@ void MX_USB_HOST_Process(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+// ************************************************* START FUNCTIONS HERE ***************************************
 
+// Set RTC Time
+void setTime(void)
+{
+	RTC_TimeTypeDef sTime;
+	RTC_DateTypeDef sDate;
+	sTime.Hours = 0x10;
+	sTime.Minutes = 0x20;
+	sTime.Seconds = 0x30;
+	sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+
+	sDate.WeekDay = RTC_WEEKDAY_THURSDAY;
+	sDate.Month = RTC_MONTH_JULY;
+	sDate.Date = 0x9;
+	sDate.Year = 0x21;
+	HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x32F2);
+}
+
+// Set RTC Alarm
+void setAlarm(void)
+{
+	RTC_AlarmTypeDef sAlarm;
+	sAlarm.AlarmTime.Hours = 0x10;
+	sAlarm.AlarmTime.Minutes = 0x20;
+	sAlarm.AlarmTime.Seconds = 0x32;
+	sAlarm.AlarmTime.SubSeconds = 0x0;
+	sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
+	sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+	sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+	sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
+	sAlarm.AlarmDateWeekDay = 0x9;
+	sAlarm.Alarm = RTC_ALARM_A;
+}
+
+// Checks to see if RTC alarm has been activated
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
+{
+	alarm = 1;
+}
+
+// Function calls when alarm is active
+void alarmProcess(void)
+{
+	// Blinky!
+
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
+	HAL_Delay(250);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
+	HAL_Delay(250);
+}
+
+// ************************************************* END FUNCTIONS HERE ***************************************
 /* USER CODE END 0 */
 
 /**
@@ -92,7 +151,21 @@ int main(void)
   MX_GPIO_Init();
   MX_LPUART1_UART_Init();
   MX_USB_HOST_Init();
+  MX_RTC_Init();
+
   /* USER CODE BEGIN 2 */
+
+
+
+  // ************************************************* START BEFORE WHILE CODE HERE ***************************************
+
+  setTime();
+  setAlarm();
+
+  // ************************************************* END BEFORE WHILE CODE HERE ***************************************
+
+
+
 
   /* USER CODE END 2 */
 
@@ -104,13 +177,17 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
-    // Blinky!
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-    HAL_Delay(250);
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
-	HAL_Delay(250);
+    // ************************************************* START WHILE CODE HERE ***************************************
+
+    if(alarm)
+    {
+    	alarmProcess();
+    	setTime();
+    	alarm = 0;
+    }
 
   }
+  // ************************************************* END WHILE CODE HERE ***************************************
   /* USER CODE END 3 */
 }
 
@@ -131,8 +208,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_LSE
+                              |RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.MSICalibrationValue = 0;
   RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_9;
@@ -160,8 +239,10 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_LPUART1|RCC_PERIPHCLK_USB;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_LPUART1
+                              |RCC_PERIPHCLK_USB;
   PeriphClkInit.Lpuart1ClockSelection = RCC_LPUART1CLKSOURCE_PCLK1;
+  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLLSAI1;
   PeriphClkInit.PLLSAI1.PLLSAI1Source = RCC_PLLSOURCE_MSI;
   PeriphClkInit.PLLSAI1.PLLSAI1M = 5;
@@ -216,6 +297,88 @@ static void MX_LPUART1_UART_Init(void)
   /* USER CODE BEGIN LPUART1_Init 2 */
 
   /* USER CODE END LPUART1_Init 2 */
+
+}
+
+/**
+  * @brief RTC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_RTC_Init(void)
+{
+
+  /* USER CODE BEGIN RTC_Init 0 */
+
+  /* USER CODE END RTC_Init 0 */
+
+  RTC_TimeTypeDef sTime = {0};
+  RTC_DateTypeDef sDate = {0};
+  RTC_AlarmTypeDef sAlarm = {0};
+
+  /* USER CODE BEGIN RTC_Init 1 */
+
+  /* USER CODE END RTC_Init 1 */
+  /** Initialize RTC Only
+  */
+  hrtc.Instance = RTC;
+  hrtc.Init.HourFormat = RTC_HOURFORMAT_24;
+  hrtc.Init.AsynchPrediv = 127;
+  hrtc.Init.SynchPrediv = 255;
+  hrtc.Init.OutPut = RTC_OUTPUT_DISABLE;
+  hrtc.Init.OutPutRemap = RTC_OUTPUT_REMAP_NONE;
+  hrtc.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
+  hrtc.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
+  if (HAL_RTC_Init(&hrtc) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /* USER CODE BEGIN Check_RTC_BKUP */
+
+  /* USER CODE END Check_RTC_BKUP */
+
+  /** Initialize RTC and set the Time and Date
+  */
+  sTime.Hours = 0x10;
+  sTime.Minutes = 0x20;
+  sTime.Seconds = 0x30;
+  sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+  sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sDate.WeekDay = RTC_WEEKDAY_MONDAY;
+  sDate.Month = RTC_MONTH_AUGUST;
+  sDate.Date = 0x12;
+  sDate.Year = 0x0;
+
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Enable the Alarm A
+  */
+  sAlarm.AlarmTime.Hours = 0x10;
+  sAlarm.AlarmTime.Minutes = 0x20;
+  sAlarm.AlarmTime.Seconds = 0x35;
+  sAlarm.AlarmTime.SubSeconds = 0x0;
+  sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+  sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
+  sAlarm.AlarmMask = RTC_ALARMMASK_DATEWEEKDAY|RTC_ALARMMASK_HOURS
+                              |RTC_ALARMMASK_MINUTES;
+  sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+  sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
+  sAlarm.AlarmDateWeekDay = 0x12;
+  sAlarm.Alarm = RTC_ALARM_A;
+  if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BCD) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN RTC_Init 2 */
+
+  /* USER CODE END RTC_Init 2 */
 
 }
 
