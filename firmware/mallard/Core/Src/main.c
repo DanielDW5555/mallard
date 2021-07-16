@@ -47,7 +47,12 @@ RTC_HandleTypeDef hrtc;
 
 /* USER CODE BEGIN PV */
 
-uint8_t alarm = 0;
+// RTC Wakup Timer Calculations
+const uint8_t rtc_sleepTime = 5;
+const uint32_t rtc_LSI = 32000;
+const uint8_t rtc_DIV = 16;
+const uint32_t rtc_timeBase = rtc_DIV/rtc_LSI;
+
 
 /* USER CODE END PV */
 
@@ -64,61 +69,57 @@ void MX_USB_HOST_Process(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
+
+
+
 // ************************************************* START FUNCTIONS HERE ***************************************
 
-// Set RTC Time
-void setTime(void)
+// Blinky!!
+void blinky(void)
 {
-	RTC_TimeTypeDef sTime;
-	RTC_DateTypeDef sDate;
-	sTime.Hours = 0x10;
-	sTime.Minutes = 0x20;
-	sTime.Seconds = 0x30;
-	sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
-	sTime.StoreOperation = RTC_STOREOPERATION_RESET;
-
-	sDate.WeekDay = RTC_WEEKDAY_THURSDAY;
-	sDate.Month = RTC_MONTH_JULY;
-	sDate.Date = 0x9;
-	sDate.Year = 0x21;
-	HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x32F2);
+	for(int i = 0; i < 2; i ++)
+	{
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
+		HAL_Delay(100);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
+		HAL_Delay(100);
+	}
 }
 
-// Set RTC Alarm
-void setAlarm(void)
+// Set RTC wakup period
+void enterSleepMode()
 {
-	RTC_AlarmTypeDef sAlarm;
-	sAlarm.AlarmTime.Hours = 0x10;
-	sAlarm.AlarmTime.Minutes = 0x20;
-	sAlarm.AlarmTime.Seconds = 0x32;
-	sAlarm.AlarmTime.SubSeconds = 0x0;
-	sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
-	sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
-	sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
-	sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
-	sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
-	sAlarm.AlarmDateWeekDay = 0x9;
-	sAlarm.Alarm = RTC_ALARM_A;
+	// To modify the sleep value, preform the following calcultion:
+	// Sleep time = {Sleep Time}/([LSI_RC]/[RTC_DIV])
+	// Sleep time = {Sleep Time}/(0.0005)
+	// Currently, having the wakeup counter set to 0xEA60 is equivalent to 30s.
+	// Enter sleep mode
+	if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0xEA60, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	HAL_SuspendTick();
+
+	HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_STOPENTRY_WFI);
+
 }
 
-// Checks to see if RTC alarm has been activated
-void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
+// Wakeup RTC Interupt
+void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef *hrtc)
 {
-	alarm = 1;
-}
-
-// Function calls when alarm is active
-void alarmProcess(void)
-{
-	// Blinky!
-
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-	HAL_Delay(250);
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
-	HAL_Delay(250);
+	SystemClock_Config();
+	HAL_ResumeTick();
 }
 
 // ************************************************* END FUNCTIONS HERE ***************************************
+
+
+
+
+
 /* USER CODE END 0 */
 
 /**
@@ -152,17 +153,22 @@ int main(void)
   MX_LPUART1_UART_Init();
   MX_USB_HOST_Init();
   MX_RTC_Init();
-
   /* USER CODE BEGIN 2 */
+
+
 
 
 
   // ************************************************* START BEFORE WHILE CODE HERE ***************************************
 
-  setTime();
-  setAlarm();
+  // Bootup Blinkys
+  blinky();
+  HAL_Delay(3000);
+  blinky();
+
 
   // ************************************************* END BEFORE WHILE CODE HERE ***************************************
+
 
 
 
@@ -177,17 +183,24 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
+
+
+
+
+
     // ************************************************* START WHILE CODE HERE ***************************************
 
-    if(alarm)
-    {
-    	alarmProcess();
-    	setTime();
-    	alarm = 0;
-    }
+    // Enter sleep for 30s, this is currently commented out because it makes programming the STM32 much more difficult
+    // enterSleepMode();
+    blinky();
 
   }
   // ************************************************* END WHILE CODE HERE ***************************************
+
+
+
+
+
   /* USER CODE END 3 */
 }
 
@@ -312,10 +325,6 @@ static void MX_RTC_Init(void)
 
   /* USER CODE END RTC_Init 0 */
 
-  RTC_TimeTypeDef sTime = {0};
-  RTC_DateTypeDef sDate = {0};
-  RTC_AlarmTypeDef sAlarm = {0};
-
   /* USER CODE BEGIN RTC_Init 1 */
 
   /* USER CODE END RTC_Init 1 */
@@ -333,49 +342,12 @@ static void MX_RTC_Init(void)
   {
     Error_Handler();
   }
-
-  /* USER CODE BEGIN Check_RTC_BKUP */
-
-  /* USER CODE END Check_RTC_BKUP */
-
-  /** Initialize RTC and set the Time and Date
+  /** Enable the WakeUp
   */
-  sTime.Hours = 0x10;
-  sTime.Minutes = 0x20;
-  sTime.Seconds = 0x30;
-  sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
-  sTime.StoreOperation = RTC_STOREOPERATION_RESET;
-  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sDate.WeekDay = RTC_WEEKDAY_MONDAY;
-  sDate.Month = RTC_MONTH_AUGUST;
-  sDate.Date = 0x12;
-  sDate.Year = 0x0;
-
-  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Enable the Alarm A
-  */
-  sAlarm.AlarmTime.Hours = 0x10;
-  sAlarm.AlarmTime.Minutes = 0x20;
-  sAlarm.AlarmTime.Seconds = 0x35;
-  sAlarm.AlarmTime.SubSeconds = 0x0;
-  sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
-  sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
-  sAlarm.AlarmMask = RTC_ALARMMASK_DATEWEEKDAY|RTC_ALARMMASK_HOURS
-                              |RTC_ALARMMASK_MINUTES;
-  sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
-  sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
-  sAlarm.AlarmDateWeekDay = 0x12;
-  sAlarm.Alarm = RTC_ALARM_A;
-  if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BCD) != HAL_OK)
-  {
-    Error_Handler();
-  }
+//  if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
+//  {
+//    Error_Handler();
+//  }
   /* USER CODE BEGIN RTC_Init 2 */
 
   /* USER CODE END RTC_Init 2 */
@@ -430,6 +402,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
 
