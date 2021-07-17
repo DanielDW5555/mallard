@@ -62,8 +62,8 @@ const uint32_t rtc_timeBase = rtc_DIV/rtc_LSI;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_LPUART1_UART_Init(void);
-static void MX_RTC_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_RTC_Init(void);
 void MX_USB_HOST_Process(void);
 
 /* USER CODE BEGIN PFP */
@@ -92,17 +92,18 @@ void blinky(void)
 }
 
 // Set RTC wakup period
-void enterSleepMode()
+// Sleep time is in seconds
+void enterSleepMode(uint16_t sleepTime)
 {
 	// To modify the sleep value, preform the following calcultion:
 	// Sleep time = {Sleep Time}/([LSI_RC]/[RTC_DIV])
 	// Sleep time = {Sleep Time}/(0.0005)
 	// Currently, having the wakeup counter set to 0xEA60 is equivalent to 30s.
 	// Enter sleep mode
-	if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0xEA60, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
-	{
-		Error_Handler();
-	}
+	if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, sleepTime, RTC_WAKEUPCLOCK_CK_SPRE_16BITS) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
 
 	HAL_SuspendTick();
 
@@ -155,8 +156,8 @@ int main(void)
   MX_GPIO_Init();
   MX_LPUART1_UART_Init();
   MX_USB_HOST_Init();
-  MX_RTC_Init();
   MX_ADC1_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
 
@@ -195,7 +196,7 @@ int main(void)
     // ************************************************* START WHILE CODE HERE ***************************************
 
     // Enter sleep for 30s, this is currently commented out because it makes programming the STM32 much more difficult
-    // enterSleepMode();
+    enterSleepMode(30);
     blinky();
 
   }
@@ -413,10 +414,10 @@ static void MX_RTC_Init(void)
   }
   /** Enable the WakeUp
   */
-  if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
-  {
-    Error_Handler();
-  }
+//  if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0, RTC_WAKEUPCLOCK_CK_SPRE_16BITS) != HAL_OK)
+//  {
+//    Error_Handler();
+//  }
   /* USER CODE BEGIN RTC_Init 2 */
 
   /* USER CODE END RTC_Init 2 */
