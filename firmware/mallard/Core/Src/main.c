@@ -167,8 +167,9 @@ int main(void)
   // ************************************************* START BEFORE WHILE CODE HERE ***************************************
 
   // Bootup Blinkys
+  // These are put in place to allow programming before the microcontroller enters its sleep loop, currently its set to wait 5 seconds before entering sleep mode
   blinky();
-  HAL_Delay(3000);
+  HAL_Delay(5000);
   blinky();
   //Assign ADC Variable
   uint16_t ADC_READING = 0;
@@ -197,12 +198,15 @@ int main(void)
     // ************************************************* START WHILE CODE HERE ***************************************
     //Start ADC Conversion
     HAL_ADC_Start(&hadc1);
+
     //Poll ADC 1 Periferal and Timeout 1ms
     HAL_ADC_PollForConversion(&hadc1, 1);
+
     //Store ADC Value in ADC_Reading
     ADC_READING = HAL_ADC_GetValue(&hadc1);
-    // Enter sleep for 30s, this is currently commented out because it makes programming the STM32 much more difficult
-    enterSleepMode(30);
+
+    // Enter sleep mode using RTC wakeup functions
+    enterSleepMode(3); // Parameter depicts how long the sleep cycle is (currently its set to 3 seconds)
     blinky();
 
   }
