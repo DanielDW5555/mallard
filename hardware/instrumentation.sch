@@ -68,4 +68,15 @@ F 3 "" H 6250 3750 50  0001 C CNN
 	1    6250 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L mallard:TMUX1309 U?
+U 1 1 610A2355
+P 6250 750
+F 0 "U?" H 6250 875 50  0000 C CNN
+F 1 "TMUX1309" H 6250 784 50  0000 C CNN
+F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 6250 -1150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tmux1309.pdf" H 6250 750 50  0001 C CNN
+	1    6250 750 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
