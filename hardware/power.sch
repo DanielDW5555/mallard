@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 1
 Title "Power Schematic"
 Date "2021-07-27"
 Rev "R1"
@@ -366,10 +366,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 4400 1450 3900
 Wire Wire Line
-	2600 3200 1450 3200
-Wire Wire Line
 	1450 3200 1450 3350
-Connection ~ 2600 3200
 $Comp
 L Device:R R
 U 1 1 61014D9F
@@ -415,4 +412,22 @@ Wire Wire Line
 	6100 2000 6100 3000
 Wire Wire Line
 	6400 2300 6400 2400
+Wire Wire Line
+	1900 3200 1450 3200
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 610C81D5
+P 2050 3200
+F 0 "D?" H 2050 3417 50  0001 C CNN
+F 1 "DIODE" H 2050 3325 50  0000 C CNN
+F 2 "" H 2050 3200 50  0001 C CNN
+F 3 "~" H 2050 3200 50  0001 C CNN
+F 4 "Y" H 2050 3200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 2050 3200 50  0001 L CNN "Spice_Primitive"
+	1    2050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3200 2200 3200
+Connection ~ 2600 3200
 $EndSCHEMATC
