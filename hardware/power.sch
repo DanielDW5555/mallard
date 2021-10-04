@@ -149,19 +149,11 @@ Wire Wire Line
 	4500 3700 4750 3700
 Wire Wire Line
 	4500 4000 4750 4000
-Text Label 6450 1550 0    50   ~ 0
-MC_xx
-Wire Wire Line
-	6900 1650 6450 1650
-Wire Wire Line
-	6450 1650 6450 1550
 Wire Wire Line
 	6900 1450 6100 1450
 Wire Wire Line
 	6100 1450 6100 2000
 Connection ~ 6100 3000
-Text Label 9000 1450 0    50   ~ 0
-CIRCUIT_COMP
 Wire Wire Line
 	8350 1450 9000 1450
 Connection ~ 8350 1450
@@ -181,12 +173,6 @@ Wire Wire Line
 Wire Wire Line
 	8650 3000 6650 3000
 Connection ~ 6650 3000
-Text Label 3150 3350 0    50   ~ 0
-MC_xx
-Wire Wire Line
-	3500 3400 3150 3400
-Wire Wire Line
-	3150 3400 3150 3350
 Wire Notes Line
 	1750 3350 1750 3900
 Wire Notes Line
@@ -436,4 +422,34 @@ $EndComp
 Connection ~ 5650 3000
 Wire Wire Line
 	5650 3000 6100 3000
+Wire Wire Line
+	3500 3400 3400 3400
+Text GLabel 3400 3400 0    50   Input ~ 0
+Charge_EN
+$Comp
+L Device:D D?
+U 1 1 6161D676
+P 2050 3200
+F 0 "D?" H 2050 2984 50  0000 C CNN
+F 1 "D" H 2050 3075 50  0000 C CNN
+F 2 "" H 2050 3200 50  0001 C CNN
+F 3 "~" H 2050 3200 50  0001 C CNN
+	1    2050 3200
+	-1   0    0    1   
+$EndComp
+Text GLabel 6800 1650 0    50   Input ~ 0
+-3V3_SHDN_L
+Wire Wire Line
+	6900 1650 6800 1650
+$Comp
+L power:-3V3 #PWR?
+U 1 1 6161FA5E
+P 9000 1450
+F 0 "#PWR?" H 9000 1550 50  0001 C CNN
+F 1 "-3V3" V 9015 1578 50  0000 L CNN
+F 2 "" H 9000 1450 50  0001 C CNN
+F 3 "" H 9000 1450 50  0001 C CNN
+	1    9000 1450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -228,9 +228,9 @@ Wire Wire Line
 Wire Wire Line
 	2800 2550 4150 2550
 Wire Wire Line
-	3550 1900 3550 2450
+	3100 1900 3100 2450
 Wire Wire Line
-	3800 1250 3800 2350
+	3300 1250 3300 2350
 Wire Wire Line
 	2800 3350 3250 3350
 Wire Wire Line
@@ -250,13 +250,13 @@ Wire Wire Line
 Wire Wire Line
 	3750 3050 4150 3050
 Wire Wire Line
-	3800 2350 4150 2350
+	3300 2350 4150 2350
 Wire Wire Line
-	2800 1250 3800 1250
+	2800 1250 3300 1250
 Wire Wire Line
-	3550 2450 4150 2450
+	3100 2450 4150 2450
 Wire Wire Line
-	2800 1900 3550 1900
+	2800 1900 3100 1900
 Wire Wire Line
 	5100 2850 4950 2850
 Wire Wire Line
@@ -567,4 +567,28 @@ F 4 "296-TMUX1309BQBRCT-ND‎" H 4600 3950 50  0001 C CNN "Digikey"
 $EndComp
 Text Notes 2850 4800 0    50   ~ 0
 Needed New Temp sensors\n
+Text GLabel 4050 1850 0    50   Input ~ 0
+MUX1_EN
+Text GLabel 4050 2050 0    50   Input ~ 0
+MUX1_A0
+Text GLabel 4050 2150 0    50   Input ~ 0
+MUX1_A1
+Wire Wire Line
+	4150 1850 4050 1850
+Wire Wire Line
+	4150 2050 4050 2050
+Wire Wire Line
+	4150 2150 4050 2150
+Text GLabel 4100 4250 0    50   Input ~ 0
+MUX2_EN
+Wire Wire Line
+	4100 4250 4200 4250
+Text GLabel 4100 4450 0    50   Input ~ 0
+MUX2_A0
+Text GLabel 4100 4550 0    50   Input ~ 0
+MUX2_A1
+Wire Wire Line
+	4200 4450 4100 4450
+Wire Wire Line
+	4200 4550 4100 4550
 $EndSCHEMATC
