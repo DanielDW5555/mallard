@@ -411,7 +411,7 @@ F 0 "U4" H 7500 2675 50  0000 C CNN
 F 1 "LMV554" H 7500 2584 50  0000 C CNN
 F 2 "" H 7500 1600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lmv551.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626469395066&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmv551" H 7500 1600 50  0001 C CNN
-F 4 "LMP7721MA/NOPB-ND‎" H 7500 2500 50  0001 C CNN "Digikey"
+F 4 "" H 7500 2500 50  0001 C CNN "Digikey"
 	1    7500 2500
 	1    0    0    -1  
 $EndComp

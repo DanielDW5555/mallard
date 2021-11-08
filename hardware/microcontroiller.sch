@@ -64,20 +64,11 @@ Wire Wire Line
 Wire Wire Line
 	4950 2300 4950 2350
 Connection ~ 4950 2350
-Wire Wire Line
-	4950 2350 4750 2350
 Connection ~ 4750 2050
 Wire Wire Line
 	4750 2050 4950 2050
 Wire Wire Line
 	4550 2050 4750 2050
-Text Label 4750 2450 0    50   ~ 0
-3V3_VDD
-Wire Wire Line
-	4750 2450 4750 2350
-Connection ~ 4750 2350
-Wire Wire Line
-	4750 2350 4550 2350
 $Comp
 L Device:R_Small R1
 U 1 1 6157D2C1
@@ -185,8 +176,6 @@ $EndComp
 Connection ~ 3500 3750
 Wire Wire Line
 	3500 3750 3500 3650
-Text Label 5400 2750 2    50   ~ 0
-3V3_VDD
 Wire Wire Line
 	5400 2800 5400 2750
 Wire Wire Line
@@ -201,7 +190,7 @@ P 5400 4200
 F 0 "U1" H 6050 5450 50  0000 C CNN
 F 1 "STM32L4Q5xx" H 6250 5350 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4900 2800 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00257211.pdf" H 5400 4200 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32l4q5ag.pdf" H 5400 4200 50  0001 C CNN
 F 4 "497-STM32L4Q5CGT6-ND" H 5400 4200 50  0001 C CNN "Digikey"
 	1    5400 4200
 	1    0    0    -1  
@@ -527,17 +516,6 @@ Text GLabel 4700 5000 0    50   Input ~ 0
 Charge_EN
 Text GLabel 4700 5100 0    50   Input ~ 0
 CP_SHDN_L
-$Comp
-L power:+5V #PWR?
-U 1 1 6162950C
-P 5600 2800
-F 0 "#PWR?" H 5600 2650 50  0001 C CNN
-F 1 "+5V" H 5615 2973 50  0000 C CNN
-F 2 "" H 5600 2800 50  0001 C CNN
-F 3 "" H 5600 2800 50  0001 C CNN
-	1    5600 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 5000 4700 5000
 Wire Wire Line
@@ -546,4 +524,56 @@ Text GLabel 4700 5200 0    50   Input ~ 0
 +1V0_EN
 Wire Wire Line
 	4700 5200 4800 5200
+Wire Wire Line
+	4550 2350 4750 2350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 615C7609
+P 5400 2750
+F 0 "#PWR?" H 5400 2600 50  0001 C CNN
+F 1 "+3V3" H 5415 2923 50  0000 C CNN
+F 2 "" H 5400 2750 50  0001 C CNN
+F 3 "" H 5400 2750 50  0001 C CNN
+	1    5400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615C81D2
+P 4750 2350
+F 0 "#PWR?" H 4750 2100 50  0001 C CNN
+F 1 "GND" H 4755 2177 50  0000 C CNN
+F 2 "" H 4750 2350 50  0001 C CNN
+F 3 "" H 4750 2350 50  0001 C CNN
+	1    4750 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 2350
+Wire Wire Line
+	4750 2350 4950 2350
+$Comp
+L Device:C_Small C?
+U 1 1 615C988A
+P 5550 2200
+F 0 "C?" H 5400 2250 50  0000 L CNN
+F 1 "0.1uF" H 5300 2100 50  0000 L CNN
+F 2 "" H 5550 2200 50  0001 C CNN
+F 3 "~" H 5550 2200 50  0001 C CNN
+F 4 "445-8122-1-ND" H 5550 2200 50  0001 C CNN "Digikey"
+	1    5550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2100 5550 2050
+Wire Wire Line
+	5550 2050 5250 2050
+Connection ~ 5250 2050
+Wire Wire Line
+	5550 2300 5550 2350
+Wire Wire Line
+	5550 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5600 2800 5500 2800
+Connection ~ 5500 2800
 $EndSCHEMATC
