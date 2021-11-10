@@ -372,10 +372,9 @@ U 1 1 6159B70F
 P 5250 2850
 F 0 "R3" V 5043 2850 50  0000 C CNN
 F 1 "10k" V 5134 2850 50  0000 C CNN
-F 2 "" V 5180 2850 50  0001 C CNN
-F 3 "~" H 5250 2850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 5180 2850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5250 2850 50  0001 C CNN
 F 4 "13-RC0603DR-0710KLCT-ND‎" V 5250 2850 50  0001 C CNN "Digikey"
-F 5 "‎RC0603DR-0710KL‎" V 5250 2850 50  0001 C CNN "Manufacturer"
 	1    5250 2850
 	0    1    1    0   
 $EndComp
@@ -385,8 +384,8 @@ U 1 1 6159EF44
 P 7450 1750
 F 0 "R8" V 7243 1750 50  0000 C CNN
 F 1 "20k" V 7334 1750 50  0000 C CNN
-F 2 "" V 7380 1750 50  0001 C CNN
-F 3 "~" H 7450 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 1750 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7450 1750 50  0001 C CNN
 F 4 "‎P20429CT-ND‎" V 7450 1750 50  0001 C CNN "Digikey"
 	1    7450 1750
 	0    1    1    0   
@@ -397,8 +396,8 @@ U 1 1 615A0EFD
 P 7450 1350
 F 0 "R7" V 7243 1350 50  0000 C CNN
 F 1 "30k" V 7334 1350 50  0000 C CNN
-F 2 "" V 7380 1350 50  0001 C CNN
-F 3 "~" H 7450 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 1350 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 7450 1350 50  0001 C CNN
 F 4 "311-30KDCT-ND‎" V 7450 1350 50  0001 C CNN "Digikey"
 	1    7450 1350
 	0    1    1    0   
@@ -409,9 +408,9 @@ U 1 1 615A28E5
 P 7500 2500
 F 0 "U4" H 7500 2675 50  0000 C CNN
 F 1 "LMV554" H 7500 2584 50  0000 C CNN
-F 2 "" H 7500 1600 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7500 1600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lmv551.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626469395066&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmv551" H 7500 1600 50  0001 C CNN
-F 4 "" H 7500 2500 50  0001 C CNN "Digikey"
+F 4 "296-51370-1-ND" H 7500 2500 50  0001 C CNN "Digikey"
 	1    7500 2500
 	1    0    0    -1  
 $EndComp
@@ -422,8 +421,8 @@ U 1 1 615A675D
 P 7050 5100
 F 0 "R6" H 7120 5146 50  0000 L CNN
 F 1 "1k" H 7120 5055 50  0000 L CNN
-F 2 "" V 6980 5100 50  0001 C CNN
-F 3 "~" H 7050 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 6980 5100 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20065/rcse3.pdf" H 7050 5100 50  0001 C CNN
 F 4 "541-2788-1-ND" H 7050 5100 50  0001 C CNN "Digikey"
 	1    7050 5100
 	1    0    0    -1  
@@ -434,8 +433,8 @@ U 1 1 615A70C7
 P 7500 4850
 F 0 "R10" V 7293 4850 50  0000 C CNN
 F 1 "9.1k" V 7384 4850 50  0000 C CNN
-F 2 "" V 7430 4850 50  0001 C CNN
-F 3 "~" H 7500 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7430 4850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 7500 4850 50  0001 C CNN
 F 4 "YAG1756CT-ND‎" H 7500 4850 50  0001 C CNN "Digikey"
 	1    7500 4850
 	0    1    1    0   
@@ -446,8 +445,8 @@ U 1 1 615A7B6B
 P 5900 2600
 F 0 "R4" H 5830 2554 50  0000 R CNN
 F 1 "10k" H 5830 2645 50  0000 R CNN
-F 2 "" V 5830 2600 50  0001 C CNN
-F 3 "~" H 5900 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 5830 2600 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 2600 50  0001 C CNN
 F 4 "13-RC0603DR-0710KLCT-ND‎" V 5900 2600 50  0001 C CNN "Digikey"
 	1    5900 2600
 	-1   0    0    1   
@@ -458,10 +457,9 @@ U 1 1 615A829C
 P 7450 2150
 F 0 "R9" V 7243 2150 50  0000 C CNN
 F 1 "10k" V 7334 2150 50  0000 C CNN
-F 2 "" V 7380 2150 50  0001 C CNN
-F 3 "~" H 7450 2150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 2150 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7450 2150 50  0001 C CNN
 F 4 "13-RC0603DR-0710KLCT-ND‎" V 7450 2150 50  0001 C CNN "Digikey"
-F 5 "‎RC0603DR-0710KL‎" V 7450 2150 50  0001 C CNN "Manufacturer"
 	1    7450 2150
 	0    1    1    0   
 $EndComp
@@ -471,10 +469,9 @@ U 1 1 615A8D1F
 P 6800 5900
 F 0 "R5" H 6730 5854 50  0000 R CNN
 F 1 "10k" H 6730 5945 50  0000 R CNN
-F 2 "" V 6730 5900 50  0001 C CNN
-F 3 "~" H 6800 5900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 6730 5900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6800 5900 50  0001 C CNN
 F 4 "13-RC0603DR-0710KLCT-ND‎" V 6800 5900 50  0001 C CNN "Digikey"
-F 5 "‎RC0603DR-0710KL‎" V 6800 5900 50  0001 C CNN "Manufacturer"
 	1    6800 5900
 	-1   0    0    1   
 $EndComp
@@ -484,8 +481,8 @@ U 1 1 615AA078
 P 7500 5600
 F 0 "R11" V 7293 5600 50  0000 C CNN
 F 1 "20k" V 7384 5600 50  0000 C CNN
-F 2 "" V 7430 5600 50  0001 C CNN
-F 3 "~" H 7500 5600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7430 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7500 5600 50  0001 C CNN
 F 4 "‎P20429CT-ND‎" V 7500 5600 50  0001 C CNN "Digikey"
 	1    7500 5600
 	0    1    1    0   
