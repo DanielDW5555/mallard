@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware\mallard.sch</source>
-    <date>01/10/2021 3:41:09 PM</date>
-    <tool>Eeschema (5.1.5)-3</tool>
+    <source>F:\electricalDesignProjects\mallard\hardware\mallard.sch</source>
+    <date>2021-11-10 10:25:25 PM</date>
+    <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -58,9 +58,9 @@
     </sheet>
   </design>
   <components>
-    <comp ref="C3">
+    <comp ref="C400">
       <value>0.1uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <fields>
         <field name="Digikey">445-8122-1-ND</field>
       </fields>
@@ -68,9 +68,10 @@
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>61572B0A</tstamp>
     </comp>
-    <comp ref="R1">
+    <comp ref="R400">
       <value>10k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
         <field name="Digikey">13-RC0603DR-0710KLCT-ND‎</field>
       </fields>
@@ -85,36 +86,16 @@
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>6158BC98</tstamp>
     </comp>
-    <comp ref="C2">
+    <comp ref="C405">
       <value>20pF</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">399-C0603C200G4HAC7867CT-ND</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
-      <tstamp>6158D460</tstamp>
-    </comp>
-    <comp ref="C1">
-      <value>20pF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1007_X8R_ULTRA_150C_SMD.pdf</datasheet>
       <fields>
         <field name="Digikey">399-C0603C200G4HAC7867CT-ND</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>6158E0B8</tstamp>
-    </comp>
-    <comp ref="U1">
-      <value>STM32L431CBTx</value>
-      <footprint>Package_QFP:LQFP-48_7x7mm_P0.5mm</footprint>
-      <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00257211.pdf</datasheet>
-      <fields>
-        <field name="Digikey">497-STM32L4Q5CGT6-ND</field>
-      </fields>
-      <libsource lib="MCU_ST_STM32L4" part="STM32L431CBTx" description="ARM Cortex-M4 MCU, 128KB flash, 64KB RAM, 80MHz, 1.71-3.6V, 38 GPIO, LQFP-48"/>
-      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
-      <tstamp>615DF2CD</tstamp>
     </comp>
     <comp ref="J1">
       <value>SWD</value>
@@ -123,47 +104,18 @@
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>61608109</tstamp>
     </comp>
-    <comp ref="C4">
-      <value>0.1uF</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">445-8122-1-ND</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
-      <tstamp>6161C39A</tstamp>
-    </comp>
-    <comp ref="C5">
-      <value>0.1uF</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">445-8122-1-ND</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
-      <tstamp>6161C5E7</tstamp>
-    </comp>
-    <comp ref="C6">
-      <value>0.1uF</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">445-8122-1-ND</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
-      <tstamp>6161CC96</tstamp>
-    </comp>
     <comp ref="J2">
       <value>USB_A</value>
-      <datasheet> ~</datasheet>
+      <footprint>Connector_USB:USB3_A_Molex_48393-001</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB1130-USB1135.pdf</datasheet>
       <fields>
         <field name="Digikey">2073-USB1135-15-9-L-B-ND</field>
       </fields>
-      <libsource lib="Connector" part="USB_A" description="USB Type A connector"/>
+      <libsource lib="mallard-rescue" part="USB_A-Connector" description=""/>
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>6161D470</tstamp>
     </comp>
-    <comp ref="SW1">
+    <comp ref="SW400">
       <value>RESET Switch</value>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push_Open_Dual" description="Push button switch, normally closed, generic, four pins"/>
@@ -172,7 +124,8 @@
     </comp>
     <comp ref="D1">
       <value>Orange</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>https://optoelectronics.liteon.com/upload/download/DS-22-99-0185/LTST-C170KFKT.pdf</datasheet>
       <fields>
         <field name="Digikey">160-1413-1-ND</field>
       </fields>
@@ -180,9 +133,10 @@
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>6164F04D</tstamp>
     </comp>
-    <comp ref="R2">
+    <comp ref="R401">
       <value>680</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-AC_51_RoHS_L_7.pdf</datasheet>
       <fields>
         <field name="Digikey">YAG3624CT-ND</field>
       </fields>
@@ -190,42 +144,108 @@
       <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
       <tstamp>61650FB5</tstamp>
     </comp>
-    <comp ref="Eh1">
+    <comp ref="U400">
+      <value>STM32L4Q5xx</value>
+      <footprint>Package_QFP:LQFP-48_7x7mm_P0.5mm</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/stm32l4q5ag.pdf</datasheet>
+      <fields>
+        <field name="Digikey">497-STM32L4Q5CGT6-ND</field>
+      </fields>
+      <libsource lib="MCU_ST_STM32L4" part="STM32L431CBTx" description="ARM Cortex-M4 MCU, 128KB flash, 64KB RAM, 80MHz, 1.71-3.6V, 38 GPIO, LQFP-48"/>
+      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
+      <tstamp>615DF2CD</tstamp>
+    </comp>
+    <comp ref="C406">
+      <value>20pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1007_X8R_ULTRA_150C_SMD.pdf</datasheet>
+      <fields>
+        <field name="Digikey">399-C0603C200G4HAC7867CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
+      <tstamp>61A825EB</tstamp>
+    </comp>
+    <comp ref="C401">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey">445-8122-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
+      <tstamp>61A86DBF</tstamp>
+    </comp>
+    <comp ref="C402">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey">445-8122-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
+      <tstamp>61A88F4C</tstamp>
+    </comp>
+    <comp ref="C403">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey">445-8122-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
+      <tstamp>61A8B01F</tstamp>
+    </comp>
+    <comp ref="C404">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey">445-8122-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/microcontroller/" tstamps="/60B3FDDE/"/>
+      <tstamp>61A8D0B6</tstamp>
+    </comp>
+    <comp ref="Eh603">
       <value>Eh Electrode</value>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>610DC20D</tstamp>
     </comp>
-    <comp ref="Eh2">
+    <comp ref="Eh604">
       <value>Eh Electrode</value>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>610DD4BF</tstamp>
     </comp>
-    <comp ref="Eh3">
+    <comp ref="Eh605">
       <value>Eh Electrode</value>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>610DDA62</tstamp>
     </comp>
-    <comp ref="SM1">
+    <comp ref="SM600">
       <value>Oct Soil Moisture </value>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>610E87B7</tstamp>
     </comp>
-    <comp ref="SM2">
+    <comp ref="SM601">
       <value>Oct Soil Moisture </value>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>610F5909</tstamp>
     </comp>
-    <comp ref="SM3">
+    <comp ref="SM602">
       <value>Oct Soil Moisture </value>
       <datasheet>~</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -239,7 +259,7 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>6110E4AF</tstamp>
     </comp>
-    <comp ref="U2">
+    <comp ref="U600">
       <value>TMUX1309</value>
       <footprint>Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tmux1309.pdf</datasheet>
@@ -250,20 +270,21 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>61595D93</tstamp>
     </comp>
-    <comp ref="R3">
+    <comp ref="R600">
       <value>10k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
         <field name="Digikey">13-RC0603DR-0710KLCT-ND‎</field>
-        <field name="Manufacturer">‎RC0603DR-0710KL‎</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>6159B70F</tstamp>
     </comp>
-    <comp ref="R8">
+    <comp ref="R502">
       <value>20k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf</datasheet>
       <fields>
         <field name="Digikey">‎P20429CT-ND‎</field>
       </fields>
@@ -271,9 +292,10 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>6159EF44</tstamp>
     </comp>
-    <comp ref="R7">
+    <comp ref="R501">
       <value>30k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf</datasheet>
       <fields>
         <field name="Digikey">311-30KDCT-ND‎</field>
       </fields>
@@ -281,19 +303,21 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A0EFD</tstamp>
     </comp>
-    <comp ref="U4">
+    <comp ref="U500">
       <value>LMV554</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/lmv551.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1626469395066&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmv551</datasheet>
       <fields>
-        <field name="Digikey">LMP7721MA/NOPB-ND‎</field>
+        <field name="Digikey">296-51370-1-ND</field>
       </fields>
       <libsource lib="mallard" part="LMV554" description=""/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A28E5</tstamp>
     </comp>
-    <comp ref="R6">
+    <comp ref="R505">
       <value>1k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.vishay.com/docs/20065/rcse3.pdf</datasheet>
       <fields>
         <field name="Digikey">541-2788-1-ND</field>
       </fields>
@@ -301,9 +325,10 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A675D</tstamp>
     </comp>
-    <comp ref="R10">
+    <comp ref="R504">
       <value>9.1k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf</datasheet>
       <fields>
         <field name="Digikey">YAG1756CT-ND‎</field>
       </fields>
@@ -311,9 +336,10 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A70C7</tstamp>
     </comp>
-    <comp ref="R4">
+    <comp ref="R500">
       <value>10k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
         <field name="Digikey">13-RC0603DR-0710KLCT-ND‎</field>
       </fields>
@@ -321,31 +347,32 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A7B6B</tstamp>
     </comp>
-    <comp ref="R9">
+    <comp ref="R503">
       <value>10k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
         <field name="Digikey">13-RC0603DR-0710KLCT-ND‎</field>
-        <field name="Manufacturer">‎RC0603DR-0710KL‎</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A829C</tstamp>
     </comp>
-    <comp ref="R5">
+    <comp ref="R507">
       <value>10k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
         <field name="Digikey">13-RC0603DR-0710KLCT-ND‎</field>
-        <field name="Manufacturer">‎RC0603DR-0710KL‎</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A8D1F</tstamp>
     </comp>
-    <comp ref="R11">
+    <comp ref="R506">
       <value>20k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf</datasheet>
       <fields>
         <field name="Digikey">‎P20429CT-ND‎</field>
       </fields>
@@ -353,7 +380,7 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615AA078</tstamp>
     </comp>
-    <comp ref="U3">
+    <comp ref="U700">
       <value>TMUX1309</value>
       <footprint>Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tmux1309.pdf</datasheet>
@@ -364,16 +391,13 @@
       <sheetpath names="/instrumentation/" tstamps="/60B3FE92/"/>
       <tstamp>615A1290</tstamp>
     </comp>
-    <comp ref="D2">
+    <comp ref="D102">
       <value>LED</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
-      <tstamp>610182AA</tstamp>
-    </comp>
-    <comp ref="D3">
-      <value>LED</value>
-      <datasheet>~</datasheet>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.sunledusa.com/products/spec/XZVG53W-8.pdf</datasheet>
+      <fields>
+        <field name="Digikey">1497-1215-1-ND</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>61018DA7</tstamp>
@@ -385,9 +409,10 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>61025352</tstamp>
     </comp>
-    <comp ref="R14">
+    <comp ref="R103">
       <value>21.5k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf</datasheet>
       <fields>
         <field name="Digikey">P20432CT-ND</field>
       </fields>
@@ -395,19 +420,21 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615B9F1A</tstamp>
     </comp>
-    <comp ref="R15">
-      <value>510</value>
-      <datasheet>~</datasheet>
+    <comp ref="R101">
+      <value>3.6k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ3GEYJ362V</datasheet>
       <fields>
-        <field name="Digikey">CR0603-FX-5100ELFCT-ND</field>
+        <field name="Digikey">P3.6KGCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615BC28F</tstamp>
     </comp>
-    <comp ref="C9">
+    <comp ref="C101">
       <value>1uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
       <fields>
         <field name="Digikey">311-1446-1-ND</field>
       </fields>
@@ -415,9 +442,10 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615BF1F0</tstamp>
     </comp>
-    <comp ref="C8">
+    <comp ref="C200">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf</datasheet>
       <fields>
         <field name="Digikey">587-3258-1-ND</field>
       </fields>
@@ -425,7 +453,7 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615BF8BC</tstamp>
     </comp>
-    <comp ref="C10">
+    <comp ref="C201">
       <value>1uF</value>
       <datasheet>~</datasheet>
       <fields>
@@ -435,39 +463,10 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615C05A8</tstamp>
     </comp>
-    <comp ref="C11">
-      <value>10uF</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">587-3258-1-ND</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
-      <tstamp>615C0C75</tstamp>
-    </comp>
-    <comp ref="C7">
-      <value>1uF</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">311-1446-1-ND</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
-      <tstamp>615C10D2</tstamp>
-    </comp>
-    <comp ref="R13">
+    <comp ref="R100">
       <value>5.1k</value>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Digikey">311-5.10KHRCT-ND</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
-      <tstamp>615C1F4F</tstamp>
-    </comp>
-    <comp ref="R12">
-      <value>5.1k</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
         <field name="Digikey">311-5.10KHRCT-ND</field>
       </fields>
@@ -475,7 +474,7 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615C2AA1</tstamp>
     </comp>
-    <comp ref="U5">
+    <comp ref="U100">
       <value>BQ24210DQCT</value>
       <footprint>Package_SON:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/bq24210.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1627409280722&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fbq24210</datasheet>
@@ -486,7 +485,7 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615C38E5</tstamp>
     </comp>
-    <comp ref="U6">
+    <comp ref="U200">
       <value>LTC1983ES6-3</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/1983fc.pdf</datasheet>
@@ -497,43 +496,146 @@
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615C529F</tstamp>
     </comp>
-    <comp ref="TH1">
+    <comp ref="TH100">
       <value>103AT</value>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="Thermistor" description="Temperature dependent resistor"/>
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
       <tstamp>615C9973</tstamp>
     </comp>
-    <comp ref="R16">
-      <value>510</value>
-      <datasheet>~</datasheet>
+    <comp ref="D100">
+      <value>D</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds16003.pdf</datasheet>
       <fields>
-        <field name="Digikey">CR0603-FX-5100ELFCT-ND</field>
+        <field name="Digikey">S1B-13-F</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>6161D676</tstamp>
+    </comp>
+    <comp ref="U300">
+      <value>TPS717</value>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps717.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1633366861578&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps717</datasheet>
+      <fields>
+        <field name="Digikey">296-27043-1-ND</field>
+      </fields>
+      <libsource lib="mallard" part="TPS717" description=""/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>615C2667</tstamp>
+    </comp>
+    <comp ref="R303">
+      <value>Jumper</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.vishay.com/docs/20043/crcwhpe3.pdf</datasheet>
+      <fields>
+        <field name="Digikey">541-0.0SBCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>615D2E50</tstamp>
+    </comp>
+    <comp ref="R102">
+      <value>3.6k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ3GEYJ362V</datasheet>
+      <fields>
+        <field name="Digikey">P3.6KGCT-ND</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
-      <tstamp>615CDE99</tstamp>
+      <tstamp>615E6A6B</tstamp>
+    </comp>
+    <comp ref="C300">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <fields>
+        <field name="Digikey">311-1446-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>619186D3</tstamp>
+    </comp>
+    <comp ref="R300">
+      <value>80.6k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RMCF0603FT80K6CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>61925061</tstamp>
+    </comp>
+    <comp ref="R301">
+      <value>324k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ3GEYJ362V</datasheet>
+      <fields>
+        <field name="Digikey">P3.6KGCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>6192E038</tstamp>
+    </comp>
+    <comp ref="C301">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <fields>
+        <field name="Digikey">311-1446-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>619438C1</tstamp>
+    </comp>
+    <comp ref="C202">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf</datasheet>
+      <fields>
+        <field name="Digikey">587-3258-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>619CB531</tstamp>
+    </comp>
+    <comp ref="C100">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <fields>
+        <field name="Digikey">311-1446-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>619D13FF</tstamp>
+    </comp>
+    <comp ref="R10x1">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
+      <fields>
+        <field name="Digikey">311-5.10KHRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>619D521F</tstamp>
+    </comp>
+    <comp ref="D101">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.sunledusa.com/products/spec/XZVG53W-8.pdf</datasheet>
+      <fields>
+        <field name="Digikey">1497-1215-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/power/" tstamps="/60B3FF2D/"/>
+      <tstamp>61A122D5</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connector" part="USB_A">
-      <description>USB Type A connector</description>
-      <docs> ~</docs>
-      <footprints>
-        <fp>USB*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">USB_A</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VBUS" type="power_in"/>
-        <pin num="2" name="D-" type="passive"/>
-        <pin num="3" name="D+" type="passive"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="Shield" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x01">
       <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -642,6 +744,24 @@
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="LED">
@@ -887,443 +1007,465 @@
         <pin num="16" name="VDD" type="unspc"/>
       </pins>
     </libpart>
+    <libpart lib="mallard" part="TPS717">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS717</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="mallard-rescue" part="USB_A-Connector">
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_A-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="Connector">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
-    </library>
     <library logical="Connector_Generic">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+      <uri>F:\KiCad\share\kicad\library/Connector_Generic.lib</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+      <uri>F:\KiCad\share\kicad\library/Device.lib</uri>
     </library>
     <library logical="MCU_ST_STM32L4">
-      <uri>C:\Program Files\KiCad\share\kicad\library/MCU_ST_STM32L4.lib</uri>
+      <uri>F:\KiCad\share\kicad\library/MCU_ST_STM32L4.lib</uri>
     </library>
     <library logical="Switch">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+      <uri>F:\KiCad\share\kicad\library/Switch.lib</uri>
     </library>
     <library logical="mallard">
-      <uri>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware/mallard.lib</uri>
+      <uri>F:\electricalDesignProjects\mallard\hardware/mallard.lib</uri>
+    </library>
+    <library logical="mallard-rescue">
+      <uri>F:\electricalDesignProjects\mallard\hardware/mallard-rescue.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="TH1" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="U6" pin="5"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="J2" pin="4"/>
-      <node ref="C11" pin="2"/>
-      <node ref="R13" pin="2"/>
-      <node ref="U5" pin="3"/>
-      <node ref="R12" pin="2"/>
-      <node ref="R5" pin="1"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U3" pin="8"/>
-      <node ref="U4" pin="5"/>
-      <node ref="U4" pin="3"/>
-      <node ref="U2" pin="8"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="SM3" pin="3"/>
-      <node ref="SM2" pin="3"/>
-      <node ref="SM1" pin="3"/>
-      <node ref="U1" pin="35"/>
-      <node ref="U1" pin="8"/>
-      <node ref="SW1" pin="4"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="U1" pin="47"/>
+    <net code="1" name="Net-(U400-Pad31)">
+      <node ref="U400" pin="31"/>
+    </net>
+    <net code="2" name="Net-(U400-Pad38)">
+      <node ref="U400" pin="38"/>
+    </net>
+    <net code="3" name="Net-(U400-Pad17)">
+      <node ref="U400" pin="17"/>
+    </net>
+    <net code="4" name="Net-(U400-Pad29)">
+      <node ref="U400" pin="29"/>
+    </net>
+    <net code="5" name="Net-(U400-Pad30)">
+      <node ref="U400" pin="30"/>
+    </net>
+    <net code="6" name="MUX2_A0">
+      <node ref="U400" pin="19"/>
+      <node ref="U700" pin="9"/>
+    </net>
+    <net code="7" name="Net-(U400-Pad26)">
+      <node ref="U400" pin="26"/>
+    </net>
+    <net code="8" name="Net-(U400-Pad27)">
+      <node ref="U400" pin="27"/>
+    </net>
+    <net code="9" name="Net-(U400-Pad28)">
+      <node ref="U400" pin="28"/>
+    </net>
+    <net code="10" name="MUX2_A1">
+      <node ref="U700" pin="10"/>
+      <node ref="U400" pin="20"/>
+    </net>
+    <net code="11" name="Net-(U400-Pad39)">
+      <node ref="U400" pin="39"/>
+    </net>
+    <net code="12" name="Net-(D1-Pad1)">
+      <node ref="U400" pin="40"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="13" name="Net-(U400-Pad41)">
+      <node ref="U400" pin="41"/>
+    </net>
+    <net code="14" name="Charge_EN">
+      <node ref="U100" pin="7"/>
+      <node ref="U400" pin="21"/>
+    </net>
+    <net code="15" name="CP_SHDN_L">
+      <node ref="U400" pin="22"/>
+    </net>
+    <net code="16" name="+1V0_EN">
+      <node ref="U400" pin="25"/>
+      <node ref="U300" pin="3"/>
+    </net>
+    <net code="17" name="Net-(U400-Pad42)">
+      <node ref="U400" pin="42"/>
+    </net>
+    <net code="18" name="Net-(C406-Pad1)">
+      <node ref="U400" pin="4"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="C406" pin="1"/>
+    </net>
+    <net code="19" name="Net-(C405-Pad1)">
+      <node ref="Y1" pin="1"/>
+      <node ref="C405" pin="1"/>
+      <node ref="U400" pin="3"/>
+    </net>
+    <net code="20" name="Net-(U400-Pad43)">
+      <node ref="U400" pin="43"/>
+    </net>
+    <net code="21" name="Net-(U400-Pad45)">
+      <node ref="U400" pin="45"/>
+    </net>
+    <net code="22" name="Net-(U400-Pad46)">
+      <node ref="U400" pin="46"/>
+    </net>
+    <net code="23" name="Net-(U400-Pad2)">
+      <node ref="U400" pin="2"/>
+    </net>
+    <net code="24" name="Net-(U400-Pad5)">
+      <node ref="U400" pin="5"/>
+    </net>
+    <net code="25" name="Net-(U400-Pad6)">
+      <node ref="U400" pin="6"/>
+    </net>
+    <net code="26" name="Net-(U400-Pad44)">
+      <node ref="U400" pin="44"/>
+    </net>
+    <net code="27" name="/microcontroller/SWCLK">
+      <node ref="J1" pin="4"/>
+      <node ref="U400" pin="37"/>
+    </net>
+    <net code="28" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="29" name="Net-(J1-Pad7)">
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="30" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="31" name="/microcontroller/SWDIO">
+      <node ref="J1" pin="2"/>
+      <node ref="U400" pin="34"/>
+    </net>
+    <net code="32" name="/microcontroller/RESET_L">
+      <node ref="R400" pin="1"/>
+      <node ref="J1" pin="10"/>
+      <node ref="SW400" pin="3"/>
+      <node ref="SW400" pin="1"/>
+      <node ref="U400" pin="7"/>
+    </net>
+    <net code="33" name="+3V3">
+      <node ref="R102" pin="1"/>
+      <node ref="R401" pin="1"/>
+      <node ref="C400" pin="1"/>
+      <node ref="SM602" pin="1"/>
+      <node ref="SM601" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R400" pin="2"/>
+      <node ref="C300" pin="1"/>
+      <node ref="U100" pin="10"/>
+      <node ref="U400" pin="36"/>
+      <node ref="U400" pin="9"/>
+      <node ref="U400" pin="48"/>
+      <node ref="U400" pin="24"/>
+      <node ref="U400" pin="1"/>
+      <node ref="C200" pin="1"/>
+      <node ref="C404" pin="1"/>
+      <node ref="C403" pin="1"/>
+      <node ref="C402" pin="1"/>
+      <node ref="U700" pin="16"/>
+      <node ref="C401" pin="1"/>
+      <node ref="BatteryPack1" pin="1"/>
+      <node ref="U600" pin="16"/>
+      <node ref="R101" pin="1"/>
+      <node ref="U500" pin="4"/>
+      <node ref="SM600" pin="1"/>
+      <node ref="C101" pin="1"/>
+      <node ref="U300" pin="1"/>
+      <node ref="U200" pin="1"/>
+    </net>
+    <net code="34" name="GND">
+      <node ref="U700" pin="8"/>
+      <node ref="U600" pin="8"/>
+      <node ref="SM600" pin="3"/>
+      <node ref="SM601" pin="3"/>
+      <node ref="SM602" pin="3"/>
+      <node ref="R507" pin="1"/>
+      <node ref="U200" pin="5"/>
+      <node ref="TH100" pin="1"/>
+      <node ref="U300" pin="2"/>
+      <node ref="R100" pin="2"/>
+      <node ref="C101" pin="2"/>
+      <node ref="C200" pin="2"/>
+      <node ref="U100" pin="3"/>
+      <node ref="C301" pin="2"/>
+      <node ref="C300" pin="2"/>
+      <node ref="R301" pin="2"/>
+      <node ref="C202" pin="2"/>
+      <node ref="C100" pin="2"/>
+      <node ref="R10x1" pin="2"/>
       <node ref="BatteryPack1" pin="2"/>
+      <node ref="C400" pin="2"/>
+      <node ref="R505" pin="2"/>
       <node ref="J1" pin="9"/>
       <node ref="J1" pin="5"/>
       <node ref="J1" pin="3"/>
+      <node ref="U400" pin="8"/>
+      <node ref="U400" pin="47"/>
+      <node ref="U400" pin="23"/>
       <node ref="J2" pin="5"/>
-      <node ref="U1" pin="23"/>
+      <node ref="SW400" pin="4"/>
+      <node ref="SW400" pin="2"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U500" pin="3"/>
+      <node ref="U500" pin="5"/>
+      <node ref="C405" pin="2"/>
+      <node ref="C401" pin="2"/>
+      <node ref="C406" pin="2"/>
+      <node ref="C402" pin="2"/>
+      <node ref="C403" pin="2"/>
+      <node ref="C404" pin="2"/>
+      <node ref="U400" pin="35"/>
     </net>
-    <net code="2" name="/microcontroller/SWDIO">
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="3" name="/microcontroller/SWCLK">
-      <node ref="J1" pin="4"/>
-    </net>
-    <net code="4" name="/microcontroller/RESET_L">
-      <node ref="J1" pin="10"/>
-      <node ref="SW1" pin="3"/>
-      <node ref="R1" pin="1"/>
-      <node ref="U1" pin="7"/>
-      <node ref="SW1" pin="1"/>
-    </net>
-    <net code="5" name="Net-(U1-Pad36)">
-      <node ref="U1" pin="36"/>
-    </net>
-    <net code="6" name="+3V3">
-      <node ref="BatteryPack1" pin="1"/>
-      <node ref="U4" pin="4"/>
-      <node ref="U3" pin="16"/>
-      <node ref="U2" pin="16"/>
-      <node ref="R16" pin="1"/>
-      <node ref="U5" pin="10"/>
-      <node ref="U6" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="SM1" pin="1"/>
-      <node ref="SM2" pin="1"/>
-      <node ref="SM3" pin="1"/>
-      <node ref="R15" pin="1"/>
-      <node ref="C9" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="J1" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="C6" pin="1"/>
-      <node ref="C4" pin="1"/>
-    </net>
-    <net code="7" name="Net-(J1-Pad7)">
-      <node ref="J1" pin="7"/>
-    </net>
-    <net code="8" name="Net-(J1-Pad6)">
-      <node ref="J1" pin="6"/>
-    </net>
-    <net code="9" name="Net-(J1-Pad8)">
-      <node ref="J1" pin="8"/>
-    </net>
-    <net code="10" name="Net-(D1-Pad1)">
-      <node ref="U1" pin="16"/>
-      <node ref="D1" pin="1"/>
-    </net>
-    <net code="11" name="Net-(D1-Pad2)">
-      <node ref="R2" pin="2"/>
+    <net code="35" name="Net-(D1-Pad2)">
+      <node ref="R401" pin="2"/>
       <node ref="D1" pin="2"/>
     </net>
-    <net code="12" name="+5V">
-      <node ref="J2" pin="1"/>
+    <net code="36" name="Eh_Sense">
+      <node ref="U500" pin="7"/>
+      <node ref="U400" pin="10"/>
+      <node ref="R501" pin="1"/>
     </net>
-    <net code="13" name="/microcontroller/USB-">
-      <node ref="J2" pin="2"/>
+    <net code="37" name="Temp_Sense">
+      <node ref="U400" pin="11"/>
+      <node ref="U500" pin="8"/>
+      <node ref="R506" pin="1"/>
     </net>
-    <net code="14" name="/microcontroller/USB+">
+    <net code="38" name="Ref_Elec">
+      <node ref="U400" pin="12"/>
+    </net>
+    <net code="39" name="Moisture_Sense">
+      <node ref="U400" pin="13"/>
+      <node ref="U600" pin="13"/>
+    </net>
+    <net code="40" name="/microcontroller/USB+">
+      <node ref="U400" pin="32"/>
       <node ref="J2" pin="3"/>
     </net>
-    <net code="15" name="Net-(C2-Pad1)">
-      <node ref="Y1" pin="2"/>
-      <node ref="C2" pin="1"/>
-      <node ref="U1" pin="4"/>
+    <net code="41" name="/microcontroller/USB-">
+      <node ref="J2" pin="2"/>
+      <node ref="U400" pin="33"/>
     </net>
-    <net code="16" name="Net-(C1-Pad1)">
-      <node ref="Y1" pin="1"/>
-      <node ref="U1" pin="3"/>
-      <node ref="C1" pin="1"/>
+    <net code="42" name="MUX1_EN">
+      <node ref="U600" pin="6"/>
+      <node ref="U400" pin="14"/>
     </net>
-    <net code="17" name="/microcontroller/3V3_VDD">
-      <node ref="C3" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C4" pin="2"/>
-      <node ref="U1" pin="9"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="U1" pin="48"/>
-      <node ref="U1" pin="24"/>
+    <net code="43" name="MUX1_A0">
+      <node ref="U400" pin="15"/>
+      <node ref="U600" pin="9"/>
     </net>
-    <net code="18" name="Net-(U1-Pad41)">
-      <node ref="U1" pin="41"/>
+    <net code="44" name="MUX1_A1">
+      <node ref="U400" pin="16"/>
+      <node ref="U600" pin="10"/>
     </net>
-    <net code="19" name="Net-(U1-Pad30)">
-      <node ref="U1" pin="30"/>
+    <net code="45" name="MUX2_EN">
+      <node ref="U400" pin="18"/>
+      <node ref="U700" pin="6"/>
     </net>
-    <net code="20" name="Net-(U1-Pad18)">
-      <node ref="U1" pin="18"/>
+    <net code="46" name="+5V">
+      <node ref="J2" pin="1"/>
     </net>
-    <net code="21" name="Net-(U1-Pad19)">
-      <node ref="U1" pin="19"/>
+    <net code="47" name="Net-(SM601-Pad2)">
+      <node ref="SM601" pin="2"/>
+      <node ref="U600" pin="14"/>
     </net>
-    <net code="22" name="Net-(U1-Pad21)">
-      <node ref="U1" pin="21"/>
+    <net code="48" name="Net-(R504-Pad2)">
+      <node ref="R505" pin="1"/>
+      <node ref="R504" pin="2"/>
+      <node ref="U500" pin="13"/>
     </net>
-    <net code="23" name="Net-(U1-Pad22)">
-      <node ref="U1" pin="22"/>
+    <net code="49" name="-3V3">
+      <node ref="U200" pin="2"/>
+      <node ref="C202" pin="1"/>
+      <node ref="U500" pin="11"/>
     </net>
-    <net code="24" name="Net-(U1-Pad25)">
-      <node ref="U1" pin="25"/>
+    <net code="50" name="Net-(R502-Pad1)">
+      <node ref="U500" pin="1"/>
+      <node ref="R502" pin="1"/>
+      <node ref="R503" pin="1"/>
     </net>
-    <net code="25" name="Net-(U1-Pad26)">
-      <node ref="U1" pin="26"/>
+    <net code="51" name="Net-(R501-Pad2)">
+      <node ref="R501" pin="2"/>
+      <node ref="U500" pin="6"/>
+      <node ref="R502" pin="2"/>
     </net>
-    <net code="26" name="Net-(U1-Pad27)">
-      <node ref="U1" pin="27"/>
+    <net code="52" name="Net-(R506-Pad2)">
+      <node ref="R506" pin="2"/>
+      <node ref="R507" pin="2"/>
+      <node ref="U500" pin="9"/>
     </net>
-    <net code="27" name="Net-(U1-Pad28)">
-      <node ref="U1" pin="28"/>
+    <net code="53" name="Ref_Out">
+      <node ref="U500" pin="14"/>
+      <node ref="R504" pin="1"/>
     </net>
-    <net code="28" name="Net-(U1-Pad20)">
-      <node ref="U1" pin="20"/>
+    <net code="54" name="Net-(U600-Pad11)">
+      <node ref="U600" pin="11"/>
     </net>
-    <net code="29" name="Net-(U1-Pad39)">
-      <node ref="U1" pin="39"/>
+    <net code="55" name="Net-(Eh605-Pad1)">
+      <node ref="U600" pin="2"/>
+      <node ref="Eh605" pin="1"/>
     </net>
-    <net code="30" name="Net-(U1-Pad40)">
-      <node ref="U1" pin="40"/>
+    <net code="56" name="Net-(R600-Pad2)">
+      <node ref="U600" pin="3"/>
+      <node ref="R600" pin="2"/>
     </net>
-    <net code="31" name="Net-(U1-Pad42)">
-      <node ref="U1" pin="42"/>
+    <net code="57" name="Net-(U600-Pad4)">
+      <node ref="U600" pin="4"/>
     </net>
-    <net code="32" name="Net-(U1-Pad43)">
-      <node ref="U1" pin="43"/>
+    <net code="58" name="Net-(U600-Pad7)">
+      <node ref="U600" pin="7"/>
     </net>
-    <net code="33" name="Net-(U1-Pad45)">
-      <node ref="U1" pin="45"/>
+    <net code="59" name="Net-(U500-Pad10)">
+      <node ref="U700" pin="13"/>
+      <node ref="U500" pin="10"/>
     </net>
-    <net code="34" name="Net-(U1-Pad46)">
-      <node ref="U1" pin="46"/>
+    <net code="60" name="Net-(U700-Pad14)">
+      <node ref="U700" pin="14"/>
     </net>
-    <net code="35" name="Net-(U1-Pad2)">
-      <node ref="U1" pin="2"/>
+    <net code="61" name="Net-(U700-Pad15)">
+      <node ref="U700" pin="15"/>
     </net>
-    <net code="36" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
+    <net code="62" name="Net-(U700-Pad2)">
+      <node ref="U700" pin="2"/>
     </net>
-    <net code="37" name="Net-(U1-Pad6)">
-      <node ref="U1" pin="6"/>
+    <net code="63" name="Net-(U700-Pad3)">
+      <node ref="U700" pin="3"/>
     </net>
-    <net code="38" name="Net-(U1-Pad44)">
-      <node ref="U1" pin="44"/>
+    <net code="64" name="Net-(U700-Pad4)">
+      <node ref="U700" pin="4"/>
     </net>
-    <net code="39" name="Net-(U1-Pad17)">
-      <node ref="U1" pin="17"/>
+    <net code="65" name="Net-(U700-Pad5)">
+      <node ref="U700" pin="5"/>
     </net>
-    <net code="40" name="Net-(U1-Pad29)">
-      <node ref="U1" pin="29"/>
+    <net code="66" name="Net-(U700-Pad7)">
+      <node ref="U700" pin="7"/>
     </net>
-    <net code="41" name="Net-(U1-Pad10)">
-      <node ref="U1" pin="10"/>
+    <net code="67" name="Net-(U700-Pad12)">
+      <node ref="U700" pin="12"/>
     </net>
-    <net code="42" name="Net-(U1-Pad11)">
-      <node ref="U1" pin="11"/>
+    <net code="68" name="+1V0">
+      <node ref="R303" pin="1"/>
+      <node ref="R500" pin="2"/>
     </net>
-    <net code="43" name="Net-(U1-Pad32)">
-      <node ref="U1" pin="32"/>
+    <net code="69" name="Net-(R500-Pad1)">
+      <node ref="R500" pin="1"/>
+      <node ref="R600" pin="1"/>
+      <node ref="R503" pin="2"/>
+      <node ref="U500" pin="2"/>
     </net>
-    <net code="44" name="Net-(U1-Pad31)">
-      <node ref="U1" pin="31"/>
+    <net code="70" name="Net-(U700-Pad1)">
+      <node ref="U700" pin="1"/>
     </net>
-    <net code="45" name="Net-(U1-Pad15)">
-      <node ref="U1" pin="15"/>
+    <net code="71" name="Net-(U700-Pad11)">
+      <node ref="U700" pin="11"/>
     </net>
-    <net code="46" name="Net-(U1-Pad14)">
-      <node ref="U1" pin="14"/>
-    </net>
-    <net code="47" name="Net-(U1-Pad13)">
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="48" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="49" name="Net-(U1-Pad38)">
-      <node ref="U1" pin="38"/>
-    </net>
-    <net code="50" name="Net-(U1-Pad37)">
-      <node ref="U1" pin="37"/>
-    </net>
-    <net code="51" name="Net-(U1-Pad34)">
-      <node ref="U1" pin="34"/>
-    </net>
-    <net code="52" name="Net-(U1-Pad33)">
-      <node ref="U1" pin="33"/>
-    </net>
-    <net code="53" name="Net-(U2-Pad4)">
-      <node ref="U2" pin="4"/>
-    </net>
-    <net code="54" name="Net-(U2-Pad6)">
-      <node ref="U2" pin="6"/>
-    </net>
-    <net code="55" name="Net-(U2-Pad7)">
-      <node ref="U2" pin="7"/>
-    </net>
-    <net code="56" name="Net-(U2-Pad9)">
-      <node ref="U2" pin="9"/>
-    </net>
-    <net code="57" name="Net-(R8-Pad1)">
-      <node ref="R9" pin="1"/>
-      <node ref="R8" pin="1"/>
-      <node ref="U4" pin="1"/>
-    </net>
-    <net code="58" name="Eh_Sense">
-      <node ref="U4" pin="7"/>
-      <node ref="R7" pin="1"/>
-    </net>
-    <net code="59" name="Net-(R7-Pad2)">
-      <node ref="U4" pin="6"/>
-      <node ref="R7" pin="2"/>
-      <node ref="R8" pin="2"/>
-    </net>
-    <net code="60" name="-3V3">
-      <node ref="U4" pin="11"/>
-    </net>
-    <net code="61" name="Net-(R10-Pad2)">
-      <node ref="U4" pin="13"/>
-      <node ref="R6" pin="1"/>
-      <node ref="R10" pin="2"/>
-    </net>
-    <net code="62" name="Moisture_Sense">
-      <node ref="U2" pin="13"/>
-    </net>
-    <net code="63" name="Net-(R3-Pad2)">
-      <node ref="R3" pin="2"/>
-      <node ref="U2" pin="3"/>
-    </net>
-    <net code="64" name="Net-(U2-Pad10)">
-      <node ref="U2" pin="10"/>
-    </net>
-    <net code="65" name="Net-(U2-Pad11)">
-      <node ref="U2" pin="11"/>
-    </net>
-    <net code="66" name="Net-(Eh3-Pad1)">
-      <node ref="Eh3" pin="1"/>
-      <node ref="U2" pin="2"/>
-    </net>
-    <net code="67" name="Net-(U3-Pad13)">
-      <node ref="U3" pin="13"/>
-      <node ref="U4" pin="10"/>
-    </net>
-    <net code="68" name="Net-(U3-Pad1)">
-      <node ref="U3" pin="1"/>
-    </net>
-    <net code="69" name="Net-(U3-Pad10)">
-      <node ref="U3" pin="10"/>
-    </net>
-    <net code="70" name="Net-(U3-Pad11)">
-      <node ref="U3" pin="11"/>
-    </net>
-    <net code="71" name="Net-(U3-Pad12)">
-      <node ref="U3" pin="12"/>
-    </net>
-    <net code="72" name="Net-(U3-Pad14)">
-      <node ref="U3" pin="14"/>
-    </net>
-    <net code="73" name="Net-(U3-Pad15)">
-      <node ref="U3" pin="15"/>
-    </net>
-    <net code="74" name="Net-(U3-Pad2)">
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="75" name="Net-(U3-Pad3)">
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="76" name="Net-(U3-Pad4)">
-      <node ref="U3" pin="4"/>
-    </net>
-    <net code="77" name="Net-(U3-Pad5)">
-      <node ref="U3" pin="5"/>
-    </net>
-    <net code="78" name="Net-(U3-Pad6)">
-      <node ref="U3" pin="6"/>
-    </net>
-    <net code="79" name="Net-(U3-Pad7)">
-      <node ref="U3" pin="7"/>
-    </net>
-    <net code="80" name="Net-(U3-Pad9)">
-      <node ref="U3" pin="9"/>
-    </net>
-    <net code="81" name="Net-(R3-Pad1)">
-      <node ref="R3" pin="1"/>
-      <node ref="R9" pin="2"/>
-      <node ref="U4" pin="2"/>
-      <node ref="R4" pin="1"/>
-    </net>
-    <net code="82" name="Temp_Sense">
-      <node ref="U4" pin="8"/>
-      <node ref="R11" pin="1"/>
-    </net>
-    <net code="83" name="Net-(R11-Pad2)">
-      <node ref="U4" pin="9"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R11" pin="2"/>
-    </net>
-    <net code="84" name="Ref_Out">
-      <node ref="U4" pin="14"/>
-      <node ref="R10" pin="1"/>
-    </net>
-    <net code="85" name="+1V0">
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="86" name="Net-(Ref1-Pad1)">
-      <node ref="U4" pin="12"/>
+    <net code="72" name="Net-(Ref1-Pad1)">
       <node ref="Ref1" pin="1"/>
+      <node ref="U500" pin="12"/>
     </net>
-    <net code="87" name="Net-(Eh1-Pad1)">
-      <node ref="Eh1" pin="1"/>
-      <node ref="U2" pin="1"/>
+    <net code="73" name="Net-(Eh603-Pad1)">
+      <node ref="Eh603" pin="1"/>
+      <node ref="U600" pin="1"/>
     </net>
-    <net code="88" name="Net-(Eh2-Pad1)">
-      <node ref="U2" pin="5"/>
-      <node ref="Eh2" pin="1"/>
+    <net code="74" name="Net-(Eh604-Pad1)">
+      <node ref="U600" pin="5"/>
+      <node ref="Eh604" pin="1"/>
     </net>
-    <net code="89" name="Net-(SM3-Pad2)">
-      <node ref="U2" pin="15"/>
-      <node ref="SM3" pin="2"/>
+    <net code="75" name="Net-(SM602-Pad2)">
+      <node ref="SM602" pin="2"/>
+      <node ref="U600" pin="15"/>
     </net>
-    <net code="90" name="Net-(SM2-Pad2)">
-      <node ref="U2" pin="14"/>
-      <node ref="SM2" pin="2"/>
+    <net code="76" name="Net-(SM600-Pad2)">
+      <node ref="U600" pin="12"/>
+      <node ref="SM600" pin="2"/>
     </net>
-    <net code="91" name="Net-(SM1-Pad2)">
-      <node ref="U2" pin="12"/>
-      <node ref="SM1" pin="2"/>
+    <net code="78" name="Net-(R300-Pad2)">
+      <node ref="R301" pin="1"/>
+      <node ref="R300" pin="2"/>
+      <node ref="U300" pin="4"/>
     </net>
-    <net code="92" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
-      <node ref="R15" pin="2"/>
+    <net code="79" name="Net-(C301-Pad1)">
+      <node ref="R300" pin="1"/>
+      <node ref="R303" pin="2"/>
+      <node ref="U300" pin="5"/>
+      <node ref="C301" pin="1"/>
     </net>
-    <net code="93" name="Net-(C7-Pad1)">
-      <node ref="C7" pin="1"/>
-      <node ref="U5" pin="1"/>
+    <net code="81" name="Net-(D102-Pad1)">
+      <node ref="D102" pin="1"/>
+      <node ref="U100" pin="6"/>
     </net>
-    <net code="95" name="Net-(C10-Pad2)">
-      <node ref="C10" pin="2"/>
-      <node ref="U6" pin="4"/>
+    <net code="82" name="Net-(R103-Pad1)">
+      <node ref="R103" pin="1"/>
+      <node ref="U100" pin="4"/>
     </net>
-    <net code="96" name="Net-(C10-Pad1)">
-      <node ref="U6" pin="3"/>
-      <node ref="C10" pin="1"/>
+    <net code="83" name="Net-(R103-Pad2)">
+      <node ref="U100" pin="5"/>
+      <node ref="R103" pin="2"/>
+      <node ref="TH100" pin="2"/>
     </net>
-    <net code="97" name="Net-(R14-Pad1)">
-      <node ref="U5" pin="4"/>
-      <node ref="R14" pin="1"/>
+    <net code="84" name="Net-(D101-Pad1)">
+      <node ref="U100" pin="8"/>
+      <node ref="D101" pin="1"/>
     </net>
-    <net code="98" name="Net-(R12-Pad1)">
-      <node ref="U5" pin="2"/>
-      <node ref="R12" pin="1"/>
+    <net code="85" name="Net-(D101-Pad2)">
+      <node ref="D101" pin="2"/>
+      <node ref="R101" pin="2"/>
     </net>
-    <net code="99" name="Net-(R14-Pad2)">
-      <node ref="R14" pin="2"/>
-      <node ref="U5" pin="5"/>
-      <node ref="TH1" pin="2"/>
+    <net code="86" name="Net-(D102-Pad2)">
+      <node ref="R102" pin="2"/>
+      <node ref="D102" pin="2"/>
     </net>
-    <net code="100" name="/power/MC_xx">
-      <node ref="U6" pin="6"/>
-      <node ref="U5" pin="7"/>
+    <net code="87" name="Net-(C100-Pad1)">
+      <node ref="U100" pin="1"/>
+      <node ref="D100" pin="1"/>
+      <node ref="C100" pin="1"/>
     </net>
-    <net code="101" name="Net-(R13-Pad1)">
-      <node ref="R13" pin="1"/>
-      <node ref="U5" pin="9"/>
+    <net code="88" name="Net-(D100-Pad2)">
+      <node ref="D100" pin="2"/>
     </net>
-    <net code="102" name="/power/CIRCUIT_COMP">
-      <node ref="C11" pin="1"/>
-      <node ref="U6" pin="2"/>
+    <net code="89" name="Net-(C201-Pad1)">
+      <node ref="U200" pin="3"/>
+      <node ref="C201" pin="1"/>
     </net>
-    <net code="103" name="Net-(D3-Pad2)">
-      <node ref="R16" pin="2"/>
-      <node ref="D3" pin="2"/>
+    <net code="90" name="Net-(C201-Pad2)">
+      <node ref="U200" pin="4"/>
+      <node ref="C201" pin="2"/>
     </net>
-    <net code="104" name="Net-(D2-Pad1)">
-      <node ref="U5" pin="8"/>
-      <node ref="D2" pin="1"/>
+    <net code="91" name="Net-(R10x1-Pad1)">
+      <node ref="R10x1" pin="1"/>
+      <node ref="U100" pin="9"/>
     </net>
-    <net code="105" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1"/>
-      <node ref="U5" pin="6"/>
+    <net code="92" name="Net-(R100-Pad1)">
+      <node ref="R100" pin="1"/>
+      <node ref="U100" pin="2"/>
+    </net>
+    <net code="93" name="-3V3_SHDN_L">
+      <node ref="U200" pin="6"/>
     </net>
   </nets>
 </export>

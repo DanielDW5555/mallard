@@ -58,10 +58,10 @@ F 3 "" H 7100 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 Eh1
+L Connector_Generic:Conn_01x01 Eh603
 U 1 1 610DC20D
 P 2600 3350
-F 0 "Eh1" H 2750 3400 50  0000 L CNN
+F 0 "Eh603" H 2750 3400 50  0000 L CNN
 F 1 "Eh Electrode" H 2680 3301 50  0000 L CNN
 F 2 "" H 2600 3350 50  0001 C CNN
 F 3 "~" H 2600 3350 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "~" H 2600 3350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 Eh2
+L Connector_Generic:Conn_01x01 Eh604
 U 1 1 610DD4BF
 P 2600 3600
-F 0 "Eh2" H 2850 3700 50  0000 C CNN
+F 0 "Eh604" H 2850 3700 50  0000 C CNN
 F 1 "Eh Electrode" H 2900 3600 50  0000 C CNN
 F 2 "" H 2600 3600 50  0001 C CNN
 F 3 "~" H 2600 3600 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "~" H 2600 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 Eh3
+L Connector_Generic:Conn_01x01 Eh605
 U 1 1 610DDA62
 P 2600 3850
-F 0 "Eh3" H 2850 3950 50  0000 C CNN
+F 0 "Eh605" H 2850 3950 50  0000 C CNN
 F 1 "Eh Electrode" H 2900 3850 50  0000 C CNN
 F 2 "" H 2600 3850 50  0001 C CNN
 F 3 "~" H 2600 3850 50  0001 C CNN
@@ -91,10 +91,10 @@ F 3 "~" H 2600 3850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 SM1
+L Connector_Generic:Conn_01x03 SM600
 U 1 1 610E87B7
 P 2600 1250
-F 0 "SM1" H 2950 1350 50  0000 C CNN
+F 0 "SM600" H 2950 1350 50  0000 C CNN
 F 1 "Oct Soil Moisture " H 3000 1200 50  0000 C CNN
 F 2 "" H 2600 1250 50  0001 C CNN
 F 3 "~" H 2600 1250 50  0001 C CNN
@@ -102,10 +102,10 @@ F 3 "~" H 2600 1250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 SM2
+L Connector_Generic:Conn_01x03 SM601
 U 1 1 610F5909
 P 2600 1900
-F 0 "SM2" H 2950 2000 50  0000 C CNN
+F 0 "SM601" H 2950 2000 50  0000 C CNN
 F 1 "Oct Soil Moisture " H 3000 1850 50  0000 C CNN
 F 2 "" H 2600 1900 50  0001 C CNN
 F 3 "~" H 2600 1900 50  0001 C CNN
@@ -113,10 +113,10 @@ F 3 "~" H 2600 1900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 SM3
+L Connector_Generic:Conn_01x03 SM602
 U 1 1 610F6592
 P 2600 2550
-F 0 "SM3" H 2950 2650 50  0000 C CNN
+F 0 "SM602" H 2950 2650 50  0000 C CNN
 F 1 "Oct Soil Moisture " H 3000 2500 50  0000 C CNN
 F 2 "" H 2600 2550 50  0001 C CNN
 F 3 "~" H 2600 2550 50  0001 C CNN
@@ -355,10 +355,10 @@ Wire Wire Line
 Wire Wire Line
 	6850 3150 7100 3150
 $Comp
-L mallard:TMUX1309 U2
+L mallard:TMUX1309 U600
 U 1 1 61595D93
 P 4550 1550
-F 0 "U2" H 4550 1675 50  0000 C CNN
+F 0 "U600" H 4550 1675 50  0000 C CNN
 F 1 "TMUX1309" H 4550 1584 50  0000 C CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 4550 -350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tmux1309.pdf" H 4550 1550 50  0001 C CNN
@@ -367,10 +367,10 @@ F 4 "296-TMUX1309BQBRCT-ND‎" H 4550 1550 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L Device:R R600
 U 1 1 6159B70F
 P 5250 2850
-F 0 "R3" V 5043 2850 50  0000 C CNN
+F 0 "R600" V 5043 2850 50  0000 C CNN
 F 1 "10k" V 5134 2850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 5180 2850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5250 2850 50  0001 C CNN
@@ -379,10 +379,10 @@ F 4 "13-RC0603DR-0710KLCT-ND‎" V 5250 2850 50  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R8
+L Device:R R502
 U 1 1 6159EF44
 P 7450 1750
-F 0 "R8" V 7243 1750 50  0000 C CNN
+F 0 "R502" V 7243 1750 50  0000 C CNN
 F 1 "20k" V 7334 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 1750 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7450 1750 50  0001 C CNN
@@ -391,10 +391,10 @@ F 4 "‎P20429CT-ND‎" V 7450 1750 50  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R7
+L Device:R R501
 U 1 1 615A0EFD
 P 7450 1350
-F 0 "R7" V 7243 1350 50  0000 C CNN
+F 0 "R501" V 7243 1350 50  0000 C CNN
 F 1 "30k" V 7334 1350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 1350 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 7450 1350 50  0001 C CNN
@@ -403,10 +403,10 @@ F 4 "311-30KDCT-ND‎" V 7450 1350 50  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L mallard:LMV554 U4
+L mallard:LMV554 U500
 U 1 1 615A28E5
 P 7500 2500
-F 0 "U4" H 7500 2675 50  0000 C CNN
+F 0 "U500" H 7500 2675 50  0000 C CNN
 F 1 "LMV554" H 7500 2584 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7500 1600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lmv551.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626469395066&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmv551" H 7500 1600 50  0001 C CNN
@@ -416,10 +416,10 @@ F 4 "296-51370-1-ND" H 7500 2500 50  0001 C CNN "Digikey"
 $EndComp
 Connection ~ 7900 4050
 $Comp
-L Device:R R6
+L Device:R R505
 U 1 1 615A675D
 P 7050 5100
-F 0 "R6" H 7120 5146 50  0000 L CNN
+F 0 "R505" H 7120 5146 50  0000 L CNN
 F 1 "1k" H 7120 5055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 6980 5100 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20065/rcse3.pdf" H 7050 5100 50  0001 C CNN
@@ -428,10 +428,10 @@ F 4 "541-2788-1-ND" H 7050 5100 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L Device:R R504
 U 1 1 615A70C7
 P 7500 4850
-F 0 "R10" V 7293 4850 50  0000 C CNN
+F 0 "R504" V 7293 4850 50  0000 C CNN
 F 1 "9.1k" V 7384 4850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7430 4850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 7500 4850 50  0001 C CNN
@@ -440,10 +440,10 @@ F 4 "YAG1756CT-ND‎" H 7500 4850 50  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R500
 U 1 1 615A7B6B
 P 5900 2600
-F 0 "R4" H 5830 2554 50  0000 R CNN
+F 0 "R500" H 5830 2554 50  0000 R CNN
 F 1 "10k" H 5830 2645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 5830 2600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 2600 50  0001 C CNN
@@ -452,10 +452,10 @@ F 4 "13-RC0603DR-0710KLCT-ND‎" V 5900 2600 50  0001 C CNN "Digikey"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R9
+L Device:R R503
 U 1 1 615A829C
 P 7450 2150
-F 0 "R9" V 7243 2150 50  0000 C CNN
+F 0 "R503" V 7243 2150 50  0000 C CNN
 F 1 "10k" V 7334 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 2150 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7450 2150 50  0001 C CNN
@@ -464,10 +464,10 @@ F 4 "13-RC0603DR-0710KLCT-ND‎" V 7450 2150 50  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R507
 U 1 1 615A8D1F
 P 6800 5900
-F 0 "R5" H 6730 5854 50  0000 R CNN
+F 0 "R507" H 6730 5854 50  0000 R CNN
 F 1 "10k" H 6730 5945 50  0000 R CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 6730 5900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6800 5900 50  0001 C CNN
@@ -476,10 +476,10 @@ F 4 "13-RC0603DR-0710KLCT-ND‎" V 6800 5900 50  0001 C CNN "Digikey"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R11
+L Device:R R506
 U 1 1 615AA078
 P 7500 5600
-F 0 "R11" V 7293 5600 50  0000 C CNN
+F 0 "R506" V 7293 5600 50  0000 C CNN
 F 1 "20k" V 7384 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7430 5600 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7500 5600 50  0001 C CNN
@@ -551,10 +551,10 @@ Temp_Sense
 Text GLabel 8650 4050 2    50   Input ~ 0
 Ref_Out
 $Comp
-L mallard:TMUX1309 U3
+L mallard:TMUX1309 U700
 U 1 1 615A1290
 P 4600 3950
-F 0 "U3" H 4600 4075 50  0000 C CNN
+F 0 "U700" H 4600 4075 50  0000 C CNN
 F 1 "TMUX1309" H 4600 3984 50  0000 C CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 4600 2050 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tmux1309.pdf" H 4600 3950 50  0001 C CNN
