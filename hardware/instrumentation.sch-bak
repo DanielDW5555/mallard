@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -38,23 +38,23 @@ $EndComp
 $Comp
 L mallard-rescue:-3V3-power #PWR045
 U 1 1 610D35B3
-P 7100 2650
-F 0 "#PWR045" H 7100 2750 50  0001 C CNN
-F 1 "-3V3" H 6900 2700 50  0000 C CNN
-F 2 "" H 7100 2650 50  0001 C CNN
-F 3 "" H 7100 2650 50  0001 C CNN
-	1    7100 2650
+P 9000 2650
+F 0 "#PWR045" H 9000 2750 50  0001 C CNN
+F 1 "-3V3" H 8800 2700 50  0000 C CNN
+F 2 "" H 9000 2650 50  0001 C CNN
+F 3 "" H 9000 2650 50  0001 C CNN
+	1    9000 2650
 	1    0    0    1   
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR044
 U 1 1 610D41DB
-P 7100 2550
-F 0 "#PWR044" H 7100 2400 50  0001 C CNN
-F 1 "+3V3" H 7115 2723 50  0000 C CNN
-F 2 "" H 7100 2550 50  0001 C CNN
-F 3 "" H 7100 2550 50  0001 C CNN
-	1    7100 2550
+P 9000 2550
+F 0 "#PWR044" H 9000 2400 50  0001 C CNN
+F 1 "+3V3" H 9015 2723 50  0000 C CNN
+F 2 "" H 9000 2550 50  0001 C CNN
+F 3 "" H 9000 2550 50  0001 C CNN
+	1    9000 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -165,59 +165,57 @@ $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR043
 U 1 1 6110F9A0
-P 7050 5250
-F 0 "#PWR043" H 7050 5000 50  0001 C CNN
-F 1 "GND" H 7055 5077 50  0000 C CNN
-F 2 "" H 7050 5250 50  0001 C CNN
-F 3 "" H 7050 5250 50  0001 C CNN
-	1    7050 5250
+P 8950 5250
+F 0 "#PWR043" H 8950 5000 50  0001 C CNN
+F 1 "GND" H 8955 5077 50  0000 C CNN
+F 2 "" H 8950 5250 50  0001 C CNN
+F 3 "" H 8950 5250 50  0001 C CNN
+	1    8950 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 4050 7050 4050
+	9000 4050 8950 4050
 Wire Wire Line
-	7050 4050 7050 4850
+	8950 4050 8950 4850
 Wire Wire Line
-	7050 4850 7350 4850
-Connection ~ 7050 4850
+	8950 4850 9250 4850
+Connection ~ 8950 4850
 Wire Wire Line
-	7050 4850 7050 4950
+	8950 4850 8950 4950
 Wire Wire Line
-	7650 4850 7900 4850
+	9550 4850 9800 4850
 Wire Wire Line
-	7900 4850 7900 4050
+	9800 4850 9800 4050
 Wire Wire Line
-	5000 4750 5650 4750
+	7550 4750 7550 3950
 Wire Wire Line
-	5650 4750 5650 3950
-Wire Wire Line
-	5650 3950 7100 3950
+	7550 3950 9000 3950
 $Comp
 L mallard-rescue:GND-power #PWR041
 U 1 1 6111DAC4
-P 6800 6050
-F 0 "#PWR041" H 6800 5800 50  0001 C CNN
-F 1 "GND" H 6805 5877 50  0000 C CNN
-F 2 "" H 6800 6050 50  0001 C CNN
-F 3 "" H 6800 6050 50  0001 C CNN
-	1    6800 6050
+P 8700 6050
+F 0 "#PWR041" H 8700 5800 50  0001 C CNN
+F 1 "GND" H 8705 5877 50  0000 C CNN
+F 2 "" H 8700 6050 50  0001 C CNN
+F 3 "" H 8700 6050 50  0001 C CNN
+	1    8700 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 3650 6800 3650
+	9000 3650 8700 3650
 Wire Wire Line
-	6800 3650 6800 5600
+	8700 3650 8700 5600
 Wire Wire Line
-	7350 5600 6800 5600
-Connection ~ 6800 5600
+	9250 5600 8700 5600
+Connection ~ 8700 5600
 Wire Wire Line
-	6800 5600 6800 5750
+	8700 5600 8700 5750
 Wire Wire Line
-	8100 5600 8100 3650
+	10000 5600 10000 3650
 Wire Wire Line
-	8100 3650 7900 3650
+	10000 3650 9800 3650
 Wire Wire Line
-	7650 5600 8100 5600
+	9550 5600 10000 5600
 Wire Wire Line
 	2800 2550 4150 2550
 Wire Wire Line
@@ -255,23 +253,18 @@ Wire Wire Line
 Wire Wire Line
 	5400 2850 5900 2850
 Wire Wire Line
-	7300 2150 6700 2150
+	9200 2150 8600 2150
 Wire Wire Line
-	6700 2150 6700 2850
-Connection ~ 6700 2850
+	8600 2850 9000 2850
 Wire Wire Line
-	6700 2850 7100 2850
+	9500 2150 9950 2150
 Wire Wire Line
-	7600 2150 8050 2150
+	9950 2150 9950 2850
 Wire Wire Line
-	8050 2150 8050 2850
-Wire Wire Line
-	8050 2850 7900 2850
+	9950 2850 9800 2850
 Wire Wire Line
 	5900 2850 5900 2750
 Connection ~ 5900 2850
-Wire Wire Line
-	5900 2850 6700 2850
 $Comp
 L mallard-rescue:+1V0-power #PWR039
 U 1 1 61160D78
@@ -284,69 +277,67 @@ F 3 "" H 5900 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 1750 6500 1750
+	8400 3300 9000 3300
 Wire Wire Line
-	6500 3300 7100 3300
+	9500 1750 9950 1750
 Wire Wire Line
-	7600 1750 8050 1750
+	9950 1750 9950 2150
+Connection ~ 9950 2150
 Wire Wire Line
-	8050 1750 8050 2150
-Connection ~ 8050 2150
+	9200 1350 8400 1350
 Wire Wire Line
-	7300 1350 6500 1350
+	8400 1350 8400 1750
+Connection ~ 8400 1750
 Wire Wire Line
-	6500 1350 6500 1750
-Connection ~ 6500 1750
+	9500 1350 10150 1350
 Wire Wire Line
-	7600 1350 8250 1350
+	10150 1350 10150 3250
 Wire Wire Line
-	8250 1350 8250 3250
-Wire Wire Line
-	8250 3250 7900 3250
+	10150 3250 9800 3250
 $Comp
 L mallard-rescue:GND-power #PWR040
 U 1 1 6116A43C
-P 6650 3600
-F 0 "#PWR040" H 6650 3350 50  0001 C CNN
-F 1 "GND" H 6655 3427 50  0000 C CNN
-F 2 "" H 6650 3600 50  0001 C CNN
-F 3 "" H 6650 3600 50  0001 C CNN
-	1    6650 3600
+P 8550 3600
+F 0 "#PWR040" H 8550 3350 50  0001 C CNN
+F 1 "GND" H 8555 3427 50  0000 C CNN
+F 2 "" H 8550 3600 50  0001 C CNN
+F 3 "" H 8550 3600 50  0001 C CNN
+	1    8550 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR042
 U 1 1 6116B6E7
-P 6850 3150
-F 0 "#PWR042" H 6850 2900 50  0001 C CNN
-F 1 "GND" H 6700 3150 50  0000 C CNN
-F 2 "" H 6850 3150 50  0001 C CNN
-F 3 "" H 6850 3150 50  0001 C CNN
-	1    6850 3150
+P 8750 3150
+F 0 "#PWR042" H 8750 2900 50  0001 C CNN
+F 1 "GND" H 8600 3150 50  0000 C CNN
+F 2 "" H 8750 3150 50  0001 C CNN
+F 3 "" H 8750 3150 50  0001 C CNN
+	1    8750 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 3550 6650 3550
+	9000 3550 8550 3550
 Wire Wire Line
-	6650 3550 6650 3600
+	8550 3550 8550 3600
 Wire Wire Line
-	8250 3250 8650 3250
-Connection ~ 8250 3250
+	10150 3250 10550 3250
+Connection ~ 10150 3250
 Wire Wire Line
 	4950 2350 5150 2350
-Connection ~ 8100 3650
+Connection ~ 10000 3650
 Wire Wire Line
-	7900 4050 8650 4050
+	9800 4050 10550 4050
 Wire Wire Line
-	8100 3650 8650 3650
+	10000 3650 10550 3650
 Text Notes 4950 2200 0    50   ~ 0
 Soil Moisture Output
 Wire Wire Line
-	6500 1750 6500 3300
+	8400 1750 8400 3300
 Wire Wire Line
-	7100 3300 7100 3250
+	9000 3300 9000 3250
 Wire Wire Line
-	6850 3150 7100 3150
+	8750 3150 9000 3150
 $Comp
 L mallard:TMUX1309 U5
 U 1 1 61595D93
@@ -374,62 +365,62 @@ $EndComp
 $Comp
 L mallard-rescue:R-Device R8
 U 1 1 6159EF44
-P 7450 1750
-F 0 "R8" V 7243 1750 50  0000 C CNN
-F 1 "20k" V 7334 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 1750 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7450 1750 50  0001 C CNN
-F 4 "‎P20429CT-ND‎" V 7450 1750 50  0001 C CNN "Digikey"
-	1    7450 1750
+P 9350 1750
+F 0 "R8" V 9143 1750 50  0000 C CNN
+F 1 "20k DNI" V 9234 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 9280 1750 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 9350 1750 50  0001 C CNN
+F 4 "‎P20429CT-ND‎" V 9350 1750 50  0001 C CNN "Digikey"
+	1    9350 1750
 	0    1    1    0   
 $EndComp
 $Comp
 L mallard-rescue:R-Device R7
 U 1 1 615A0EFD
-P 7450 1350
-F 0 "R7" V 7243 1350 50  0000 C CNN
-F 1 "30k" V 7334 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 1350 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 7450 1350 50  0001 C CNN
-F 4 "311-30KDCT-ND‎" V 7450 1350 50  0001 C CNN "Digikey"
-	1    7450 1350
+P 9350 1350
+F 0 "R7" V 9143 1350 50  0000 C CNN
+F 1 "30k" V 9234 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 9280 1350 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 9350 1350 50  0001 C CNN
+F 4 "311-30KDCT-ND‎" V 9350 1350 50  0001 C CNN "Digikey"
+	1    9350 1350
 	0    1    1    0   
 $EndComp
 $Comp
 L mallard:LMV554 U7
 U 1 1 615A28E5
-P 7500 2500
-F 0 "U7" H 7500 2675 50  0000 C CNN
-F 1 "LMV554" H 7500 2584 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7500 1600 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/lmv551.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626469395066&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmv551" H 7500 1600 50  0001 C CNN
-F 4 "296-51370-1-ND" H 7500 2500 50  0001 C CNN "Digikey"
-	1    7500 2500
+P 9400 2500
+F 0 "U7" H 9400 2675 50  0000 C CNN
+F 1 "LMV554" H 9400 2584 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9400 1600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lmv551.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626469395066&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmv551" H 9400 1600 50  0001 C CNN
+F 4 "296-51370-1-ND" H 9400 2500 50  0001 C CNN "Digikey"
+	1    9400 2500
 	1    0    0    -1  
 $EndComp
-Connection ~ 7900 4050
+Connection ~ 9800 4050
 $Comp
 L mallard-rescue:R-Device R6
 U 1 1 615A675D
-P 7050 5100
-F 0 "R6" H 7120 5146 50  0000 L CNN
-F 1 "1k" H 7120 5055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 6980 5100 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/20065/rcse3.pdf" H 7050 5100 50  0001 C CNN
-F 4 "541-2788-1-ND" H 7050 5100 50  0001 C CNN "Digikey"
-	1    7050 5100
+P 8950 5100
+F 0 "R6" H 9020 5146 50  0000 L CNN
+F 1 "1k" H 9020 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 8880 5100 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20065/rcse3.pdf" H 8950 5100 50  0001 C CNN
+F 4 "541-2788-1-ND" H 8950 5100 50  0001 C CNN "Digikey"
+	1    8950 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:R-Device R10
 U 1 1 615A70C7
-P 7500 4850
-F 0 "R10" V 7293 4850 50  0000 C CNN
-F 1 "9.1k" V 7384 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7430 4850 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 7500 4850 50  0001 C CNN
-F 4 "YAG1756CT-ND‎" H 7500 4850 50  0001 C CNN "Digikey"
-	1    7500 4850
+P 9400 4850
+F 0 "R10" V 9193 4850 50  0000 C CNN
+F 1 "9.1k" V 9284 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 9330 4850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 9400 4850 50  0001 C CNN
+F 4 "YAG1756CT-ND‎" H 9400 4850 50  0001 C CNN "Digikey"
+	1    9400 4850
 	0    1    1    0   
 $EndComp
 $Comp
@@ -447,37 +438,37 @@ $EndComp
 $Comp
 L mallard-rescue:R-Device R9
 U 1 1 615A829C
-P 7450 2150
-F 0 "R9" V 7243 2150 50  0000 C CNN
-F 1 "10k" V 7334 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7380 2150 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7450 2150 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 7450 2150 50  0001 C CNN "Digikey"
-	1    7450 2150
+P 9350 2150
+F 0 "R9" V 9143 2150 50  0000 C CNN
+F 1 "10k" V 9234 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 9280 2150 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9350 2150 50  0001 C CNN
+F 4 "13-RC0603DR-0710KLCT-ND‎" V 9350 2150 50  0001 C CNN "Digikey"
+	1    9350 2150
 	0    1    1    0   
 $EndComp
 $Comp
 L mallard-rescue:R-Device R5
 U 1 1 615A8D1F
-P 6800 5900
-F 0 "R5" H 6730 5854 50  0000 R CNN
-F 1 "10k" H 6730 5945 50  0000 R CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 6730 5900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6800 5900 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 6800 5900 50  0001 C CNN "Digikey"
-	1    6800 5900
+P 8700 5900
+F 0 "R5" H 8630 5854 50  0000 R CNN
+F 1 "10k" H 8630 5945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 8630 5900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8700 5900 50  0001 C CNN
+F 4 "13-RC0603DR-0710KLCT-ND‎" V 8700 5900 50  0001 C CNN "Digikey"
+	1    8700 5900
 	-1   0    0    1   
 $EndComp
 $Comp
 L mallard-rescue:R-Device R11
 U 1 1 615AA078
-P 7500 5600
-F 0 "R11" V 7293 5600 50  0000 C CNN
-F 1 "20k" V 7384 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7430 5600 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7500 5600 50  0001 C CNN
-F 4 "‎P20429CT-ND‎" V 7500 5600 50  0001 C CNN "Digikey"
-	1    7500 5600
+P 9400 5600
+F 0 "R11" V 9193 5600 50  0000 C CNN
+F 1 "20k" V 9284 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 9330 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 9400 5600 50  0001 C CNN
+F 4 "‎P20429CT-ND‎" V 9400 5600 50  0001 C CNN "Digikey"
+	1    9400 5600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -537,11 +528,11 @@ F 3 "" H 2800 2450 50  0001 C CNN
 $EndComp
 Text GLabel 5150 2350 2    50   Input ~ 0
 Moisture_Sense
-Text GLabel 8650 3250 2    50   Input ~ 0
+Text GLabel 10550 3250 2    50   Input ~ 0
 Eh_Sense
-Text GLabel 8650 3650 2    50   Input ~ 0
+Text GLabel 10550 3650 2    50   Input ~ 0
 Temp_Sense
-Text GLabel 8650 4050 2    50   Input ~ 0
+Text GLabel 10550 4050 2    50   Input ~ 0
 Ref_Out
 $Comp
 L mallard:TMUX1309 U6
@@ -818,54 +809,189 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 Ref1
 U 1 1 61EF1B68
-P 5850 4550
-F 0 "Ref1" H 5768 4225 50  0000 C CNN
-F 1 "Conn_01x02" H 5768 4316 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 5850 4550 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634503&DocType=Customer+Drawing&DocLang=English" H 5850 4550 50  0001 C CNN
-F 4 "A97581-ND" H 5850 4550 50  0001 C CNN "Digikey"
-	1    5850 4550
+P 7750 4550
+F 0 "Ref1" H 7668 4225 50  0000 C CNN
+F 1 "Conn_01x02" H 7668 4316 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 7750 4550 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634503&DocType=Customer+Drawing&DocLang=English" H 7750 4550 50  0001 C CNN
+F 4 "A97581-ND" H 7750 4550 50  0001 C CNN "Digikey"
+	1    7750 4550
 	-1   0    0    1   
 $EndComp
 $Comp
 L mallard-rescue:R_Small-Device R?
 U 1 1 61F0CE97
-P 6600 4450
+P 8500 4450
 AR Path="/60B3FF2D/61F0CE97" Ref="R?"  Part="1" 
-AR Path="/60B3FE92/61F0CE97" Ref="R?"  Part="1" 
-F 0 "R?" V 6404 4450 50  0000 C CNN
-F 1 "Jumper" V 6495 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6600 4450 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 6600 4450 50  0001 C CNN
-F 4 "541-0.0SBCT-ND" V 6600 4450 50  0001 C CNN "Digikey"
-	1    6600 4450
+AR Path="/60B3FE92/61F0CE97" Ref="R101"  Part="1" 
+F 0 "R101" V 8304 4450 50  0000 C CNN
+F 1 "Jumper" V 8395 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8500 4450 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 8500 4450 50  0001 C CNN
+F 4 "541-0.0SBCT-ND" V 8500 4450 50  0001 C CNN "Digikey"
+	1    8500 4450
 	0    1    1    0   
 $EndComp
 $Comp
 L mallard-rescue:R_Small-Device R?
 U 1 1 61F133A7
-P 6300 4550
+P 8200 4550
 AR Path="/60B3FF2D/61F133A7" Ref="R?"  Part="1" 
-AR Path="/60B3FE92/61F133A7" Ref="R?"  Part="1" 
-F 0 "R?" V 6104 4550 50  0000 C CNN
-F 1 "Jumper" V 6195 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6300 4550 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 6300 4550 50  0001 C CNN
-F 4 "541-0.0SBCT-ND" V 6300 4550 50  0001 C CNN "Digikey"
-	1    6300 4550
+AR Path="/60B3FE92/61F133A7" Ref="R100"  Part="1" 
+AR Path="/61F133A7" Ref="R100"  Part="1" 
+F 0 "R100" V 8004 4550 50  0000 C CNN
+F 1 "Jumper" V 8095 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8200 4550 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 8200 4550 50  0001 C CNN
+F 4 "541-0.0SBCT-ND" V 8200 4550 50  0001 C CNN "Digikey"
+	1    8200 4550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6050 4450 6500 4450
+	7950 4450 8400 4450
 Wire Wire Line
-	6050 4550 6200 4550
+	7950 4550 8100 4550
 Wire Wire Line
-	6400 4550 6750 4550
+	8300 4550 8650 4550
 Wire Wire Line
-	6750 4550 6750 4450
+	8650 4550 8650 4450
 Wire Wire Line
-	6750 4450 6700 4450
+	8650 4450 8600 4450
 Wire Wire Line
-	6750 4450 7100 4450
-Connection ~ 6750 4450
+	8650 4450 9000 4450
+Connection ~ 8650 4450
+$Comp
+L mallard:LMP7721 U8
+U 1 1 61EA6C59
+P 7350 1750
+F 0 "U8" H 7350 2415 50  0000 C CNN
+F 1 "LMP7721" H 7350 2324 50  0000 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "" H 6500 3200 50  0001 C CNN
+	1    7350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1750 9200 1750
+Wire Wire Line
+	5000 4750 7550 4750
+$Comp
+L mallard-rescue:-3V3-power #PWR?
+U 1 1 61EF1988
+P 6850 1600
+F 0 "#PWR?" H 6850 1700 50  0001 C CNN
+F 1 "-3V3" H 6700 1700 50  0000 C CNN
+F 2 "" H 6850 1600 50  0001 C CNN
+F 3 "" H 6850 1600 50  0001 C CNN
+	1    6850 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L mallard-rescue:+3V3-power #PWR?
+U 1 1 61EF21AE
+P 6850 1400
+F 0 "#PWR?" H 6850 1250 50  0001 C CNN
+F 1 "+3V3" H 6700 1500 50  0000 C CNN
+F 2 "" H 6850 1400 50  0001 C CNN
+F 3 "" H 6850 1400 50  0001 C CNN
+	1    6850 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61EF2E75
+P 6850 1900
+F 0 "#PWR?" H 6850 1650 50  0001 C CNN
+F 1 "GND" H 6700 1800 50  0000 C CNN
+F 2 "" H 6850 1900 50  0001 C CNN
+F 3 "" H 6850 1900 50  0001 C CNN
+	1    6850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:R_Small-Device R?
+U 1 1 61EF684F
+P 6300 2100
+AR Path="/60B3FF2D/61EF684F" Ref="R?"  Part="1" 
+AR Path="/60B3FE92/61EF684F" Ref="R?"  Part="1" 
+AR Path="/61EF684F" Ref="R103"  Part="1" 
+F 0 "R103" V 6104 2100 50  0000 C CNN
+F 1 "Jumper" V 6195 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6300 2100 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 6300 2100 50  0001 C CNN
+F 4 "541-0.0SBCT-ND" V 6300 2100 50  0001 C CNN "Digikey"
+	1    6300 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L mallard-rescue:R_Small-Device R?
+U 1 1 61EF7B8D
+P 7400 2850
+AR Path="/60B3FF2D/61EF7B8D" Ref="R?"  Part="1" 
+AR Path="/60B3FE92/61EF7B8D" Ref="R?"  Part="1" 
+AR Path="/61EF7B8D" Ref="R102"  Part="1" 
+F 0 "R102" V 7204 2850 50  0000 C CNN
+F 1 "Jumper DNI" V 7295 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7400 2850 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 7400 2850 50  0001 C CNN
+F 4 "541-0.0SBCT-ND" V 7400 2850 50  0001 C CNN "Digikey"
+	1    7400 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 2150 8600 2850
+Wire Wire Line
+	8600 2850 7500 2850
+Connection ~ 8600 2850
+Wire Wire Line
+	7950 1750 7900 1750
+Wire Wire Line
+	8250 1750 8400 1750
+$Comp
+L mallard-rescue:R-Device R?
+U 1 1 61F1D13C
+P 7350 850
+F 0 "R?" V 7143 850 50  0000 C CNN
+F 1 "10k" V 7234 850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 7280 850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7350 850 50  0001 C CNN
+F 4 "13-RC0603DR-0710KLCT-ND‎" V 7350 850 50  0001 C CNN "Digikey"
+	1    7350 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 1750 7900 850 
+Wire Wire Line
+	7900 850  7500 850 
+Connection ~ 7900 1750
+Wire Wire Line
+	7900 1750 7850 1750
+Wire Wire Line
+	5900 2850 6200 2850
+Wire Wire Line
+	6200 2100 6200 2850
+Connection ~ 6200 2850
+Wire Wire Line
+	6200 2850 7300 2850
+Wire Wire Line
+	7200 850  6500 850 
+Wire Wire Line
+	6500 850  6500 2100
+Wire Wire Line
+	6500 2100 6400 2100
+Wire Wire Line
+	6500 2100 6850 2100
+Connection ~ 6500 2100
+$Comp
+L mallard-rescue:R-Device R11
+U 1 1 61F1577E
+P 8100 1750
+F 0 "R11" V 7893 1750 50  0000 C CNN
+F 1 "20k" V 7984 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 8030 1750 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 8100 1750 50  0001 C CNN
+F 4 "‎P20429CT-ND‎" V 8100 1750 50  0001 C CNN "Digikey"
+	1    8100 1750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
