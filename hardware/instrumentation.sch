@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -38,128 +38,128 @@ $EndComp
 $Comp
 L mallard-rescue:-3V3-power #PWR045
 U 1 1 610D35B3
-P 9000 2650
-F 0 "#PWR045" H 9000 2750 50  0001 C CNN
-F 1 "-3V3" H 8800 2700 50  0000 C CNN
-F 2 "" H 9000 2650 50  0001 C CNN
-F 3 "" H 9000 2650 50  0001 C CNN
-	1    9000 2650
-	1    0    0    1   
+P 7600 3100
+F 0 "#PWR045" H 7600 3200 50  0001 C CNN
+F 1 "-3V3" H 7400 3150 50  0000 C CNN
+F 2 "" H 7600 3100 50  0001 C CNN
+F 3 "" H 7600 3100 50  0001 C CNN
+	1    7600 3100
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR044
 U 1 1 610D41DB
-P 9000 2550
-F 0 "#PWR044" H 9000 2400 50  0001 C CNN
-F 1 "+3V3" H 9015 2723 50  0000 C CNN
-F 2 "" H 9000 2550 50  0001 C CNN
-F 3 "" H 9000 2550 50  0001 C CNN
-	1    9000 2550
+P 7900 2250
+F 0 "#PWR044" H 7900 2100 50  0001 C CNN
+F 1 "+3V3" H 7915 2423 50  0000 C CNN
+F 2 "" H 7900 2250 50  0001 C CNN
+F 3 "" H 7900 2250 50  0001 C CNN
+	1    7900 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:Conn_01x01-Connector_Generic Eh?
 U 1 1 610DC20D
-P 2600 3350
+P 2250 3350
 AR Path="/610DC20D" Ref="Eh?"  Part="1" 
 AR Path="/60B3FE92/610DC20D" Ref="Eh1"  Part="1" 
-F 0 "Eh1" H 2750 3400 50  0000 L CNN
-F 1 "Eh Electrode" H 2680 3301 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2600 3350 50  0001 C CNN
-F 3 "~" H 2600 3350 50  0001 C CNN
-	1    2600 3350
+F 0 "Eh1" H 2400 3400 50  0000 L CNN
+F 1 "Eh Electrode" H 2330 3301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2250 3350 50  0001 C CNN
+F 3 "~" H 2250 3350 50  0001 C CNN
+	1    2250 3350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:Conn_01x01-Connector_Generic Eh?
 U 1 1 610DD4BF
-P 2600 3600
+P 2250 3600
 AR Path="/610DD4BF" Ref="Eh?"  Part="1" 
 AR Path="/60B3FE92/610DD4BF" Ref="Eh2"  Part="1" 
-F 0 "Eh2" H 2850 3700 50  0000 C CNN
-F 1 "Eh Electrode" H 2900 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2600 3600 50  0001 C CNN
-F 3 "~" H 2600 3600 50  0001 C CNN
-	1    2600 3600
+F 0 "Eh2" H 2500 3700 50  0000 C CNN
+F 1 "Eh Electrode" H 2550 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2250 3600 50  0001 C CNN
+F 3 "~" H 2250 3600 50  0001 C CNN
+	1    2250 3600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:Conn_01x01-Connector_Generic Eh?
 U 1 1 610DDA62
-P 2600 3850
+P 2250 3850
 AR Path="/610DDA62" Ref="Eh?"  Part="1" 
 AR Path="/60B3FE92/610DDA62" Ref="Eh3"  Part="1" 
-F 0 "Eh3" H 2850 3950 50  0000 C CNN
-F 1 "Eh Electrode" H 2900 3850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2600 3850 50  0001 C CNN
-F 3 "~" H 2600 3850 50  0001 C CNN
-	1    2600 3850
+F 0 "Eh3" H 2500 3950 50  0000 C CNN
+F 1 "Eh Electrode" H 2550 3850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2250 3850 50  0001 C CNN
+F 3 "~" H 2250 3850 50  0001 C CNN
+	1    2250 3850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:Conn_01x03-Connector_Generic SM1
 U 1 1 610E87B7
-P 2600 1250
-F 0 "SM1" H 2950 1350 50  0000 C CNN
-F 1 "Oct Soil Moisture " H 3000 1200 50  0000 C CNN
-F 2 "" H 2600 1250 50  0001 C CNN
-F 3 "~" H 2600 1250 50  0001 C CNN
-	1    2600 1250
+P 2250 1250
+F 0 "SM1" H 2600 1350 50  0000 C CNN
+F 1 "Oct Soil Moisture " H 2650 1200 50  0000 C CNN
+F 2 "" H 2250 1250 50  0001 C CNN
+F 3 "~" H 2250 1250 50  0001 C CNN
+	1    2250 1250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:Conn_01x03-Connector_Generic SM2
 U 1 1 610F5909
-P 2600 1900
-F 0 "SM2" H 2950 2000 50  0000 C CNN
-F 1 "Oct Soil Moisture " H 3000 1850 50  0000 C CNN
-F 2 "" H 2600 1900 50  0001 C CNN
-F 3 "~" H 2600 1900 50  0001 C CNN
-	1    2600 1900
+P 2250 1900
+F 0 "SM2" H 2600 2000 50  0000 C CNN
+F 1 "Oct Soil Moisture " H 2650 1850 50  0000 C CNN
+F 2 "" H 2250 1900 50  0001 C CNN
+F 3 "~" H 2250 1900 50  0001 C CNN
+	1    2250 1900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:Conn_01x03-Connector_Generic SM3
 U 1 1 610F6592
-P 2600 2550
-F 0 "SM3" H 2950 2650 50  0000 C CNN
-F 1 "Oct Soil Moisture " H 3000 2500 50  0000 C CNN
-F 2 "" H 2600 2550 50  0001 C CNN
-F 3 "~" H 2600 2550 50  0001 C CNN
-	1    2600 2550
+P 2250 2550
+F 0 "SM3" H 2600 2650 50  0000 C CNN
+F 1 "Oct Soil Moisture " H 2650 2500 50  0000 C CNN
+F 2 "" H 2250 2550 50  0001 C CNN
+F 3 "~" H 2250 2550 50  0001 C CNN
+	1    2250 2550
 	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR030
 U 1 1 610F7489
-P 2800 1350
-F 0 "#PWR030" H 2800 1100 50  0001 C CNN
-F 1 "GND" H 2805 1177 50  0000 C CNN
-F 2 "" H 2800 1350 50  0001 C CNN
-F 3 "" H 2800 1350 50  0001 C CNN
-	1    2800 1350
+P 2450 1350
+F 0 "#PWR030" H 2450 1100 50  0001 C CNN
+F 1 "GND" H 2455 1177 50  0000 C CNN
+F 2 "" H 2450 1350 50  0001 C CNN
+F 3 "" H 2450 1350 50  0001 C CNN
+	1    2450 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR032
 U 1 1 610F795C
-P 2800 2000
-F 0 "#PWR032" H 2800 1750 50  0001 C CNN
-F 1 "GND" H 2805 1827 50  0000 C CNN
-F 2 "" H 2800 2000 50  0001 C CNN
-F 3 "" H 2800 2000 50  0001 C CNN
-	1    2800 2000
+P 2450 2000
+F 0 "#PWR032" H 2450 1750 50  0001 C CNN
+F 1 "GND" H 2455 1827 50  0000 C CNN
+F 2 "" H 2450 2000 50  0001 C CNN
+F 3 "" H 2450 2000 50  0001 C CNN
+	1    2450 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR034
 U 1 1 610F7C41
-P 2800 2650
-F 0 "#PWR034" H 2800 2400 50  0001 C CNN
-F 1 "GND" H 2805 2477 50  0000 C CNN
-F 2 "" H 2800 2650 50  0001 C CNN
-F 3 "" H 2800 2650 50  0001 C CNN
-	1    2800 2650
+P 2450 2650
+F 0 "#PWR034" H 2450 2400 50  0001 C CNN
+F 1 "GND" H 2455 2477 50  0000 C CNN
+F 2 "" H 2450 2650 50  0001 C CNN
+F 3 "" H 2450 2650 50  0001 C CNN
+	1    2450 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -217,37 +217,15 @@ Wire Wire Line
 Wire Wire Line
 	9550 5600 10000 5600
 Wire Wire Line
-	2800 2550 4150 2550
+	2700 1900 2700 2450
 Wire Wire Line
-	3100 1900 3100 2450
+	2900 1250 2900 2350
 Wire Wire Line
-	3300 1250 3300 2350
+	2850 3350 2850 2850
 Wire Wire Line
-	2800 3350 3250 3350
+	3100 3600 3100 2950
 Wire Wire Line
-	3250 3350 3250 2850
-Wire Wire Line
-	3250 2850 4150 2850
-Wire Wire Line
-	2800 3600 3500 3600
-Wire Wire Line
-	3500 3600 3500 2950
-Wire Wire Line
-	3500 2950 4150 2950
-Wire Wire Line
-	2800 3850 3750 3850
-Wire Wire Line
-	3750 3850 3750 3050
-Wire Wire Line
-	3750 3050 4150 3050
-Wire Wire Line
-	3300 2350 4150 2350
-Wire Wire Line
-	2800 1250 3300 1250
-Wire Wire Line
-	3100 2450 4150 2450
-Wire Wire Line
-	2800 1900 3100 1900
+	3350 3850 3350 3050
 Wire Wire Line
 	5100 2850 4950 2850
 Wire Wire Line
@@ -474,56 +452,56 @@ $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR035
 U 1 1 615AB6B2
-P 4150 1650
-F 0 "#PWR035" H 4150 1500 50  0001 C CNN
-F 1 "+3V3" H 4165 1823 50  0000 C CNN
-F 2 "" H 4150 1650 50  0001 C CNN
-F 3 "" H 4150 1650 50  0001 C CNN
-	1    4150 1650
+P 3050 1550
+F 0 "#PWR035" H 3050 1400 50  0001 C CNN
+F 1 "+3V3" H 3065 1723 50  0000 C CNN
+F 2 "" H 3050 1550 50  0001 C CNN
+F 3 "" H 3050 1550 50  0001 C CNN
+	1    3050 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR036
 U 1 1 615ABFF5
-P 4200 4050
-F 0 "#PWR036" H 4200 3900 50  0001 C CNN
-F 1 "+3V3" H 4215 4223 50  0000 C CNN
-F 2 "" H 4200 4050 50  0001 C CNN
-F 3 "" H 4200 4050 50  0001 C CNN
-	1    4200 4050
+P 3250 4050
+F 0 "#PWR036" H 3250 3900 50  0001 C CNN
+F 1 "+3V3" H 3265 4223 50  0000 C CNN
+F 2 "" H 3250 4050 50  0001 C CNN
+F 3 "" H 3250 4050 50  0001 C CNN
+	1    3250 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR029
 U 1 1 615AD5AB
-P 2800 1150
-F 0 "#PWR029" H 2800 1000 50  0001 C CNN
-F 1 "+3V3" H 2815 1323 50  0000 C CNN
-F 2 "" H 2800 1150 50  0001 C CNN
-F 3 "" H 2800 1150 50  0001 C CNN
-	1    2800 1150
+P 2450 1150
+F 0 "#PWR029" H 2450 1000 50  0001 C CNN
+F 1 "+3V3" H 2465 1323 50  0000 C CNN
+F 2 "" H 2450 1150 50  0001 C CNN
+F 3 "" H 2450 1150 50  0001 C CNN
+	1    2450 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR031
 U 1 1 615AE10B
-P 2800 1800
-F 0 "#PWR031" H 2800 1650 50  0001 C CNN
-F 1 "+3V3" H 2815 1973 50  0000 C CNN
-F 2 "" H 2800 1800 50  0001 C CNN
-F 3 "" H 2800 1800 50  0001 C CNN
-	1    2800 1800
+P 2450 1800
+F 0 "#PWR031" H 2450 1650 50  0001 C CNN
+F 1 "+3V3" H 2465 1973 50  0000 C CNN
+F 2 "" H 2450 1800 50  0001 C CNN
+F 3 "" H 2450 1800 50  0001 C CNN
+	1    2450 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR033
 U 1 1 615AE517
-P 2800 2450
-F 0 "#PWR033" H 2800 2300 50  0001 C CNN
-F 1 "+3V3" H 2815 2623 50  0000 C CNN
-F 2 "" H 2800 2450 50  0001 C CNN
-F 3 "" H 2800 2450 50  0001 C CNN
-	1    2800 2450
+P 2450 2450
+F 0 "#PWR033" H 2450 2300 50  0001 C CNN
+F 1 "+3V3" H 2465 2623 50  0000 C CNN
+F 2 "" H 2450 2450 50  0001 C CNN
+F 3 "" H 2450 2450 50  0001 C CNN
+	1    2450 2450
 	1    0    0    -1  
 $EndComp
 Text GLabel 5150 2350 2    50   Input ~ 0
@@ -866,8 +844,9 @@ U 1 1 61EA6C59
 P 7350 1750
 F 0 "U8" H 7350 2415 50  0000 C CNN
 F 1 "LMP7721" H 7350 2324 50  0000 C CNN
-F 2 "" H 6500 3200 50  0001 C CNN
-F 3 "" H 6500 3200 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6500 3200 50  0001 C CNN
+F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flmp7721" H 6500 3200 50  0001 C CNN
+F 4 "LMP7721MA/NOPB-ND" H 7350 1750 50  0001 C CNN "Digikey"
 	1    7350 1750
 	1    0    0    -1  
 $EndComp
@@ -889,12 +868,12 @@ $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR?
 U 1 1 61EF21AE
-P 6850 1400
-F 0 "#PWR?" H 6850 1250 50  0001 C CNN
-F 1 "+3V3" H 6700 1500 50  0000 C CNN
-F 2 "" H 6850 1400 50  0001 C CNN
-F 3 "" H 6850 1400 50  0001 C CNN
-	1    6850 1400
+P 5900 1250
+F 0 "#PWR?" H 5900 1100 50  0001 C CNN
+F 1 "+3V3" H 5750 1350 50  0000 C CNN
+F 2 "" H 5900 1250 50  0001 C CNN
+F 3 "" H 5900 1250 50  0001 C CNN
+	1    5900 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -915,7 +894,7 @@ P 6300 2100
 AR Path="/60B3FF2D/61EF684F" Ref="R?"  Part="1" 
 AR Path="/60B3FE92/61EF684F" Ref="R?"  Part="1" 
 AR Path="/61EF684F" Ref="R103"  Part="1" 
-F 0 "R103" V 6104 2100 50  0000 C CNN
+F 0 "R?" V 6104 2100 50  0000 C CNN
 F 1 "Jumper" V 6195 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6300 2100 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 6300 2100 50  0001 C CNN
@@ -930,7 +909,7 @@ P 7400 2850
 AR Path="/60B3FF2D/61EF7B8D" Ref="R?"  Part="1" 
 AR Path="/60B3FE92/61EF7B8D" Ref="R?"  Part="1" 
 AR Path="/61EF7B8D" Ref="R102"  Part="1" 
-F 0 "R102" V 7204 2850 50  0000 C CNN
+F 0 "R?" V 7204 2850 50  0000 C CNN
 F 1 "Jumper DNI" V 7295 2850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7400 2850 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 7400 2850 50  0001 C CNN
@@ -994,4 +973,206 @@ F 4 "‎P20429CT-ND‎" V 8100 1750 50  0001 C CNN "Digikey"
 	1    8100 1750
 	0    1    1    0   
 $EndComp
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61ED681F
+P 6050 1750
+AR Path="/60B3FF2D/61ED681F" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61ED681F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6050 1500 50  0001 C CNN
+F 1 "GND" H 6055 1577 50  0000 C CNN
+F 2 "" H 6050 1750 50  0001 C CNN
+F 3 "" H 6050 1750 50  0001 C CNN
+	1    6050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61ED6826
+P 6050 1550
+AR Path="/60B3FF2D/61ED6826" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61ED6826" Ref="C800"  Part="1" 
+F 0 "C800" H 6165 1596 50  0000 L CNN
+F 1 "1uF" H 6165 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6088 1400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 6050 1550 50  0001 C CNN
+F 4 "311-1446-1-ND" H 6050 1550 50  0001 C CNN "Digikey"
+	1    6050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1700 6050 1750
+Wire Wire Line
+	5900 1250 5900 1400
+Wire Wire Line
+	5900 1400 6050 1400
+Wire Wire Line
+	6050 1400 6850 1400
+Connection ~ 6050 1400
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61F0E735
+P 3200 2000
+AR Path="/60B3FF2D/61F0E735" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61F0E735" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3200 1750 50  0001 C CNN
+F 1 "GND" H 3205 1827 50  0000 C CNN
+F 2 "" H 3200 2000 50  0001 C CNN
+F 3 "" H 3200 2000 50  0001 C CNN
+	1    3200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61F0E73C
+P 3200 1800
+AR Path="/60B3FF2D/61F0E73C" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61F0E73C" Ref="C500"  Part="1" 
+F 0 "C500" H 3315 1846 50  0000 L CNN
+F 1 "1uF" H 3315 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3238 1650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 3200 1800 50  0001 C CNN
+F 4 "311-1446-1-ND" H 3200 1800 50  0001 C CNN "Digikey"
+	1    3200 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1950 3200 2000
+Wire Wire Line
+	2450 1250 2900 1250
+Wire Wire Line
+	2450 1900 2700 1900
+Wire Wire Line
+	2450 2550 4150 2550
+Wire Wire Line
+	2700 2450 4150 2450
+Wire Wire Line
+	2900 2350 4150 2350
+Wire Wire Line
+	2850 2850 4150 2850
+Wire Wire Line
+	3100 2950 4150 2950
+Wire Wire Line
+	3350 3050 4150 3050
+Wire Wire Line
+	2850 3350 2450 3350
+Wire Wire Line
+	2450 3600 3100 3600
+Wire Wire Line
+	3350 3850 2450 3850
+Wire Wire Line
+	3050 1550 3050 1650
+Wire Wire Line
+	3050 1650 3200 1650
+Wire Wire Line
+	3200 1650 4150 1650
+Connection ~ 3200 1650
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61F6A55C
+P 3400 4400
+AR Path="/60B3FF2D/61F6A55C" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61F6A55C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 4150 50  0001 C CNN
+F 1 "GND" H 3405 4227 50  0000 C CNN
+F 2 "" H 3400 4400 50  0001 C CNN
+F 3 "" H 3400 4400 50  0001 C CNN
+	1    3400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61F6A563
+P 3400 4200
+AR Path="/60B3FF2D/61F6A563" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61F6A563" Ref="C600"  Part="1" 
+F 0 "C600" H 3515 4246 50  0000 L CNN
+F 1 "1uF" H 3515 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3438 4050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 3400 4200 50  0001 C CNN
+F 4 "311-1446-1-ND" H 3400 4200 50  0001 C CNN "Digikey"
+	1    3400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4350 3400 4400
+Wire Wire Line
+	3250 4050 3400 4050
+Wire Wire Line
+	3400 4050 4200 4050
+Connection ~ 3400 4050
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61F832FE
+P 8050 2600
+AR Path="/60B3FF2D/61F832FE" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61F832FE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 2350 50  0001 C CNN
+F 1 "GND" H 8055 2427 50  0000 C CNN
+F 2 "" H 8050 2600 50  0001 C CNN
+F 3 "" H 8050 2600 50  0001 C CNN
+	1    8050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61F83305
+P 8050 2400
+AR Path="/60B3FF2D/61F83305" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61F83305" Ref="C700"  Part="1" 
+F 0 "C700" H 8165 2446 50  0000 L CNN
+F 1 "1uF" H 8165 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8088 2250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 8050 2400 50  0001 C CNN
+F 4 "311-1446-1-ND" H 8050 2400 50  0001 C CNN "Digikey"
+	1    8050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2550 8050 2600
+Wire Wire Line
+	7900 2250 8050 2250
+Connection ~ 8050 2250
+Wire Wire Line
+	9000 2250 9000 2550
+Wire Wire Line
+	8050 2250 9000 2250
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61F8F166
+P 7600 3400
+AR Path="/60B3FF2D/61F8F166" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61F8F166" Ref="C701"  Part="1" 
+F 0 "C701" H 7715 3446 50  0000 L CNN
+F 1 "1uF" H 7715 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7638 3250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 7600 3400 50  0001 C CNN
+F 4 "311-1446-1-ND" H 7600 3400 50  0001 C CNN "Digikey"
+	1    7600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3250 7600 3200
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61F9F73F
+P 7600 3550
+AR Path="/60B3FF2D/61F9F73F" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61F9F73F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7600 3300 50  0001 C CNN
+F 1 "GND" H 7605 3377 50  0000 C CNN
+F 2 "" H 7600 3550 50  0001 C CNN
+F 3 "" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3200 8250 3200
+Wire Wire Line
+	8250 3200 8250 2650
+Wire Wire Line
+	8250 2650 9000 2650
+Connection ~ 7600 3200
+Wire Wire Line
+	7600 3100 7600 3200
 $EndSCHEMATC
