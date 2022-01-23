@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -120,7 +120,7 @@ U 1 1 6161D470
 P 3500 1800
 AR Path="/6161D470" Ref="J2"  Part="1" 
 AR Path="/60B3FDDE/6161D470" Ref="J?"  Part="1" 
-F 0 "J2" H 3270 1789 50  0000 R CNN
+F 0 "J?" H 3270 1789 50  0000 R CNN
 F 1 "USB_A" H 3270 1698 50  0000 R CNN
 F 2 "Connector_USB:USB3_A_Molex_48393-001" H 3650 1750 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/GCT%20PDFs/USB1130-USB1135.pdf" H 3650 1750 50  0001 C CNN
@@ -165,30 +165,8 @@ Wire Wire Line
 Connection ~ 3550 2200
 Wire Wire Line
 	3550 2200 3500 2200
-$Comp
-L mallard-rescue:SW_Push_Open_Dual-Switch SW1
-U 1 1 6162FC27
-P 6450 2150
-F 0 "SW1" V 6404 2223 50  0000 L CNN
-F 1 "RESET Switch" V 6495 2223 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 6450 2350 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 6450 2350 50  0001 C CNN
-F 4 "SW1020CT-ND" H 6450 2150 50  0001 C CNN "Digikey"
-	1    6450 2150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6250 2350 6350 2350
-Connection ~ 6350 2350
-Wire Wire Line
-	6350 2350 6450 2350
 Wire Wire Line
 	6350 2350 6350 2500
-Wire Wire Line
-	6250 1950 6350 1950
-Connection ~ 6350 1950
-Wire Wire Line
-	6350 1950 6450 1950
 $Comp
 L mallard-rescue:LED_Small-Device D1
 U 1 1 6164F04D
@@ -574,4 +552,16 @@ F 3 "" H 8400 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8500 6050 8400 6050
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61ECF5F6
+P 6350 2150
+F 0 "SW1" V 6396 2102 50  0000 R CNN
+F 1 "RESET Switch" V 6305 2102 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 6350 2350 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 6350 2350 50  0001 C CNN
+F 4 "SW1020CT-ND" V 6350 2150 50  0001 C CNN "Digikey"
+	1    6350 2150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
