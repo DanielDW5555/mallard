@@ -1495,27 +1495,27 @@ Wire Wire Line
 $Comp
 L mallard-rescue:-3V3-power #PWR?
 U 1 1 61FEBA5C
-P 1150 9700
+P -650 9400
 AR Path="/60B3FE92/61FEBA5C" Ref="#PWR?"  Part="1" 
 AR Path="/61FEBA5C" Ref="#PWR0140"  Part="1" 
-F 0 "#PWR0140" H 1150 9800 50  0001 C CNN
-F 1 "-3V3" H 1000 9800 50  0000 C CNN
-F 2 "" H 1150 9700 50  0001 C CNN
-F 3 "" H 1150 9700 50  0001 C CNN
-	1    1150 9700
-	1    0    0    1   
+F 0 "#PWR0140" H -650 9500 50  0001 C CNN
+F 1 "-3V3" H -800 9500 50  0000 C CNN
+F 2 "" H -650 9400 50  0001 C CNN
+F 3 "" H -650 9400 50  0001 C CNN
+	1    -650 9400
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:+3V3-power #PWR?
 U 1 1 61FEBA62
-P 200 9350
+P -450 8650
 AR Path="/60B3FE92/61FEBA62" Ref="#PWR?"  Part="1" 
 AR Path="/61FEBA62" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 200 9200 50  0001 C CNN
-F 1 "+3V3" H 50  9450 50  0000 C CNN
-F 2 "" H 200 9350 50  0001 C CNN
-F 3 "" H 200 9350 50  0001 C CNN
-	1    200  9350
+F 0 "#PWR0141" H -450 8500 50  0001 C CNN
+F 1 "+3V3" H -600 8750 50  0000 C CNN
+F 2 "" H -450 8650 50  0001 C CNN
+F 3 "" H -450 8650 50  0001 C CNN
+	1    -450 8650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1624,41 +1624,39 @@ $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR?
 U 1 1 61FEBA9C
-P 350 9850
+P -300 9150
 AR Path="/60B3FF2D/61FEBA9C" Ref="#PWR?"  Part="1" 
 AR Path="/60B3FE92/61FEBA9C" Ref="#PWR?"  Part="1" 
 AR Path="/61FEBA9C" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 350 9600 50  0001 C CNN
-F 1 "GND" H 355 9677 50  0000 C CNN
-F 2 "" H 350 9850 50  0001 C CNN
-F 3 "" H 350 9850 50  0001 C CNN
-	1    350  9850
+F 0 "#PWR0143" H -300 8900 50  0001 C CNN
+F 1 "GND" H -295 8977 50  0000 C CNN
+F 2 "" H -300 9150 50  0001 C CNN
+F 3 "" H -300 9150 50  0001 C CNN
+	1    -300 9150
 	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:C-Device C?
 U 1 1 61FEBAA3
-P 350 9650
+P -300 8950
 AR Path="/60B3FF2D/61FEBAA3" Ref="C?"  Part="1" 
 AR Path="/60B3FE92/61FEBAA3" Ref="C?"  Part="1" 
 AR Path="/61FEBAA3" Ref="C7"  Part="1" 
-F 0 "C7" H 465 9696 50  0000 L CNN
-F 1 "1uF" H 465 9605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 388 9500 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 350 9650 50  0001 C CNN
-F 4 "311-1446-1-ND" H 350 9650 50  0001 C CNN "Digikey"
-	1    350  9650
+F 0 "C7" H -185 8996 50  0000 L CNN
+F 1 "1uF" H -185 8905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -262 8800 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -300 8950 50  0001 C CNN
+F 4 "311-1446-1-ND" H -300 8950 50  0001 C CNN "Digikey"
+	1    -300 8950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	350  9800 350  9850
+	-300 9100 -300 9150
 Wire Wire Line
-	200  9350 200  9500
+	-450 8650 -450 8800
 Wire Wire Line
-	200  9500 350  9500
-Wire Wire Line
-	350  9500 1150 9500
-Connection ~ 350  9500
+	-450 8800 -300 8800
+Connection ~ -300 8800
 $Comp
 L mallard-rescue:GND-power #PWR?
 U 1 1 61FEBAAE
@@ -1937,25 +1935,15 @@ F 4 "36-1042-ND" H 6950 3800 50  0001 C CNN "Digikey"
 	1    6950 3800
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	1300 3150 1300 3700
-Wire Notes Line
-	1300 3700 700  3700
-Wire Notes Line
-	700  3700 700  3150
-Wire Notes Line
-	700  3150 1300 3150
-Text Notes 750  3450 0    50   ~ 0
-SOLAR_PANEL
 $Comp
 L mallard-rescue:GND-power #PWR0152
 U 1 1 620370A7
-P 1000 4600
-F 0 "#PWR0152" H 1000 4350 50  0001 C CNN
-F 1 "GND" H 1005 4427 50  0000 C CNN
-F 2 "" H 1000 4600 50  0001 C CNN
-F 3 "" H 1000 4600 50  0001 C CNN
-	1    1000 4600
+P 1100 3200
+F 0 "#PWR0152" H 1100 2950 50  0001 C CNN
+F 1 "GND" H 1105 3027 50  0000 C CNN
+F 2 "" H 1100 3200 50  0001 C CNN
+F 3 "" H 1100 3200 50  0001 C CNN
+	1    1100 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1975,8 +1963,6 @@ Wire Wire Line
 	2150 3000 2150 3100
 Wire Wire Line
 	2150 3400 2150 3650
-Wire Wire Line
-	1000 3000 1000 3150
 Wire Wire Line
 	6950 3000 7350 3000
 $Comp
@@ -2440,8 +2426,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 3000 6950 3600
 Wire Wire Line
-	1000 3700 1000 4600
-Wire Wire Line
 	5300 3000 6200 3000
 Wire Wire Line
 	6200 3150 6200 3000
@@ -2550,4 +2534,70 @@ F 4 "S9015E-03-ND" H 16200 850 50  0001 C CNN "Digikey"
 $EndComp
 Text Notes 12650 750  0    50   ~ 0
 Programming connector copied from a previous project (Flamingo)
+$Comp
+L Connector_Generic:Conn_01x02 Ref?
+U 1 1 61F0B90F
+P 800 3100
+AR Path="/60B3FE92/61F0B90F" Ref="Ref?"  Part="1" 
+AR Path="/61F0B90F" Ref="Ref2"  Part="1" 
+F 0 "Ref2" H 718 2775 50  0000 C CNN
+F 1 "Conn_01x02" H 718 2866 50  0000 C CNN
+F 2 "mallard:mallardScrewTerm." H 800 3100 50  0001 C CNN
+F 3 "" H 800 3100 50  0001 C CNN
+F 4 "" H 800 3100 50  0001 C CNN "Digikey"
+	1    800  3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 3100 1100 3100
+Wire Wire Line
+	1100 3100 1100 3200
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61F6F90F
+P -500 9900
+AR Path="/60B3FF2D/61F6F90F" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61F6F90F" Ref="#PWR?"  Part="1" 
+AR Path="/61F6F90F" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H -500 9650 50  0001 C CNN
+F 1 "GND" H -495 9727 50  0000 C CNN
+F 2 "" H -500 9900 50  0001 C CNN
+F 3 "" H -500 9900 50  0001 C CNN
+	1    -500 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61F6F916
+P -500 9700
+AR Path="/60B3FF2D/61F6F916" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61F6F916" Ref="C?"  Part="1" 
+AR Path="/61F6F916" Ref="C21"  Part="1" 
+F 0 "C21" H -385 9746 50  0000 L CNN
+F 1 "1uF" H -385 9655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -462 9550 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -500 9700 50  0001 C CNN
+F 4 "311-1446-1-ND" H -500 9700 50  0001 C CNN "Digikey"
+	1    -500 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-500 9850 -500 9900
+Wire Wire Line
+	-650 9400 -650 9550
+Wire Wire Line
+	-650 9550 -500 9550
+Connection ~ -500 9550
+Wire Wire Line
+	1000 8800 1000 9500
+Wire Wire Line
+	1000 9500 1150 9500
+Wire Wire Line
+	-300 8800 1000 8800
+Wire Wire Line
+	1000 9550 1000 9700
+Wire Wire Line
+	1000 9700 1150 9700
+Wire Wire Line
+	-500 9550 1000 9550
 $EndSCHEMATC
