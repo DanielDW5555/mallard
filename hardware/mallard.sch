@@ -812,19 +812,6 @@ Wire Wire Line
 Wire Wire Line
 	0    10550 0    10450
 Connection ~ 0    10550
-$Comp
-L mallard-rescue:+1V0-power #PWR?
-U 1 1 61FEB910
-P 0 10150
-AR Path="/60B3FE92/61FEB910" Ref="#PWR?"  Part="1" 
-AR Path="/61FEB910" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 0   10000 50  0001 C CNN
-F 1 "+1V0" H 15  10323 50  0000 C CNN
-F 2 "" H 0   10150 50  0001 C CNN
-F 3 "" H 0   10150 50  0001 C CNN
-	1    0    10150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 11000 3100 11000
 Wire Wire Line
@@ -883,8 +870,6 @@ Wire Wire Line
 	3900 11750 4650 11750
 Wire Wire Line
 	4100 11350 4650 11350
-Text Notes -950 9900 0    50   ~ 0
-Soil Moisture Output
 Wire Wire Line
 	2500 9450 2500 11000
 Wire Wire Line
@@ -1111,8 +1096,6 @@ F 3 "" H -3450 10150 50  0001 C CNN
 	1    -3450 10150
 	1    0    0    -1  
 $EndComp
-Text GLabel -750 10050 2    50   Input ~ 0
-Moisture_Sense
 Text GLabel 4650 10950 2    50   Input ~ 0
 Eh_Sense
 Text GLabel 4650 11350 2    50   Input ~ 0
@@ -1342,20 +1325,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 12150 3100 12150
 Connection ~ 2750 12150
-$Comp
-L mallard:LMP7721 U?
-U 1 1 61FEBA54
-P 1450 9450
-AR Path="/60B3FE92/61FEBA54" Ref="U?"  Part="1" 
-AR Path="/61FEBA54" Ref="U7"  Part="1" 
-F 0 "U7" H 1450 10115 50  0000 C CNN
-F 1 "LMP7721" H 1450 10024 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 600 10900 50  0001 C CNN
-F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flmp7721" H 600 10900 50  0001 C CNN
-F 4 "LMP7721MA/NOPB-ND" H 1450 9450 50  0001 C CNN "Digikey"
-	1    1450 9450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 9450 3300 9450
 Wire Wire Line
@@ -1387,34 +1356,6 @@ F 3 "" H -650 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mallard-rescue:GND-power #PWR?
-U 1 1 61FEBA68
-P 950 9600
-AR Path="/60B3FE92/61FEBA68" Ref="#PWR?"  Part="1" 
-AR Path="/61FEBA68" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 950 9350 50  0001 C CNN
-F 1 "GND" H 800 9500 50  0000 C CNN
-F 2 "" H 950 9600 50  0001 C CNN
-F 3 "" H 950 9600 50  0001 C CNN
-	1    950  9600
-	1    0    0    -1  
-$EndComp
-$Comp
-L mallard-rescue:R_Small-Device R?
-U 1 1 61FEBA6F
-P 400 9800
-AR Path="/60B3FF2D/61FEBA6F" Ref="R?"  Part="1" 
-AR Path="/60B3FE92/61FEBA6F" Ref="R?"  Part="1" 
-AR Path="/61FEBA6F" Ref="R7"  Part="1" 
-F 0 "R7" V 204 9800 50  0000 C CNN
-F 1 "Jumper" V 295 9800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 400 9800 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 400 9800 50  0001 C CNN
-F 4 "541-0.0SBCT-ND" V 400 9800 50  0001 C CNN "Digikey"
-	1    400  9800
-	0    1    1    0   
-$EndComp
-$Comp
 L mallard-rescue:R_Small-Device R?
 U 1 1 61FEBA76
 P 1500 10550
@@ -1438,20 +1379,6 @@ Wire Wire Line
 	2050 9450 2000 9450
 Wire Wire Line
 	2350 9450 2500 9450
-$Comp
-L mallard-rescue:R-Device R?
-U 1 1 61FEBA82
-P 1450 8550
-AR Path="/60B3FE92/61FEBA82" Ref="R?"  Part="1" 
-AR Path="/61FEBA82" Ref="R8"  Part="1" 
-F 0 "R8" V 1243 8550 50  0000 C CNN
-F 1 "10k" V 1334 8550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1380 8550 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1450 8550 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 1450 8550 50  0001 C CNN "Digikey"
-	1    1450 8550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2000 9450 2000 8550
 Wire Wire Line
@@ -1459,22 +1386,6 @@ Wire Wire Line
 Connection ~ 2000 9450
 Wire Wire Line
 	2000 9450 1950 9450
-Wire Wire Line
-	0    10550 300  10550
-Wire Wire Line
-	300  9800 300  10550
-Connection ~ 300  10550
-Wire Wire Line
-	300  10550 1400 10550
-Wire Wire Line
-	1300 8550 600  8550
-Wire Wire Line
-	600  8550 600  9800
-Wire Wire Line
-	600  9800 500  9800
-Wire Wire Line
-	600  9800 950  9800
-Connection ~ 600  9800
 $Comp
 L mallard-rescue:R-Device R?
 U 1 1 61FEBA96
@@ -1489,42 +1400,8 @@ F 4 "‎P20429CT-ND‎" V 2200 9450 50  0001 C CNN "Digikey"
 	1    2200 9450
 	0    1    1    0   
 $EndComp
-$Comp
-L mallard-rescue:GND-power #PWR?
-U 1 1 61FEBA9C
-P -500 8750
-AR Path="/60B3FF2D/61FEBA9C" Ref="#PWR?"  Part="1" 
-AR Path="/60B3FE92/61FEBA9C" Ref="#PWR?"  Part="1" 
-AR Path="/61FEBA9C" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H -500 8500 50  0001 C CNN
-F 1 "GND" H -495 8577 50  0000 C CNN
-F 2 "" H -500 8750 50  0001 C CNN
-F 3 "" H -500 8750 50  0001 C CNN
-	1    -500 8750
-	1    0    0    -1  
-$EndComp
-$Comp
-L mallard-rescue:C-Device C?
-U 1 1 61FEBAA3
-P -500 8550
-AR Path="/60B3FF2D/61FEBAA3" Ref="C?"  Part="1" 
-AR Path="/60B3FE92/61FEBAA3" Ref="C?"  Part="1" 
-AR Path="/61FEBAA3" Ref="C7"  Part="1" 
-F 0 "C7" H -385 8596 50  0000 L CNN
-F 1 "1uF" H -385 8505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -462 8400 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -500 8550 50  0001 C CNN
-F 4 "311-1446-1-ND" H -500 8550 50  0001 C CNN "Digikey"
-	1    -500 8550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-500 8700 -500 8750
 Wire Wire Line
 	-650 8250 -650 8400
-Wire Wire Line
-	-650 8400 -500 8400
-Connection ~ -500 8400
 $Comp
 L mallard-rescue:GND-power #PWR?
 U 1 1 61FEBAAE
@@ -2455,19 +2332,6 @@ Wire Wire Line
 	-850 9000 -850 9150
 Wire Wire Line
 	-850 9150 -700 9150
-Connection ~ -700 9150
-Wire Wire Line
-	800  8400 800  9100
-Wire Wire Line
-	800  9100 950  9100
-Wire Wire Line
-	-500 8400 800  8400
-Wire Wire Line
-	800  9150 800  9300
-Wire Wire Line
-	800  9300 950  9300
-Wire Wire Line
-	-700 9150 800  9150
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 61FF33B4
@@ -2785,5 +2649,141 @@ F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1950 5850 50  0001
 F 3 "~" V 1950 5850 50  0001 C CNN
 	1    1950 5850
 	0    -1   -1   0   
+$EndComp
+Connection ~ -700 9150
+Wire Wire Line
+	-700 9150 800  9150
+Wire Wire Line
+	800  9300 950  9300
+Wire Wire Line
+	800  9150 800  9300
+Wire Wire Line
+	800  9100 950  9100
+Wire Wire Line
+	800  8400 800  9100
+Wire Wire Line
+	-500 8700 -500 8750
+Wire Wire Line
+	-500 8400 800  8400
+Wire Wire Line
+	-650 8400 -500 8400
+Connection ~ -500 8400
+$Comp
+L mallard-rescue:C-Device C?
+U 1 1 61FEBAA3
+P -500 8550
+AR Path="/60B3FF2D/61FEBAA3" Ref="C?"  Part="1" 
+AR Path="/60B3FE92/61FEBAA3" Ref="C?"  Part="1" 
+AR Path="/61FEBAA3" Ref="C7"  Part="1" 
+F 0 "C7" H -385 8596 50  0000 L CNN
+F 1 "1uF" H -385 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -462 8400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -500 8550 50  0001 C CNN
+F 4 "311-1446-1-ND" H -500 8550 50  0001 C CNN "Digikey"
+	1    -500 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61FEBA9C
+P -500 8750
+AR Path="/60B3FF2D/61FEBA9C" Ref="#PWR?"  Part="1" 
+AR Path="/60B3FE92/61FEBA9C" Ref="#PWR?"  Part="1" 
+AR Path="/61FEBA9C" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H -500 8500 50  0001 C CNN
+F 1 "GND" H -495 8577 50  0000 C CNN
+F 2 "" H -500 8750 50  0001 C CNN
+F 3 "" H -500 8750 50  0001 C CNN
+	1    -500 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  9800 950  9800
+Wire Wire Line
+	600  9800 500  9800
+Connection ~ 600  9800
+Wire Wire Line
+	600  8550 600  9800
+Wire Wire Line
+	1300 8550 600  8550
+Wire Wire Line
+	300  10550 1400 10550
+Wire Wire Line
+	0    10550 300  10550
+Connection ~ 300  10550
+Wire Wire Line
+	300  9800 300  10550
+$Comp
+L mallard-rescue:R-Device R?
+U 1 1 61FEBA82
+P 1450 8550
+AR Path="/60B3FE92/61FEBA82" Ref="R?"  Part="1" 
+AR Path="/61FEBA82" Ref="R8"  Part="1" 
+F 0 "R8" V 1243 8550 50  0000 C CNN
+F 1 "10k" V 1334 8550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1380 8550 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1450 8550 50  0001 C CNN
+F 4 "13-RC0603DR-0710KLCT-ND‎" V 1450 8550 50  0001 C CNN "Digikey"
+	1    1450 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L mallard-rescue:R_Small-Device R?
+U 1 1 61FEBA6F
+P 400 9800
+AR Path="/60B3FF2D/61FEBA6F" Ref="R?"  Part="1" 
+AR Path="/60B3FE92/61FEBA6F" Ref="R?"  Part="1" 
+AR Path="/61FEBA6F" Ref="R7"  Part="1" 
+F 0 "R7" V 204 9800 50  0000 C CNN
+F 1 "Jumper" V 295 9800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 400 9800 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 400 9800 50  0001 C CNN
+F 4 "541-0.0SBCT-ND" V 400 9800 50  0001 C CNN "Digikey"
+	1    400  9800
+	0    1    1    0   
+$EndComp
+$Comp
+L mallard-rescue:GND-power #PWR?
+U 1 1 61FEBA68
+P 950 9600
+AR Path="/60B3FE92/61FEBA68" Ref="#PWR?"  Part="1" 
+AR Path="/61FEBA68" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 950 9350 50  0001 C CNN
+F 1 "GND" H 800 9500 50  0000 C CNN
+F 2 "" H 950 9600 50  0001 C CNN
+F 3 "" H 950 9600 50  0001 C CNN
+	1    950  9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard:LMP7721 U?
+U 1 1 61FEBA54
+P 1450 9450
+AR Path="/60B3FE92/61FEBA54" Ref="U?"  Part="1" 
+AR Path="/61FEBA54" Ref="U7"  Part="1" 
+F 0 "U7" H 1450 10115 50  0000 C CNN
+F 1 "LMP7721" H 1450 10024 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 600 10900 50  0001 C CNN
+F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flmp7721" H 600 10900 50  0001 C CNN
+F 4 "LMP7721MA/NOPB-ND" H 1450 9450 50  0001 C CNN "Digikey"
+	1    1450 9450
+	1    0    0    -1  
+$EndComp
+Text GLabel -750 10050 2    50   Input ~ 0
+Moisture_Sense
+Text Notes -950 9900 0    50   ~ 0
+Soil Moisture Output
+$Comp
+L mallard-rescue:+1V0-power #PWR?
+U 1 1 61FEB910
+P 0 10150
+AR Path="/60B3FE92/61FEB910" Ref="#PWR?"  Part="1" 
+AR Path="/61FEB910" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 0   10000 50  0001 C CNN
+F 1 "+1V0" H 15  10323 50  0000 C CNN
+F 2 "" H 0   10150 50  0001 C CNN
+F 3 "" H 0   10150 50  0001 C CNN
+	1    0    10150
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
