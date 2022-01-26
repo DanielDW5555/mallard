@@ -228,14 +228,12 @@ F 3 "" H 15450 6250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15450 6250 15500 6250
-Text GLabel 17750 5850 2    50   Input ~ 0
-Eh_Sense
-Text GLabel 17750 5950 2    50   Input ~ 0
-Temp_Sense
 Text GLabel 17750 6050 2    50   Input ~ 0
-Ref_Elec
-Text GLabel 17750 6150 2    50   Input ~ 0
-Moisture_Sense
+Eh_Sense
+Text GLabel 17750 5850 2    50   Input ~ 0
+Temp_Sense
+Text GLabel 17750 5950 2    50   Input ~ 0
+Ref_Out
 Text Label 17750 6950 0    50   ~ 0
 USB+
 Text Label 17750 7050 0    50   ~ 0
@@ -252,38 +250,36 @@ Text Label 17750 7250 0    50   ~ 0
 SWCLK
 Wire Wire Line
 	17750 7250 17650 7250
-Text GLabel 17750 6250 2    50   Input ~ 0
+Text GLabel 16350 5850 0    50   Input ~ 0
 MUX1_EN
-Text GLabel 17750 6350 2    50   Input ~ 0
+Text GLabel 17750 6550 2    50   Input ~ 0
 MUX1_A0
 Text GLabel 17750 6450 2    50   Input ~ 0
 MUX1_A1
-Text GLabel 16350 5850 0    50   Input ~ 0
+Text GLabel 17750 6350 2    50   Input ~ 0
 MUX2_EN
-Wire Wire Line
-	17750 5850 17650 5850
-Wire Wire Line
-	17650 5950 17750 5950
 Wire Wire Line
 	17750 6050 17650 6050
 Wire Wire Line
-	17650 6150 17750 6150
+	17650 5850 17750 5850
 Wire Wire Line
-	17750 6250 17650 6250
-Wire Wire Line
-	17650 6350 17750 6350
-Wire Wire Line
-	17750 6450 17650 6450
-Text GLabel 16350 5950 0    50   Input ~ 0
-MUX2_A0
-Text GLabel 16350 6050 0    50   Input ~ 0
-MUX2_A1
+	17750 5950 17650 5950
 Wire Wire Line
 	16350 5850 16450 5850
 Wire Wire Line
-	16450 5950 16350 5950
+	17650 6550 17750 6550
 Wire Wire Line
-	16350 6050 16450 6050
+	17750 6450 17650 6450
+Text GLabel 17750 6250 2    50   Input ~ 0
+MUX2_A0
+Text GLabel 17750 6150 2    50   Input ~ 0
+MUX2_A1
+Wire Wire Line
+	17750 6350 17650 6350
+Wire Wire Line
+	17650 6250 17750 6250
+Wire Wire Line
+	17750 6150 17650 6150
 Wire Wire Line
 	16000 6250 16450 6250
 Text GLabel 16350 6850 0    50   Input ~ 0
@@ -2581,15 +2577,14 @@ $EndComp
 $Comp
 L power:GND #PWR0172
 U 1 1 62158AAE
-P 3600 6500
-F 0 "#PWR0172" H 3600 6250 50  0001 C CNN
-F 1 "GND" H 3605 6327 50  0000 C CNN
-F 2 "" H 3600 6500 50  0001 C CNN
-F 3 "" H 3600 6500 50  0001 C CNN
-	1    3600 6500
+P 3600 6650
+F 0 "#PWR0172" H 3600 6400 50  0001 C CNN
+F 1 "GND" H 3605 6477 50  0000 C CNN
+F 2 "" H 3600 6650 50  0001 C CNN
+F 3 "" H 3600 6650 50  0001 C CNN
+	1    3600 6650
 	1    0    0    -1  
 $EndComp
-Connection ~ 3600 6500
 Connection ~ 3600 6300
 $Comp
 L power:GND #PWR0173
@@ -2786,4 +2781,14 @@ F 3 "" H 0   10150 50  0001 C CNN
 	1    0    10150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	16450 5950 16350 5950
+Text GLabel 16350 5950 0    50   Input ~ 0
+Moisture_Sense
+Wire Wire Line
+	3600 6500 3600 6650
+Connection ~ 3600 6500
+Wire Wire Line
+	3200 6650 3600 6650
+Connection ~ 3600 6650
 $EndSCHEMATC
