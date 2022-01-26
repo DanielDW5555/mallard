@@ -1145,8 +1145,8 @@ AR Path="/61FEB9BC" Ref="U1"  Part="1"
 F 0 "U1" H -5100 12625 50  0000 C CNN
 F 1 "TMP235" H -5100 12534 50  0000 C CNN
 F 2 "" H -5100 12000 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tmp235.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626470161926&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmp235" H -5100 12000 50  0001 C CNN
-F 4 "296-48860-1-ND" H -5100 12450 50  0001 C CNN "Digikey"
+F 3 "https://www.ti.com/lit/ds/symlink/tmp235-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1643211475158&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmp235-q1" H -5100 12000 50  0001 C CNN
+F 4 "296-TMP235AEDBZTQ1CT-ND" H -5100 12450 50  0001 C CNN "Digikey"
 	1    -5100 12450
 	1    0    0    -1  
 $EndComp
@@ -1202,7 +1202,7 @@ F 0 "U2" H -5100 13525 50  0000 C CNN
 F 1 "TMP235" H -5100 13434 50  0000 C CNN
 F 2 "" H -5100 12900 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tmp235.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626470161926&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmp235" H -5100 12900 50  0001 C CNN
-F 4 "296-48860-1-ND" H -5100 13350 50  0001 C CNN "Digikey"
+F 4 "296-TMP235AEDBZTQ1CT-ND" H -5100 13350 50  0001 C CNN "Digikey"
 	1    -5100 13350
 	1    0    0    -1  
 $EndComp
@@ -1229,7 +1229,7 @@ F 0 "U3" H -5150 14375 50  0000 C CNN
 F 1 "TMP235" H -5150 14284 50  0000 C CNN
 F 2 "" H -5150 13750 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tmp235.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1626470161926&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmp235" H -5150 13750 50  0001 C CNN
-F 4 "296-48860-1-ND" H -5150 14200 50  0001 C CNN "Digikey"
+F 4 "296-TMP235AEDBZTQ1CT-ND" H -5150 14200 50  0001 C CNN "Digikey"
 	1    -5150 14200
 	1    0    0    -1  
 $EndComp
