@@ -1573,10 +1573,6 @@ Connection ~ 1700 10900
 Wire Wire Line
 	1700 10800 1700 10900
 Wire Wire Line
-	9650 3200 9950 3200
-Wire Wire Line
-	9650 3500 9950 3500
-Wire Wire Line
 	3050 3950 2950 3950
 Wire Wire Line
 	2950 3950 2950 4100
@@ -1593,17 +1589,6 @@ F 1 "GND" H 2455 4427 50  0000 C CNN
 F 2 "" H 2450 4600 50  0001 C CNN
 F 3 "" H 2450 4600 50  0001 C CNN
 	1    2450 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L mallard-rescue:GND-power #PWR0149
-U 1 1 62037076
-P 9800 3850
-F 0 "#PWR0149" H 9800 3600 50  0001 C CNN
-F 1 "GND" H 9805 3677 50  0000 C CNN
-F 2 "" H 9800 3850 50  0001 C CNN
-F 3 "" H 9800 3850 50  0001 C CNN
-	1    9800 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1706,19 +1691,6 @@ Wire Wire Line
 	2150 3400 2150 3650
 Wire Wire Line
 	6950 3000 7350 3000
-$Comp
-L mallard-rescue:GND-power #PWR0154
-U 1 1 620370B8
-P 7950 3500
-F 0 "#PWR0154" H 7950 3250 50  0001 C CNN
-F 1 "GND" H 7955 3327 50  0000 C CNN
-F 2 "" H 7950 3500 50  0001 C CNN
-F 3 "" H 7950 3500 50  0001 C CNN
-	1    7950 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 3400 7950 3500
 Wire Wire Line
 	1450 3000 1000 3000
 Wire Wire Line
@@ -1763,25 +1735,13 @@ $EndComp
 $Comp
 L mallard-rescue:C-Device C11
 U 1 1 620370D8
-P 7950 3250
-F 0 "C11" H 8065 3296 50  0000 L CNN
-F 1 "10uF" H 8065 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7988 3100 50  0001 C CNN
-F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 7950 3250 50  0001 C CNN
-F 4 "587-3258-1-ND" H 7950 3250 50  0001 C CNN "Digikey"
-	1    7950 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L mallard-rescue:C-Device C13
-U 1 1 620370DF
-P 9950 3350
-F 0 "C13" H 10065 3396 50  0000 L CNN
-F 1 "1uF" H 10065 3305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9988 3200 50  0001 C CNN
-F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 9950 3350 50  0001 C CNN
-F 4 "1276-1019-1-ND" H 9950 3350 50  0001 C CNN "Digikey"
-	1    9950 3350
+P 8600 3250
+F 0 "C11" H 8715 3296 50  0000 L CNN
+F 1 "10uF" H 8715 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8638 3100 50  0001 C CNN
+F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 8600 3250 50  0001 C CNN
+F 4 "587-3258-1-ND" H 8600 3250 50  0001 C CNN "Digikey"
+	1    8600 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1820,18 +1780,6 @@ F 4 "296-28738-1-ND" H 3550 2900 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mallard-rescue:LTC1983ES6-3-mallard U10
-U 1 1 620370FA
-P 9300 2900
-F 0 "U10" H 9300 3025 50  0000 C CNN
-F 1 "LTC1983ES6-3" H 9300 2934 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9300 1850 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1983fc.pdf" H 9300 2900 50  0001 C CNN
-F 4 "LTC1983ES6-3#TRPBFCT-ND" H 9300 2900 50  0001 C CNN "Digikey"
-	1    9300 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L mallard-rescue:Thermistor-Device TH1
 U 1 1 62037100
 P 4300 4150
@@ -1857,21 +1805,6 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds16003.pdf" H 1600 3000 50  0001 
 F 4 "S1B-FDICT-ND" H 1600 3000 50  0001 C CNN "Digikey"
 	1    1600 3000
 	-1   0    0    1   
-$EndComp
-Text GLabel 8850 3200 0    50   Input ~ 0
--3V3_SHDN_L
-Wire Wire Line
-	8950 3200 8850 3200
-$Comp
-L mallard-rescue:-3V3-power #PWR0156
-U 1 1 62037111
-P 11050 3000
-F 0 "#PWR0156" H 11050 3100 50  0001 C CNN
-F 1 "-3V3" V 11065 3128 50  0000 L CNN
-F 2 "" H 11050 3000 50  0001 C CNN
-F 3 "" H 11050 3000 50  0001 C CNN
-	1    11050 3000
-	1    0    0    -1  
 $EndComp
 $Comp
 L mallard-rescue:GND-power #PWR0157
@@ -2052,62 +1985,6 @@ Wire Wire Line
 	10150 4450 10400 4450
 Wire Wire Line
 	7350 3000 7350 2950
-$Comp
-L mallard-rescue:+3V3-power #PWR0162
-U 1 1 6203717F
-P 7800 2950
-F 0 "#PWR0162" H 7800 2800 50  0001 C CNN
-F 1 "+3V3" H 7815 3123 50  0000 C CNN
-F 2 "" H 7800 2950 50  0001 C CNN
-F 3 "" H 7800 2950 50  0001 C CNN
-	1    7800 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 3000 7950 3100
-Wire Wire Line
-	7950 3000 8950 3000
-Wire Wire Line
-	7950 3000 7800 3000
-Wire Wire Line
-	7800 3000 7800 2950
-Connection ~ 7950 3000
-Wire Wire Line
-	9650 3000 10400 3000
-$Comp
-L mallard-rescue:GND-power #PWR0163
-U 1 1 6203718B
-P 10400 3600
-F 0 "#PWR0163" H 10400 3350 50  0001 C CNN
-F 1 "GND" H 10405 3427 50  0000 C CNN
-F 2 "" H 10400 3600 50  0001 C CNN
-F 3 "" H 10400 3600 50  0001 C CNN
-	1    10400 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10400 3500 10400 3600
-$Comp
-L mallard-rescue:C-Device C15
-U 1 1 62037193
-P 10400 3350
-F 0 "C15" H 10515 3396 50  0000 L CNN
-F 1 "10uF" H 10515 3305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10438 3200 50  0001 C CNN
-F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 10400 3350 50  0001 C CNN
-F 4 "587-3258-1-ND" H 10400 3350 50  0001 C CNN "Digikey"
-	1    10400 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10400 3000 10400 3200
-Connection ~ 10400 3000
-Wire Wire Line
-	10400 3000 11050 3000
-Wire Wire Line
-	9650 3700 9800 3700
-Wire Wire Line
-	9800 3700 9800 3850
 $Comp
 L mallard-rescue:C-Device C4
 U 1 1 6203719F
@@ -2628,8 +2505,6 @@ Text GLabel 16450 7250 0    50   Input ~ 0
 5V_SHDN_L
 Text GLabel 16450 7150 0    50   Input ~ 0
 5V_RST
-Text GLabel 16450 7350 0    50   Input ~ 0
--3V3_SHDN_L
 Wire Wire Line
 	3200 6300 3600 6300
 Wire Wire Line
@@ -2791,4 +2666,125 @@ Connection ~ 3600 6500
 Wire Wire Line
 	3200 6650 3600 6650
 Connection ~ 3600 6650
+$Comp
+L mallard:LM828 U10
+U 1 1 61F55449
+P 9300 2850
+F 0 "U10" H 9300 2965 50  0000 C CNN
+F 1 "LM828" H 9300 2874 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9300 2000 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm828.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1643222784613&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flm828" H 9300 2850 50  0001 C CNN
+F 4 "296-36289-1-ND" H 9300 2100 50  0001 C CNN "Digikey"
+	1    9300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3100 8900 3100
+Wire Wire Line
+	8600 3400 8900 3400
+Connection ~ 8100 3000
+Wire Wire Line
+	8100 3000 8900 3000
+Wire Wire Line
+	7950 3000 7950 2950
+Wire Wire Line
+	8100 3000 7950 3000
+Wire Wire Line
+	8100 3000 8100 3100
+$Comp
+L mallard-rescue:+3V3-power #PWR0162
+U 1 1 6203717F
+P 7950 2950
+F 0 "#PWR0162" H 7950 2800 50  0001 C CNN
+F 1 "+3V3" H 7965 3123 50  0000 C CNN
+F 2 "" H 7950 2950 50  0001 C CNN
+F 3 "" H 7950 2950 50  0001 C CNN
+	1    7950 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3400 8100 3500
+$Comp
+L mallard-rescue:GND-power #PWR0154
+U 1 1 620370B8
+P 8100 3500
+F 0 "#PWR0154" H 8100 3250 50  0001 C CNN
+F 1 "GND" H 8105 3327 50  0000 C CNN
+F 2 "" H 8100 3500 50  0001 C CNN
+F 3 "" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 3000 10350 3100
+Wire Wire Line
+	10350 3400 10350 3500
+$Comp
+L mallard-rescue:GND-power #PWR0149
+U 1 1 62090527
+P 10350 3500
+F 0 "#PWR0149" H 10350 3250 50  0001 C CNN
+F 1 "GND" H 10355 3327 50  0000 C CNN
+F 2 "" H 10350 3500 50  0001 C CNN
+F 3 "" H 10350 3500 50  0001 C CNN
+	1    10350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3000 10350 3000
+Connection ~ 10350 3000
+Wire Wire Line
+	10350 3000 10500 3000
+$Comp
+L mallard-rescue:GND-power #PWR0156
+U 1 1 620C8C7F
+P 9800 3500
+F 0 "#PWR0156" H 9800 3250 50  0001 C CNN
+F 1 "GND" H 9805 3327 50  0000 C CNN
+F 2 "" H 9800 3500 50  0001 C CNN
+F 3 "" H 9800 3500 50  0001 C CNN
+	1    9800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3400 9800 3400
+Wire Wire Line
+	9800 3400 9800 3500
+$Comp
+L mallard-rescue:-3V3-power #PWR0163
+U 1 1 6211D80B
+P 10500 2950
+F 0 "#PWR0163" H 10500 3050 50  0001 C CNN
+F 1 "-3V3" V 10515 3078 50  0000 L CNN
+F 2 "" H 10500 2950 50  0001 C CNN
+F 3 "" H 10500 2950 50  0001 C CNN
+	1    10500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3000 10500 2950
+$Comp
+L mallard-rescue:C-Device C13
+U 1 1 62191547
+P 8100 3250
+F 0 "C13" H 8215 3296 50  0000 L CNN
+F 1 "1uF" H 8215 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8138 3100 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 8100 3250 50  0001 C CNN
+F 4 "311-1446-1-ND" H 8100 3250 50  0001 C CNN "Digikey"
+	1    8100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mallard-rescue:C-Device C15
+U 1 1 621ABDE8
+P 10350 3250
+F 0 "C15" H 10465 3296 50  0000 L CNN
+F 1 "1uF" H 10465 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10388 3100 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 10350 3250 50  0001 C CNN
+F 4 "311-1446-1-ND" H 10350 3250 50  0001 C CNN "Digikey"
+	1    10350 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
