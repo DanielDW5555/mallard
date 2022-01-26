@@ -70,7 +70,7 @@ F 0 "R24" V 17254 2300 50  0000 C CNN
 F 1 "10k" V 17345 2300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 17450 2300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 17450 2300 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 17450 2300 50  0001 C CNN "Digikey"
+F 4 "13-RC0603DR-0710KLCT-ND" V 17450 2300 50  0001 C CNN "Digikey"
 	1    17450 2300
 	-1   0    0    1   
 $EndComp
@@ -873,7 +873,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 10850 3100 10850
 $Comp
-L mallard:TMUX1309 U?
+L mallard-rescue:TMUX1309-mallard U?
 U 1 1 61FEB939
 P -1350 9250
 AR Path="/60B3FE92/61FEB939" Ref="U?"  Part="1" 
@@ -882,7 +882,7 @@ F 0 "U5" H -1350 9375 50  0000 C CNN
 F 1 "TMUX1309" H -1350 9284 50  0000 C CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H -1350 7350 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tmux1309.pdf" H -1350 9250 50  0001 C CNN
-F 4 "296-TMUX1309BQBRCT-ND‎" H -1350 9250 50  0001 C CNN "Digikey"
+F 4 "296-TMUX1309BQBRCT-ND" H -1350 9250 50  0001 C CNN "Digikey"
 	1    -1350 9250
 	1    0    0    -1  
 $EndComp
@@ -896,7 +896,7 @@ F 0 "R4" V -857 10550 50  0000 C CNN
 F 1 "10k" V -766 10550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V -720 10550 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H -650 10550 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V -650 10550 50  0001 C CNN "Digikey"
+F 4 "13-RC0603DR-0710KLCT-ND" V -650 10550 50  0001 C CNN "Digikey"
 	1    -650 10550
 	0    1    1    0   
 $EndComp
@@ -910,7 +910,7 @@ F 0 "R16" V 3243 9450 50  0000 C CNN
 F 1 "20k DNI" V 3334 9450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3380 9450 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 3450 9450 50  0001 C CNN
-F 4 "‎P20429CT-ND‎" V 3450 9450 50  0001 C CNN "Digikey"
+F 4 "P20429CT-ND" V 3450 9450 50  0001 C CNN "Digikey"
 	1    3450 9450
 	0    1    1    0   
 $EndComp
@@ -924,12 +924,12 @@ F 0 "R15" V 3243 9050 50  0000 C CNN
 F 1 "30k" V 3334 9050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3380 9050 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 3450 9050 50  0001 C CNN
-F 4 "311-30KDCT-ND‎" V 3450 9050 50  0001 C CNN "Digikey"
+F 4 "311-30KDCT-ND" V 3450 9050 50  0001 C CNN "Digikey"
 	1    3450 9050
 	0    1    1    0   
 $EndComp
 $Comp
-L mallard:LMV554 U?
+L mallard-rescue:LMV554-mallard U?
 U 1 1 61FEB955
 P 3500 10200
 AR Path="/60B3FE92/61FEB955" Ref="U?"  Part="1" 
@@ -967,7 +967,7 @@ F 0 "R18" V 3293 12550 50  0000 C CNN
 F 1 "9.1k" V 3384 12550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 12550 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 3500 12550 50  0001 C CNN
-F 4 "YAG1756CT-ND‎" H 3500 12550 50  0001 C CNN "Digikey"
+F 4 "YAG1756CT-ND" H 3500 12550 50  0001 C CNN "Digikey"
 	1    3500 12550
 	0    1    1    0   
 $EndComp
@@ -981,7 +981,7 @@ F 0 "R6" H -70 10254 50  0000 R CNN
 F 1 "10k" H -70 10345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V -70 10300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 0   10300 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 0   10300 50  0001 C CNN "Digikey"
+F 4 "13-RC0603DR-0710KLCT-ND" V 0   10300 50  0001 C CNN "Digikey"
 	1    0    10300
 	-1   0    0    1   
 $EndComp
@@ -995,7 +995,7 @@ F 0 "R17" V 3243 9850 50  0000 C CNN
 F 1 "10k" V 3334 9850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3380 9850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3450 9850 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 3450 9850 50  0001 C CNN "Digikey"
+F 4 "13-RC0603DR-0710KLCT-ND" V 3450 9850 50  0001 C CNN "Digikey"
 	1    3450 9850
 	0    1    1    0   
 $EndComp
@@ -1009,7 +1009,7 @@ F 0 "R13" H 2730 13554 50  0000 R CNN
 F 1 "10k" H 2730 13645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2730 13600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2800 13600 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 2800 13600 50  0001 C CNN "Digikey"
+F 4 "13-RC0603DR-0710KLCT-ND" V 2800 13600 50  0001 C CNN "Digikey"
 	1    2800 13600
 	-1   0    0    1   
 $EndComp
@@ -1023,7 +1023,7 @@ F 0 "R19" V 3293 13300 50  0000 C CNN
 F 1 "20k" V 3384 13300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 13300 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 3500 13300 50  0001 C CNN
-F 4 "‎P20429CT-ND‎" V 3500 13300 50  0001 C CNN "Digikey"
+F 4 "P20429CT-ND" V 3500 13300 50  0001 C CNN "Digikey"
 	1    3500 13300
 	0    1    1    0   
 $EndComp
@@ -1099,7 +1099,7 @@ Temp_Sense
 Text GLabel 4650 11750 2    50   Input ~ 0
 Ref_Out
 $Comp
-L mallard:TMUX1309 U?
+L mallard-rescue:TMUX1309-mallard U?
 U 1 1 61FEB9A9
 P -1300 11650
 AR Path="/60B3FE92/61FEB9A9" Ref="U?"  Part="1" 
@@ -1108,7 +1108,7 @@ F 0 "U6" H -1300 11775 50  0000 C CNN
 F 1 "TMUX1309" H -1300 11684 50  0000 C CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H -1300 9750 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tmux1309.pdf" H -1300 11650 50  0001 C CNN
-F 4 "296-TMUX1309BQBRCT-ND‎" H -1300 11650 50  0001 C CNN "Digikey"
+F 4 "296-TMUX1309BQBRCT-ND" H -1300 11650 50  0001 C CNN "Digikey"
 	1    -1300 11650
 	1    0    0    -1  
 $EndComp
@@ -1137,7 +1137,7 @@ Wire Wire Line
 Wire Wire Line
 	-1700 12250 -1800 12250
 $Comp
-L mallard:TMP235 U?
+L mallard-rescue:TMP235-mallard U?
 U 1 1 61FEB9BC
 P -5100 12450
 AR Path="/60B3FE92/61FEB9BC" Ref="U?"  Part="1" 
@@ -1193,7 +1193,7 @@ F 3 "" H -3650 12900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mallard:TMP235 U?
+L mallard-rescue:TMP235-mallard U?
 U 1 1 61FEB9DC
 P -5100 13350
 AR Path="/60B3FE92/61FEB9DC" Ref="U?"  Part="1" 
@@ -1220,7 +1220,7 @@ F 3 "" H -3500 13400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L mallard:TMP235 U?
+L mallard-rescue:TMP235-mallard U?
 U 1 1 61FEB9FC
 P -5150 14200
 AR Path="/60B3FE92/61FEB9FC" Ref="U?"  Part="1" 
@@ -1392,7 +1392,7 @@ F 0 "R10" V 1993 9450 50  0000 C CNN
 F 1 "20k" V 2084 9450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2130 9450 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 2200 9450 50  0001 C CNN
-F 4 "‎P20429CT-ND‎" V 2200 9450 50  0001 C CNN "Digikey"
+F 4 "P20429CT-ND" V 2200 9450 50  0001 C CNN "Digikey"
 	1    2200 9450
 	0    1    1    0   
 $EndComp
@@ -1808,7 +1808,7 @@ F 3 "" H 7350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mallard:BQ24210DQCT U4
+L mallard-rescue:BQ24210DQCT-mallard U4
 U 1 1 620370F3
 P 3550 2900
 F 0 "U4" H 3550 3025 50  0000 C CNN
@@ -1820,7 +1820,7 @@ F 4 "296-28738-1-ND" H 3550 2900 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mallard:LTC1983ES6-3 U10
+L mallard-rescue:LTC1983ES6-3-mallard U10
 U 1 1 620370FA
 P 9300 2900
 F 0 "U10" H 9300 3025 50  0000 C CNN
@@ -1854,7 +1854,7 @@ F 0 "D1" H 1600 2784 50  0000 C CNN
 F 1 "D" H 1600 2875 50  0000 C CNN
 F 2 "Diode_SMD:D_SMA_Handsoldering" H 1600 3000 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds16003.pdf" H 1600 3000 50  0001 C CNN
-F 4 "S1B-13-F" H 1600 3000 50  0001 C CNN "Digikey"
+F 4 "S1B-FDICT-ND" H 1600 3000 50  0001 C CNN "Digikey"
 	1    1600 3000
 	-1   0    0    1   
 $EndComp
@@ -1887,7 +1887,7 @@ $EndComp
 Text GLabel 8650 4650 0    50   Input ~ 0
 +1V0_EN
 $Comp
-L mallard:TPS717 U8
+L mallard-rescue:TPS717-mallard U8
 U 1 1 6203711F
 P 9100 4350
 F 0 "U8" H 9100 4515 50  0000 C CNN
@@ -2483,14 +2483,14 @@ Wrong footprint size
 Text Notes 3400 12800 0    50   ~ 0
 Wrong footprint size
 $Comp
-L mallard:LTC3529EDCB U12
+L mallard-rescue:LTC3529EDCB-mallard U12
 U 1 1 62066D6A
 P 2400 5950
 F 0 "U12" H 2750 6125 50  0000 C CNN
 F 1 "LTC3529EDCB" H 2750 6034 50  0000 C CNN
 F 2 "mallard:DFN200X300X80-9N" H 2300 6100 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3529fb.pdf" H 2300 6100 50  0001 C CNN
-F 4 "LTC3529EDCB#TRPBF" H 2400 5950 50  0001 C CNN "Digikey"
+F 4 "161-LTC3529EDCB#TRPBFCT-ND" H 2400 5950 50  0001 C CNN "Digikey"
 	1    2400 5950
 	1    0    0    -1  
 $EndComp
@@ -2718,7 +2718,7 @@ F 0 "R8" V 1243 8550 50  0000 C CNN
 F 1 "10k" V 1334 8550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1380 8550 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1450 8550 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND‎" V 1450 8550 50  0001 C CNN "Digikey"
+F 4 "13-RC0603DR-0710KLCT-ND" V 1450 8550 50  0001 C CNN "Digikey"
 	1    1450 8550
 	0    1    1    0   
 $EndComp
@@ -2751,7 +2751,7 @@ F 3 "" H 950 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mallard:LMP7721 U?
+L mallard-rescue:LMP7721-mallard U?
 U 1 1 61FEBA54
 P 1450 9450
 AR Path="/60B3FE92/61FEBA54" Ref="U?"  Part="1" 
