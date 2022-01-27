@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>F:\electricalDesignProjects\mallard\hardware\mallard.sch</source>
-    <date>2022-01-26 10:53:18 PM</date>
-    <tool>Eeschema (5.1.10)-1</tool>
+    <source>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware\mallard.sch</source>
+    <date>27/01/2022 2:33:05 PM</date>
+    <tool>Eeschema (5.1.5)-3</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -52,11 +52,11 @@
       <tstamp>61F56BFD</tstamp>
     </comp>
     <comp ref="D4">
-      <value>Orange</value>
-      <footprint>Diode_SMD:D_0805_2012Metric_Castellated</footprint>
-      <datasheet>https://optoelectronics.liteon.com/upload/download/DS-22-99-0185/LTST-C170KFKT.pdf</datasheet>
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>https://www.sunledusa.com/products/spec/XZVG53W-8.pdf</datasheet>
       <fields>
-        <field name="Digikey">160-1413-1-ND</field>
+        <field name="Digikey">1497-1215-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="LED_Small-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -352,9 +352,9 @@
     <comp ref="C1">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -438,9 +438,9 @@
     <comp ref="C5">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -449,9 +449,9 @@
     <comp ref="C6">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -460,9 +460,9 @@
     <comp ref="C10">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -471,9 +471,9 @@
     <comp ref="C9">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -526,9 +526,9 @@
     <comp ref="C8">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -580,7 +580,7 @@
       <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
       <datasheet>https://www.diodes.com/assets/Datasheets/ds16003.pdf</datasheet>
       <fields>
-        <field name="Digikey">S1B-FDICT-ND</field>
+        <field name="Digikey">S1BFSCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="D-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -622,9 +622,9 @@
     <comp ref="C12">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -655,9 +655,9 @@
     <comp ref="C14">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -666,9 +666,9 @@
     <comp ref="C4">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -717,9 +717,9 @@
     <comp ref="C21">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -744,9 +744,9 @@
     <comp ref="C3">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -763,9 +763,9 @@
     <comp ref="C2">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -828,9 +828,9 @@
     <comp ref="C7">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -883,9 +883,9 @@
     <comp ref="C13">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -894,9 +894,9 @@
     <comp ref="C15">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf</datasheet>
+      <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">311-1446-1-ND</field>
+        <field name="Digikey">CL10B105KO8NNNC</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -1407,10 +1407,10 @@
       <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
     </library>
     <library logical="mallard">
-      <uri>F:\electricalDesignProjects\mallard\hardware/mallard.lib</uri>
+      <uri>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware/mallard.lib</uri>
     </library>
     <library logical="mallard-rescue">
-      <uri>F:\electricalDesignProjects\mallard\hardware/mallard-rescue.lib</uri>
+      <uri>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware/mallard-rescue.lib</uri>
     </library>
   </libraries>
   <nets>

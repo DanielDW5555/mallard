@@ -108,8 +108,6 @@ Text Label 16300 4850 2    50   ~ 0
 RESET_L
 Wire Wire Line
 	16450 4850 16300 4850
-Text Notes 17750 5400 0    50   ~ 0
-Check Symbol with Datasheet to make sure pins match
 Wire Wire Line
 	17000 7550 17000 7650
 Connection ~ 17000 7550
@@ -479,8 +477,6 @@ F 4 "445-8122-1-ND" H 15750 4150 50  0001 C CNN "Digikey"
 	1    15750 4150
 	1    0    0    -1  
 $EndComp
-Text Notes 15050 2350 0    50   ~ 0
-Double check footprint for USB connector
 Wire Wire Line
 	17450 2400 17450 2550
 Wire Wire Line
@@ -896,7 +892,7 @@ F 0 "R4" V -857 10550 50  0000 C CNN
 F 1 "10k" V -766 10550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V -720 10550 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H -650 10550 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND" V -650 10550 50  0001 C CNN "Digikey"
+F 4 "13-AC0603DR-0710KLCT-ND" V -650 10550 50  0001 C CNN "Digikey"
 	1    -650 10550
 	0    1    1    0   
 $EndComp
@@ -953,7 +949,7 @@ F 0 "R14" H 3120 12846 50  0000 L CNN
 F 1 "1k" H 3120 12755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2980 12800 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20065/rcse3.pdf" H 3050 12800 50  0001 C CNN
-F 4 "541-2788-1-ND" H 3050 12800 50  0001 C CNN "Digikey"
+F 4 "RHM1.00KADCT-ND" H 3050 12800 50  0001 C CNN "Digikey"
 	1    3050 12800
 	1    0    0    -1  
 $EndComp
@@ -981,7 +977,7 @@ F 0 "R6" H -70 10254 50  0000 R CNN
 F 1 "10k" H -70 10345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V -70 10300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 0   10300 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND" V 0   10300 50  0001 C CNN "Digikey"
+F 4 "13-AC0603DR-0710KLCT-ND" V 0   10300 50  0001 C CNN "Digikey"
 	1    0    10300
 	-1   0    0    1   
 $EndComp
@@ -995,7 +991,7 @@ F 0 "R17" V 3243 9850 50  0000 C CNN
 F 1 "10k" V 3334 9850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3380 9850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3450 9850 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND" V 3450 9850 50  0001 C CNN "Digikey"
+F 4 "13-AC0603DR-0710KLCT-ND" V 3450 9850 50  0001 C CNN "Digikey"
 	1    3450 9850
 	0    1    1    0   
 $EndComp
@@ -1009,7 +1005,7 @@ F 0 "R13" H 2730 13554 50  0000 R CNN
 F 1 "10k" H 2730 13645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2730 13600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2800 13600 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND" V 2800 13600 50  0001 C CNN "Digikey"
+F 4 "13-AC0603DR-0710KLCT-ND" V 2800 13600 50  0001 C CNN "Digikey"
 	1    2800 13600
 	-1   0    0    1   
 $EndComp
@@ -1175,7 +1171,7 @@ F 0 "C1" H -3535 12796 50  0000 L CNN
 F 1 "1uF" H -3535 12705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -3612 12600 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -3650 12750 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -3650 12750 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -3650 12750 50  0001 C CNN "Digikey"
 	1    -3650 12750
 	1    0    0    -1  
 $EndComp
@@ -1423,7 +1419,7 @@ F 0 "C5" H -2585 9546 50  0000 L CNN
 F 1 "1uF" H -2585 9455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -2662 9350 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -2700 9500 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -2700 9500 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -2700 9500 50  0001 C CNN "Digikey"
 	1    -2700 9500
 	1    0    0    -1  
 $EndComp
@@ -1483,7 +1479,7 @@ F 0 "C6" H -2385 11946 50  0000 L CNN
 F 1 "1uF" H -2385 11855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -2462 11750 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -2500 11900 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -2500 11900 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -2500 11900 50  0001 C CNN "Digikey"
 	1    -2500 11900
 	1    0    0    -1  
 $EndComp
@@ -1519,7 +1515,7 @@ F 0 "C10" H 2265 10146 50  0000 L CNN
 F 1 "1uF" H 2265 10055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2188 9950 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 2150 10100 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 2150 10100 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 2150 10100 50  0001 C CNN "Digikey"
 	1    2150 10100
 	1    0    0    -1  
 $EndComp
@@ -1543,7 +1539,7 @@ F 0 "C9" H 1815 11146 50  0000 L CNN
 F 1 "1uF" H 1815 11055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1738 10950 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 1700 11100 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 1700 11100 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 1700 11100 50  0001 C CNN "Digikey"
 	1    1700 11100
 	1    0    0    -1  
 $EndComp
@@ -1728,7 +1724,7 @@ F 0 "C8" H 6315 3346 50  0000 L CNN
 F 1 "1uF" H 6315 3255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6238 3150 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 6200 3300 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 6200 3300 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 6200 3300 50  0001 C CNN "Digikey"
 	1    6200 3300
 	1    0    0    -1  
 $EndComp
@@ -1900,7 +1896,7 @@ F 0 "C12" H 8065 4696 50  0000 L CNN
 F 1 "1uF" H 8065 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7988 4500 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 7950 4650 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 7950 4650 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 7950 4650 50  0001 C CNN "Digikey"
 	1    7950 4650
 	1    0    0    -1  
 $EndComp
@@ -1969,7 +1965,7 @@ F 0 "C14" H 10265 4696 50  0000 L CNN
 F 1 "1uF" H 10265 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10188 4500 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 10150 4650 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 10150 4650 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 10150 4650 50  0001 C CNN "Digikey"
 	1    10150 4650
 	1    0    0    -1  
 $EndComp
@@ -1993,7 +1989,7 @@ F 0 "C4" H 2265 3296 50  0000 L CNN
 F 1 "1uF" H 2265 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2188 3100 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 2150 3250 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 2150 3250 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 2150 3250 50  0001 C CNN "Digikey"
 	1    2150 3250
 	1    0    0    -1  
 $EndComp
@@ -2195,7 +2191,7 @@ F 0 "C21" H -585 9346 50  0000 L CNN
 F 1 "1uF" H -585 9255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -662 9150 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -700 9300 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -700 9300 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -700 9300 50  0001 C CNN "Digikey"
 	1    -700 9300
 	1    0    0    -1  
 $EndComp
@@ -2259,7 +2255,7 @@ F 0 "C3" H -3285 14796 50  0000 L CNN
 F 1 "1uF" H -3285 14705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -3362 14600 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -3400 14750 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -3400 14750 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -3400 14750 50  0001 C CNN "Digikey"
 	1    -3400 14750
 	1    0    0    -1  
 $EndComp
@@ -2316,7 +2312,7 @@ F 0 "C2" H -3285 13796 50  0000 L CNN
 F 1 "1uF" H -3285 13705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -3362 13600 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -3400 13750 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -3400 13750 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -3400 13750 50  0001 C CNN "Digikey"
 	1    -3400 13750
 	1    0    0    -1  
 $EndComp
@@ -2351,14 +2347,6 @@ Wire Wire Line
 Connection ~ -3400 13600
 Wire Wire Line
 	-3400 13600 -3500 13600
-Text Notes -900 10700 0    50   ~ 0
-Wrong footprint size
-Text Notes 1700 8450 0    50   ~ 0
-Wrong footprint size
-Text Notes 3850 9300 0    50   ~ 0
-Wrong footprint size
-Text Notes 3400 12800 0    50   ~ 0
-Wrong footprint size
 $Comp
 L mallard-rescue:LTC3529EDCB-mallard U12
 U 1 1 62066D6A
@@ -2549,7 +2537,7 @@ F 0 "C7" H -385 8596 50  0000 L CNN
 F 1 "1uF" H -385 8505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -462 8400 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -500 8550 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H -500 8550 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H -500 8550 50  0001 C CNN "Digikey"
 	1    -500 8550
 	1    0    0    -1  
 $EndComp
@@ -2593,7 +2581,7 @@ F 0 "R8" V 1243 8550 50  0000 C CNN
 F 1 "10k" V 1334 8550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1380 8550 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1450 8550 50  0001 C CNN
-F 4 "13-RC0603DR-0710KLCT-ND" V 1450 8550 50  0001 C CNN "Digikey"
+F 4 "13-AC0603DR-0710KLCT-ND" V 1450 8550 50  0001 C CNN "Digikey"
 	1    1450 8550
 	0    1    1    0   
 $EndComp
@@ -2771,7 +2759,7 @@ F 0 "C13" H 8215 3296 50  0000 L CNN
 F 1 "1uF" H 8215 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8138 3100 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 8100 3250 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 8100 3250 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 8100 3250 50  0001 C CNN "Digikey"
 	1    8100 3250
 	1    0    0    -1  
 $EndComp
@@ -2783,7 +2771,7 @@ F 0 "C15" H 10465 3296 50  0000 L CNN
 F 1 "1uF" H 10465 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10388 3100 50  0001 C CNN
 F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 10350 3250 50  0001 C CNN
-F 4 "CL10B105KO8NNNC" H 10350 3250 50  0001 C CNN "Digikey"
+F 4 "1276-1019-1-ND" H 10350 3250 50  0001 C CNN "Digikey"
 	1    10350 3250
 	1    0    0    -1  
 $EndComp
