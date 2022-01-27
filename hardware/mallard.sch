@@ -190,10 +190,10 @@ P 15900 6250
 AR Path="/60B3FDDE/61F56C19" Ref="D?"  Part="1" 
 AR Path="/61F56C19" Ref="D4"  Part="1" 
 F 0 "D4" H 15900 6050 50  0000 C CNN
-F 1 "Orange" H 15900 6150 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Castellated" V 15900 6250 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0185/LTST-C170KFKT.pdf" V 15900 6250 50  0001 C CNN
-F 4 "160-1413-1-ND" H 15900 6250 50  0001 C CNN "Digikey"
+F 1 "LED" H 15900 6150 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15900 6250 50  0001 C CNN
+F 3 "https://www.sunledusa.com/products/spec/XZVG53W-8.pdf" V 15900 6250 50  0001 C CNN
+F 4 "1497-1215-1-ND" H 15900 6250 50  0001 C CNN "Digikey"
 	1    15900 6250
 	-1   0    0    -1  
 $EndComp
@@ -1174,8 +1174,8 @@ AR Path="/61FEB9C9" Ref="C1"  Part="1"
 F 0 "C1" H -3535 12796 50  0000 L CNN
 F 1 "1uF" H -3535 12705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -3612 12600 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -3650 12750 50  0001 C CNN
-F 4 "311-1446-1-ND" H -3650 12750 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -3650 12750 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -3650 12750 50  0001 C CNN "Digikey"
 	1    -3650 12750
 	1    0    0    -1  
 $EndComp
@@ -1422,8 +1422,8 @@ AR Path="/61FEBAB5" Ref="C5"  Part="1"
 F 0 "C5" H -2585 9546 50  0000 L CNN
 F 1 "1uF" H -2585 9455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -2662 9350 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -2700 9500 50  0001 C CNN
-F 4 "311-1446-1-ND" H -2700 9500 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -2700 9500 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -2700 9500 50  0001 C CNN "Digikey"
 	1    -2700 9500
 	1    0    0    -1  
 $EndComp
@@ -1482,8 +1482,8 @@ AR Path="/61FEBAD2" Ref="C6"  Part="1"
 F 0 "C6" H -2385 11946 50  0000 L CNN
 F 1 "1uF" H -2385 11855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -2462 11750 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -2500 11900 50  0001 C CNN
-F 4 "311-1446-1-ND" H -2500 11900 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -2500 11900 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -2500 11900 50  0001 C CNN "Digikey"
 	1    -2500 11900
 	1    0    0    -1  
 $EndComp
@@ -1518,8 +1518,8 @@ AR Path="/61FEBAE3" Ref="C10"  Part="1"
 F 0 "C10" H 2265 10146 50  0000 L CNN
 F 1 "1uF" H 2265 10055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2188 9950 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 2150 10100 50  0001 C CNN
-F 4 "311-1446-1-ND" H 2150 10100 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 2150 10100 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 2150 10100 50  0001 C CNN "Digikey"
 	1    2150 10100
 	1    0    0    -1  
 $EndComp
@@ -1542,8 +1542,8 @@ AR Path="/61FEBAEF" Ref="C9"  Part="1"
 F 0 "C9" H 1815 11146 50  0000 L CNN
 F 1 "1uF" H 1815 11055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1738 10950 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 1700 11100 50  0001 C CNN
-F 4 "311-1446-1-ND" H 1700 11100 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 1700 11100 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 1700 11100 50  0001 C CNN "Digikey"
 	1    1700 11100
 	1    0    0    -1  
 $EndComp
@@ -1727,8 +1727,8 @@ P 6200 3300
 F 0 "C8" H 6315 3346 50  0000 L CNN
 F 1 "1uF" H 6315 3255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6238 3150 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 6200 3300 50  0001 C CNN
-F 4 "311-1446-1-ND" H 6200 3300 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 6200 3300 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 6200 3300 50  0001 C CNN "Digikey"
 	1    6200 3300
 	1    0    0    -1  
 $EndComp
@@ -1802,7 +1802,7 @@ F 0 "D1" H 1600 2784 50  0000 C CNN
 F 1 "D" H 1600 2875 50  0000 C CNN
 F 2 "Diode_SMD:D_SMA_Handsoldering" H 1600 3000 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds16003.pdf" H 1600 3000 50  0001 C CNN
-F 4 "S1B-FDICT-ND" H 1600 3000 50  0001 C CNN "Digikey"
+F 4 "S1BFSCT-ND" H 1600 3000 50  0001 C CNN "Digikey"
 	1    1600 3000
 	-1   0    0    1   
 $EndComp
@@ -1899,8 +1899,8 @@ P 7950 4650
 F 0 "C12" H 8065 4696 50  0000 L CNN
 F 1 "1uF" H 8065 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7988 4500 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 7950 4650 50  0001 C CNN
-F 4 "311-1446-1-ND" H 7950 4650 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 7950 4650 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 7950 4650 50  0001 C CNN "Digikey"
 	1    7950 4650
 	1    0    0    -1  
 $EndComp
@@ -1968,8 +1968,8 @@ P 10150 4650
 F 0 "C14" H 10265 4696 50  0000 L CNN
 F 1 "1uF" H 10265 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10188 4500 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 10150 4650 50  0001 C CNN
-F 4 "311-1446-1-ND" H 10150 4650 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 10150 4650 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 10150 4650 50  0001 C CNN "Digikey"
 	1    10150 4650
 	1    0    0    -1  
 $EndComp
@@ -1992,8 +1992,8 @@ P 2150 3250
 F 0 "C4" H 2265 3296 50  0000 L CNN
 F 1 "1uF" H 2265 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2188 3100 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 2150 3250 50  0001 C CNN
-F 4 "311-1446-1-ND" H 2150 3250 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 2150 3250 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 2150 3250 50  0001 C CNN "Digikey"
 	1    2150 3250
 	1    0    0    -1  
 $EndComp
@@ -2194,8 +2194,8 @@ AR Path="/61F6F916" Ref="C21"  Part="1"
 F 0 "C21" H -585 9346 50  0000 L CNN
 F 1 "1uF" H -585 9255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -662 9150 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -700 9300 50  0001 C CNN
-F 4 "311-1446-1-ND" H -700 9300 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -700 9300 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -700 9300 50  0001 C CNN "Digikey"
 	1    -700 9300
 	1    0    0    -1  
 $EndComp
@@ -2258,8 +2258,8 @@ AR Path="/6205C376" Ref="C3"  Part="1"
 F 0 "C3" H -3285 14796 50  0000 L CNN
 F 1 "1uF" H -3285 14705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -3362 14600 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -3400 14750 50  0001 C CNN
-F 4 "311-1446-1-ND" H -3400 14750 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -3400 14750 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -3400 14750 50  0001 C CNN "Digikey"
 	1    -3400 14750
 	1    0    0    -1  
 $EndComp
@@ -2315,8 +2315,8 @@ AR Path="/620BF937" Ref="C2"  Part="1"
 F 0 "C2" H -3285 13796 50  0000 L CNN
 F 1 "1uF" H -3285 13705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -3362 13600 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -3400 13750 50  0001 C CNN
-F 4 "311-1446-1-ND" H -3400 13750 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -3400 13750 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -3400 13750 50  0001 C CNN "Digikey"
 	1    -3400 13750
 	1    0    0    -1  
 $EndComp
@@ -2548,8 +2548,8 @@ AR Path="/61FEBAA3" Ref="C7"  Part="1"
 F 0 "C7" H -385 8596 50  0000 L CNN
 F 1 "1uF" H -385 8505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H -462 8400 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H -500 8550 50  0001 C CNN
-F 4 "311-1446-1-ND" H -500 8550 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H -500 8550 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H -500 8550 50  0001 C CNN "Digikey"
 	1    -500 8550
 	1    0    0    -1  
 $EndComp
@@ -2770,8 +2770,8 @@ P 8100 3250
 F 0 "C13" H 8215 3296 50  0000 L CNN
 F 1 "1uF" H 8215 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8138 3100 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 8100 3250 50  0001 C CNN
-F 4 "311-1446-1-ND" H 8100 3250 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 8100 3250 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 8100 3250 50  0001 C CNN "Digikey"
 	1    8100 3250
 	1    0    0    -1  
 $EndComp
@@ -2782,8 +2782,8 @@ P 10350 3250
 F 0 "C15" H 10465 3296 50  0000 L CNN
 F 1 "1uF" H 10465 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10388 3100 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 10350 3250 50  0001 C CNN
-F 4 "311-1446-1-ND" H 10350 3250 50  0001 C CNN "Digikey"
+F 3 "http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN" H 10350 3250 50  0001 C CNN
+F 4 "CL10B105KO8NNNC" H 10350 3250 50  0001 C CNN "Digikey"
 	1    10350 3250
 	1    0    0    -1  
 $EndComp
