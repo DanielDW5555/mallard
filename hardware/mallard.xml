@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware\mallard.sch</source>
-    <date>27/01/2022 2:33:05 PM</date>
-    <tool>Eeschema (5.1.5)-3</tool>
+    <source>F:\electricalDesignProjects\mallard\hardware\mallard.sch</source>
+    <date>2022-01-27 4:29:54 PM</date>
+    <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -223,7 +223,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
-        <field name="Digikey">13-RC0603DR-0710KLCT-ND</field>
+        <field name="Digikey">13-AC0603DR-0710KLCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="R-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -267,7 +267,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <datasheet>https://www.vishay.com/docs/20065/rcse3.pdf</datasheet>
       <fields>
-        <field name="Digikey">541-2788-1-ND</field>
+        <field name="Digikey">RHM1.00KADCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="R-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -289,7 +289,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
-        <field name="Digikey">13-RC0603DR-0710KLCT-ND</field>
+        <field name="Digikey">13-AC0603DR-0710KLCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="R-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -300,7 +300,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
-        <field name="Digikey">13-RC0603DR-0710KLCT-ND</field>
+        <field name="Digikey">13-AC0603DR-0710KLCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="R-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -311,7 +311,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
-        <field name="Digikey">13-RC0603DR-0710KLCT-ND</field>
+        <field name="Digikey">13-AC0603DR-0710KLCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="R-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -354,7 +354,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -440,7 +440,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -451,7 +451,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -462,7 +462,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -473,7 +473,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -528,7 +528,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -624,7 +624,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -657,7 +657,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -668,7 +668,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -719,7 +719,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -746,7 +746,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -765,7 +765,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -830,7 +830,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -841,7 +841,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf</datasheet>
       <fields>
-        <field name="Digikey">13-RC0603DR-0710KLCT-ND</field>
+        <field name="Digikey">13-AC0603DR-0710KLCT-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="R-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -885,7 +885,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -896,7 +896,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
       <datasheet>http://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KO8NNN</datasheet>
       <fields>
-        <field name="Digikey">CL10B105KO8NNNC</field>
+        <field name="Digikey">1276-1019-1-ND</field>
       </fields>
       <libsource lib="mallard-rescue" part="C-Device" description=""/>
       <sheetpath names="/" tstamps="/"/>
@@ -1407,10 +1407,10 @@
       <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
     </library>
     <library logical="mallard">
-      <uri>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware/mallard.lib</uri>
+      <uri>F:\electricalDesignProjects\mallard\hardware/mallard.lib</uri>
     </library>
     <library logical="mallard-rescue">
-      <uri>C:\Users\pwhel\Documents\ENG\Capstone\GitHub\mallard\hardware/mallard-rescue.lib</uri>
+      <uri>F:\electricalDesignProjects\mallard\hardware/mallard-rescue.lib</uri>
     </library>
   </libraries>
   <nets>
