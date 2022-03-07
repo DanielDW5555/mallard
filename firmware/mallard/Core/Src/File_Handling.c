@@ -9,8 +9,8 @@
 #include "stm32l4xx_hal.h"
 
 
-extern USART_HandleTypeDef husart_1;
-#define USART &husart_1
+extern USART_HandleTypeDef husart1;
+#define USART &husart1
 
 
 
@@ -32,7 +32,7 @@ DWORD fre_clust;
 uint32_t total, free_space;
 
 
-void Send_Uart (char *string)
+void Send_Usart (char *string)
 {
 	HAL_USART_Transmit(USART, (uint8_t *)string, strlen (string), HAL_MAX_DELAY);
 }
@@ -42,15 +42,15 @@ void Send_Uart (char *string)
 void Mount_USB (void)
 {
 	fresult = f_mount(&USBHFatFS, USBHPath, 1);
-	if (fresult != FR_OK) Send_Uart ("ERROR!!! in mounting USB ...\n\n");
-	else Send_Uart("USB mounted successfully...\n");
+	if (fresult != FR_OK) Send_Usart ("ERROR!!! in mounting USB ...\n\n");
+	else Send_Usart("USB mounted successfully...\n");
 }
 
 void Unmount_USB (void)
 {
 	fresult = f_mount(NULL, USBHPath, 1);
-	if (fresult == FR_OK) Send_Uart ("USB UNMOUNTED successfully...\n\n\n");
-	else Send_Uart("ERROR!!! in UNMOUNTING USB \n\n\n");
+	if (fresult == FR_OK) Send_Usart ("USB UNMOUNTED successfully...\n\n\n");
+	else Send_Usart("ERROR!!! in UNMOUNTING USB \n\n\n");
 }
 
 /* Start node to be scanned (***also used as work area***) */
@@ -74,7 +74,7 @@ FRESULT Scan_USB (char* pat)
             	if (!(strcmp("System Volume Information", USBHfno.fname))) continue;
             	char *buf = malloc(30*sizeof(char));
             	sprintf (buf, "Dir: %s\r\n", USBHfno.fname);
-            	Send_Uart(buf);
+            	Send_Usart(buf);
             	free(buf);
                 i = strlen(path);
                 sprintf(&path[i], "/%s", USBHfno.fname);
@@ -86,7 +86,7 @@ FRESULT Scan_USB (char* pat)
             {   /* It is a file. */
            	   char *buf = malloc(30*sizeof(char));
                sprintf(buf,"File: %s/%s\n", path, USBHfno.fname);
-               Send_Uart(buf);
+               Send_Usart(buf);
                free(buf);
             }
         }
@@ -140,7 +140,7 @@ FRESULT Write_File (char *name, char *data)
 	{
 		char *buf = malloc(100*sizeof(char));
 		sprintf (buf, "ERROR!!! *%s* does not exists\n\n", name);
-		Send_Uart (buf);
+		Send_Usart (buf);
 	    free(buf);
 	    return fresult;
 	}
@@ -153,7 +153,7 @@ FRESULT Write_File (char *name, char *data)
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "ERROR!!! No. %d in opening file *%s*\n\n", fresult, name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	        free(buf);
 	        return fresult;
 	    }
@@ -162,7 +162,7 @@ FRESULT Write_File (char *name, char *data)
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "Opening file-->  *%s*  To WRITE data in it\n", name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	        free(buf);
 
 	    	fresult = f_write(&USBHFile, data, strlen(data), &bw);
@@ -170,7 +170,7 @@ FRESULT Write_File (char *name, char *data)
 	    	{
 	    		char *buf = malloc(100*sizeof(char));
 	    		sprintf (buf, "ERROR!!! No. %d while writing to the FILE *%s*\n\n", fresult, name);
-	    		Send_Uart(buf);
+	    		Send_Usart(buf);
 	    		free(buf);
 	    	}
 
@@ -180,14 +180,14 @@ FRESULT Write_File (char *name, char *data)
 	    	{
 	    		char *buf = malloc(100*sizeof(char));
 	    		sprintf (buf, "ERROR!!! No. %d in closing file *%s* after writing it\n\n", fresult, name);
-	    		Send_Uart(buf);
+	    		Send_Usart(buf);
 	    		free(buf);
 	    	}
 	    	else
 	    	{
 	    		char *buf = malloc(100*sizeof(char));
 	    		sprintf (buf, "File *%s* is WRITTEN and CLOSED successfully\n\n", name);
-	    		Send_Uart(buf);
+	    		Send_Usart(buf);
 	    		free(buf);
 	    	}
 	    }
@@ -203,7 +203,7 @@ FRESULT Read_File (char *name)
 	{
 		char *buf = malloc(100*sizeof(char));
 		sprintf (buf, "ERRROR!!! *%s* does not exists\n\n", name);
-		Send_Uart (buf);
+		Send_Usart (buf);
 		free(buf);
 	    return fresult;
 	}
@@ -217,7 +217,7 @@ FRESULT Read_File (char *name)
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "ERROR!!! No. %d in opening file *%s*\n\n", fresult, name);
-		    Send_Uart(buf);
+		    Send_Usart(buf);
 		    free(buf);
 		    return fresult;
 		}
@@ -227,7 +227,7 @@ FRESULT Read_File (char *name)
 
     	char *buf = malloc(100*sizeof(char));
     	sprintf (buf, "Opening file-->  *%s*  To READ data from it\n", name);
-    	Send_Uart(buf);
+    	Send_Usart(buf);
         free(buf);
 
 		char *buffer = malloc(sizeof(f_size(&USBHFile)));
@@ -237,13 +237,13 @@ FRESULT Read_File (char *name)
 			char *buf = malloc(100*sizeof(char));
 			free(buffer);
 		 	sprintf (buf, "ERROR!!! No. %d in reading file *%s*\n\n", fresult, name);
-		  	Send_Uart(buffer);
+		  	Send_Usart(buffer);
 		  	free(buf);
 		}
 
 		else
 		{
-			Send_Uart(buffer);
+			Send_Usart(buffer);
 			free(buffer);
 
 			/* Close file */
@@ -252,14 +252,14 @@ FRESULT Read_File (char *name)
 			{
 				char *buf = malloc(100*sizeof(char));
 				sprintf (buf, "ERROR!!! No. %d in closing file *%s*\n\n", fresult, name);
-				Send_Uart(buf);
+				Send_Usart(buf);
 				free(buf);
 			}
 			else
 			{
 				char *buf = malloc(100*sizeof(char));
 				sprintf (buf, "File *%s* CLOSED successfully\n\n", name);
-				Send_Uart(buf);
+				Send_Usart(buf);
 				free(buf);
 			}
 		}
@@ -274,7 +274,7 @@ FRESULT Create_File (char *name)
 	{
 		char *buf = malloc(100*sizeof(char));
 		sprintf (buf, "ERROR!!! *%s* already exists!!!!\n use Update_File \n\n",name);
-		Send_Uart(buf);
+		Send_Usart(buf);
 		free(buf);
 	    return fresult;
 	}
@@ -285,7 +285,7 @@ FRESULT Create_File (char *name)
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "ERROR!!! No. %d in creating file *%s*\n\n", fresult, name);
-			Send_Uart(buf);
+			Send_Usart(buf);
 			free(buf);
 		    return fresult;
 		}
@@ -293,7 +293,7 @@ FRESULT Create_File (char *name)
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "*%s* created successfully\n Now use Write_File to write data\n",name);
-			Send_Uart(buf);
+			Send_Usart(buf);
 			free(buf);
 		}
 
@@ -302,14 +302,14 @@ FRESULT Create_File (char *name)
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "ERROR No. %d in closing file *%s*\n\n", fresult, name);
-			Send_Uart(buf);
+			Send_Usart(buf);
 			free(buf);
 		}
 		else
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "File *%s* CLOSED successfully\n\n", name);
-			Send_Uart(buf);
+			Send_Usart(buf);
 			free(buf);
 		}
 	}
@@ -324,7 +324,7 @@ FRESULT Update_File (char *name, char *data)
 	{
 		char *buf = malloc(100*sizeof(char));
 		sprintf (buf, "ERROR!!! *%s* does not exists\n\n", name);
-		Send_Uart (buf);
+		Send_Usart (buf);
 		free(buf);
 	    return fresult;
 	}
@@ -337,14 +337,14 @@ FRESULT Update_File (char *name, char *data)
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "ERROR!!! No. %d in opening file *%s*\n\n", fresult, name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	        free(buf);
 	        return fresult;
 	    }
 
     	char *buf = malloc(100*sizeof(char));
     	sprintf (buf, "Opening file-->  *%s*  To UPDATE data in it\n", name);
-    	Send_Uart(buf);
+    	Send_Usart(buf);
         free(buf);
 
 	    /* Writing text */
@@ -353,7 +353,7 @@ FRESULT Update_File (char *name, char *data)
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "ERROR!!! No. %d in writing file *%s*\n\n", fresult, name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	    	free(buf);
 	    }
 
@@ -361,7 +361,7 @@ FRESULT Update_File (char *name, char *data)
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "*%s* UPDATED successfully\n", name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	    	free(buf);
 	    }
 
@@ -371,14 +371,14 @@ FRESULT Update_File (char *name, char *data)
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "ERROR!!! No. %d in closing file *%s*\n\n", fresult, name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	    	free(buf);
 	    }
 	    else
 	    {
 	    	char *buf = malloc(100*sizeof(char));
 	    	sprintf (buf, "File *%s* CLOSED successfully\n\n", name);
-	    	Send_Uart(buf);
+	    	Send_Usart(buf);
 	    	free(buf);
 	     }
 	}
@@ -393,7 +393,7 @@ FRESULT Remove_File (char *name)
 	{
 		char *buf = malloc(100*sizeof(char));
 		sprintf (buf, "ERROR!!! *%s* does not exists\n\n", name);
-		Send_Uart (buf);
+		Send_Usart (buf);
 		free(buf);
 		return fresult;
 	}
@@ -405,7 +405,7 @@ FRESULT Remove_File (char *name)
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "*%s* has been removed successfully\n\n", name);
-			Send_Uart (buf);
+			Send_Usart (buf);
 			free(buf);
 		}
 
@@ -413,7 +413,7 @@ FRESULT Remove_File (char *name)
 		{
 			char *buf = malloc(100*sizeof(char));
 			sprintf (buf, "ERROR No. %d in removing *%s*\n\n",fresult, name);
-			Send_Uart (buf);
+			Send_Usart (buf);
 			free(buf);
 		}
 	}
@@ -427,14 +427,14 @@ FRESULT Create_Dir (char *name)
     {
     	char *buf = malloc(100*sizeof(char));
     	sprintf (buf, "*%s* has been created successfully\n\n", name);
-    	Send_Uart (buf);
+    	Send_Usart (buf);
     	free(buf);
     }
     else
     {
     	char *buf = malloc(100*sizeof(char));
     	sprintf (buf, "ERROR No. %d in creating directory *%s*\n\n", fresult,name);
-    	Send_Uart(buf);
+    	Send_Usart(buf);
     	free(buf);
     }
     return fresult;
@@ -448,12 +448,12 @@ void Check_USB_Details (void)
     total = (uint32_t)((pUSBHFatFS->n_fatent - 2) * pUSBHFatFS->csize * 0.5);
     char *buf = malloc(30*sizeof(char));
     sprintf (buf, "USB  Total Size: \t%lu\n",total);
-    Send_Uart(buf);
+    Send_Usart(buf);
     free(buf);
     free_space = (uint32_t)(fre_clust * pUSBHFatFS->csize * 0.5);
     buf = malloc(30*sizeof(char));
     sprintf (buf, "USB Free Space: \t%lu\n",free_space);
-    Send_Uart(buf);
+    Send_Usart(buf);
     free(buf);
 }
 

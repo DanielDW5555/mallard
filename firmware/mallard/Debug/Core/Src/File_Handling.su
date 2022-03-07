@@ -1,4 +1,4 @@
-File_Handling.c:35:6:Send_Uart	16	static
+File_Handling.c:35:6:Send_Usart	16	static
 File_Handling.c:42:6:Mount_USB	8	static
 File_Handling.c:49:6:Unmount_USB	8	static
 File_Handling.c:57:9:Scan_USB	112	static
