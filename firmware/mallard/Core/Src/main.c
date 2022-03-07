@@ -18,8 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "fatfs.h"
 #include "usb_host.h"
-#include "stdio.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -112,6 +113,7 @@ int main(void)
   MX_USB_HOST_Init();
   MX_ADC1_Init();
   MX_USART1_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
 
   // ************************************************* START BEFORE WHILE CODE HERE ***************************************
@@ -376,7 +378,8 @@ static void MX_GPIO_Init(void)
                           |GPIO_PIN_7, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_10|GPIO_PIN_12|GPIO_PIN_13, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|Charge_Enable_Pin|GPIO_PIN_12|GPIO_PIN_13
+                          |_5V_SHDN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PA3 PA4 PA5 PA6
                            PA7 */
@@ -387,8 +390,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB0 PB10 PB12 PB13 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_10|GPIO_PIN_12|GPIO_PIN_13;
+  /*Configure GPIO pins : PB0 Charge_Enable_Pin PB12 PB13
+                           _5V_SHDN_Pin */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|Charge_Enable_Pin|GPIO_PIN_12|GPIO_PIN_13
+                          |_5V_SHDN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Charge_Enable_Pin GPIO_PIN_10
+#define Charge_Enable_GPIO_Port GPIOB
+#define _5V_SHDN_Pin GPIO_PIN_14
+#define _5V_SHDN_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
