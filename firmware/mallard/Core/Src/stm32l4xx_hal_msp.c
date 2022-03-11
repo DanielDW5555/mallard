@@ -99,9 +99,14 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     PA0     ------> ADC1_IN5
     PA1     ------> ADC1_IN6
     PA2     ------> ADC1_IN7
+    PA3     ------> ADC1_IN8
+    PA4     ------> ADC1_IN9
+    PA5     ------> ADC1_IN10
+    PA6     ------> ADC1_IN11
     PB1     ------> ADC1_IN16
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2;
+    GPIO_InitStruct.Pin = GPIO_PIN_0|Temp_Sense_1_Pin|Eh_Sense_1_Pin|Temp_Sense_2_Pin
+                          |Eh_Sense_2_Pin|Temp_Sense_3_Pin|Eh_Sense_3_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG_ADC_CONTROL;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -138,9 +143,14 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     PA0     ------> ADC1_IN5
     PA1     ------> ADC1_IN6
     PA2     ------> ADC1_IN7
+    PA3     ------> ADC1_IN8
+    PA4     ------> ADC1_IN9
+    PA5     ------> ADC1_IN10
+    PA6     ------> ADC1_IN11
     PB1     ------> ADC1_IN16
     */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2);
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0|Temp_Sense_1_Pin|Eh_Sense_1_Pin|Temp_Sense_2_Pin
+                          |Eh_Sense_2_Pin|Temp_Sense_3_Pin|Eh_Sense_3_Pin);
 
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_1);
 
@@ -152,16 +162,16 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
 }
 
 /**
-* @brief USART MSP Initialization
+* @brief UART MSP Initialization
 * This function configures the hardware resources used in this example
-* @param husart: USART handle pointer
+* @param huart: UART handle pointer
 * @retval None
 */
-void HAL_USART_MspInit(USART_HandleTypeDef* husart)
+void HAL_UART_MspInit(UART_HandleTypeDef* huart)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
-  if(husart->Instance==USART1)
+  if(huart->Instance==USART1)
   {
   /* USER CODE BEGIN USART1_MspInit 0 */
 
@@ -179,11 +189,9 @@ void HAL_USART_MspInit(USART_HandleTypeDef* husart)
     __HAL_RCC_USART1_CLK_ENABLE();
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
-    __HAL_RCC_GPIOB_CLK_ENABLE();
     /**USART1 GPIO Configuration
     PA9     ------> USART1_TX
     PA10     ------> USART1_RX
-    PB5     ------> USART1_CK
     */
     GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -191,13 +199,6 @@ void HAL_USART_MspInit(USART_HandleTypeDef* husart)
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-    GPIO_InitStruct.Pin = GPIO_PIN_5;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN USART1_MspInit 1 */
 
@@ -207,14 +208,14 @@ void HAL_USART_MspInit(USART_HandleTypeDef* husart)
 }
 
 /**
-* @brief USART MSP De-Initialization
+* @brief UART MSP De-Initialization
 * This function freeze the hardware resources used in this example
-* @param husart: USART handle pointer
+* @param huart: UART handle pointer
 * @retval None
 */
-void HAL_USART_MspDeInit(USART_HandleTypeDef* husart)
+void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
 {
-  if(husart->Instance==USART1)
+  if(huart->Instance==USART1)
   {
   /* USER CODE BEGIN USART1_MspDeInit 0 */
 
@@ -225,11 +226,8 @@ void HAL_USART_MspDeInit(USART_HandleTypeDef* husart)
     /**USART1 GPIO Configuration
     PA9     ------> USART1_TX
     PA10     ------> USART1_RX
-    PB5     ------> USART1_CK
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
-
-    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_5);
 
   /* USER CODE BEGIN USART1_MspDeInit 1 */
 

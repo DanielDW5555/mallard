@@ -9,8 +9,8 @@
 #include "stm32l4xx_hal.h"
 
 
-extern USART_HandleTypeDef husart1;
-#define USART &husart1
+extern UART_HandleTypeDef huart1;
+#define UART &huart1
 
 
 
@@ -34,8 +34,9 @@ uint32_t total, free_space;
 
 void Send_Usart (char *string)
 {
-	HAL_USART_Transmit(USART, (uint8_t *)string, strlen (string), HAL_MAX_DELAY);
+	HAL_UART_Transmit(UART, (uint8_t *)string, strlen (string), HAL_MAX_DELAY);
 }
+
 
 
 

@@ -57,8 +57,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Temp_Sense_1_Pin GPIO_PIN_1
+#define Temp_Sense_1_GPIO_Port GPIOA
+#define Eh_Sense_1_Pin GPIO_PIN_2
+#define Eh_Sense_1_GPIO_Port GPIOA
+#define Temp_Sense_2_Pin GPIO_PIN_3
+#define Temp_Sense_2_GPIO_Port GPIOA
+#define Eh_Sense_2_Pin GPIO_PIN_4
+#define Eh_Sense_2_GPIO_Port GPIOA
+#define Temp_Sense_3_Pin GPIO_PIN_5
+#define Temp_Sense_3_GPIO_Port GPIOA
+#define Eh_Sense_3_Pin GPIO_PIN_6
+#define Eh_Sense_3_GPIO_Port GPIOA
 #define Charge_Enable_Pin GPIO_PIN_10
 #define Charge_Enable_GPIO_Port GPIOB
+#define Enable_1V_Pin GPIO_PIN_12
+#define Enable_1V_GPIO_Port GPIOB
+#define Reset_5V_Pin GPIO_PIN_13
+#define Reset_5V_GPIO_Port GPIOB
 #define _5V_SHDN_Pin GPIO_PIN_14
 #define _5V_SHDN_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */

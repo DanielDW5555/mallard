@@ -5,16 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../USB_HOST/Target/usbh_conf.c \
-../USB_HOST/Target/usbh_platform.c 
+../USB_HOST/Target/usbh_conf.c 
 
 OBJS += \
-./USB_HOST/Target/usbh_conf.o \
-./USB_HOST/Target/usbh_platform.o 
+./USB_HOST/Target/usbh_conf.o 
 
 C_DEPS += \
-./USB_HOST/Target/usbh_conf.d \
-./USB_HOST/Target/usbh_platform.d 
+./USB_HOST/Target/usbh_conf.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +21,7 @@ USB_HOST/Target/%.o: ../USB_HOST/Target/%.c USB_HOST/Target/subdir.mk
 clean: clean-USB_HOST-2f-Target
 
 clean-USB_HOST-2f-Target:
-	-$(RM) ./USB_HOST/Target/usbh_conf.d ./USB_HOST/Target/usbh_conf.o ./USB_HOST/Target/usbh_platform.d ./USB_HOST/Target/usbh_platform.o
+	-$(RM) ./USB_HOST/Target/usbh_conf.d ./USB_HOST/Target/usbh_conf.o
 
 .PHONY: clean-USB_HOST-2f-Target
 
