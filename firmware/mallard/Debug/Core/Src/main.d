@@ -48,7 +48,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/usbh_diskio.h \
- ../USB_HOST/App/usb_host.h
+ ../Core/Inc/usb_host.h
 
 ../Core/Inc/main.h:
 
@@ -156,4 +156,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../FATFS/Target/usbh_diskio.h:
 
-../USB_HOST/App/usb_host.h:
+../Core/Inc/usb_host.h:

@@ -69,6 +69,19 @@ void MX_USB_HOST_Init(void)
 {
   /* USER CODE BEGIN USB_HOST_Init_PreTreatment */
 
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+
   /* USER CODE END USB_HOST_Init_PreTreatment */
 
   /* Init host Library, add supported class and start the library. */

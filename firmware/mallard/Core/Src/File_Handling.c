@@ -8,6 +8,8 @@
 #include "File_Handling.h"
 #include "stm32l4xx_hal.h"
 
+#include <stdio.h>
+
 
 extern UART_HandleTypeDef huart1;
 #define UART &huart1
@@ -43,8 +45,20 @@ void Send_Usart (char *string)
 void Mount_USB (void)
 {
 	fresult = f_mount(&USBHFatFS, USBHPath, 1);
-	if (fresult != FR_OK) Send_Usart ("ERROR!!! in mounting USB ...\n\n");
-	else Send_Usart("USB mounted successfully...\n");
+	if (fresult != FR_OK) printf("ERROR!!! in mounting USB ...\n\n");
+	printf("USB mounted successfully...\n");
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	HAL_Delay(100);
 }
 
 void Unmount_USB (void)

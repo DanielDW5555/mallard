@@ -1,5 +1,4 @@
-USB_HOST/App/usb_host.o: ../USB_HOST/App/usb_host.c \
- ../USB_HOST/App/usb_host.h \
+Core/Src/usb_host.o: ../Core/Src/usb_host.c ../Core/Inc/usb_host.h \
  ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4q5xx.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -51,7 +50,7 @@ USB_HOST/App/usb_host.o: ../USB_HOST/App/usb_host.c \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/usbh_diskio.h
 
-../USB_HOST/App/usb_host.h:
+../Core/Inc/usb_host.h:
 
 ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:
 

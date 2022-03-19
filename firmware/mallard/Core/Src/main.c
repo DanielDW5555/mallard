@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -70,11 +70,68 @@ void blinky(void)
 {
 	for(int i = 0; i < 2; i ++)
 	{
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-		HAL_Delay(100);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
-		HAL_Delay(100);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+		HAL_Delay(500);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+		HAL_Delay(500);
 	}
+}
+
+// ADC Channel Select EH
+void ADC_Select_EH(void)
+{
+	ADC_ChannelConfTypeDef sConfig = {0};
+
+	sConfig.Channel = ADC_CHANNEL_7;
+	sConfig.Rank = 1;
+	sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+	sConfig.SingleDiff = ADC_SINGLE_ENDED;
+	sConfig.OffsetNumber = ADC_OFFSET_NONE;
+	sConfig.Offset = 0;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+	{
+	Error_Handler();
+	}
+}
+
+// ADC Channel Select REF
+void ADC_Select_REF(void)
+{
+	ADC_ChannelConfTypeDef sConfig = {0};
+
+	sConfig.Channel = ADC_CHANNEL_6;
+	sConfig.Rank = 1;
+	sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+	sConfig.SingleDiff = ADC_SINGLE_ENDED;
+	sConfig.OffsetNumber = ADC_OFFSET_NONE;
+	sConfig.Offset = 0;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+	{
+	Error_Handler();
+	}
+}
+
+// ADC Channel Select TEMP
+void ADC_Select_TEMP(void)
+{
+	ADC_ChannelConfTypeDef sConfig = {0};
+
+	sConfig.Channel = ADC_CHANNEL_5;
+	sConfig.Rank = 1;
+	sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+	sConfig.SingleDiff = ADC_SINGLE_ENDED;
+	sConfig.OffsetNumber = ADC_OFFSET_NONE;
+	sConfig.Offset = 0;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+	{
+	Error_Handler();
+	}
+}
+
+// UART Write
+void _write(int file, char *ptr, int len)
+{
+	HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
 }
 
 /* USER CODE END 0 */
@@ -110,9 +167,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USB_HOST_Init();
   MX_ADC1_Init();
   MX_USART1_UART_Init();
+  MX_USB_HOST_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
 
@@ -121,14 +178,18 @@ int main(void)
   // Bootup Blinkys
   // These are put in place to allow programming before the microcontroller enters its sleep loop, currently its set to wait 5 seconds before entering sleep mode
 
-  printf("System Starting!");
+  printf("System Starting!\r\n");
 
   blinky();
-  HAL_Delay(5000);
-  blinky();
+  // HAL_Delay(5000);
   //Assign ADC Variable
   uint16_t ADC_READING = 0;
 
+  // Enable 1V0 Regulator
+  // HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET);
+
+  // Enable 5V0 Regulator
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET);
 
 
   // ************************************************* END BEFORE WHILE CODE HERE ***************************************
@@ -148,14 +209,52 @@ int main(void)
 
 
     // ************************************************* START WHILE CODE HERE ***************************************
+
+    // TODO: Add conversion equations to convert ADC value to voltage
+
+    // READ EH
+    // Switch ADC channel to EH
+    ADC_Select_EH();
     //Start ADC Conversion
-    HAL_ADC_Start(&hadc1);
-
-    //Poll ADC 1 Periferal and Timeout 1ms
-    HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-
-    //Store ADC Value in ADC_Reading
+	HAL_ADC_Start(&hadc1);
+	// Pole to see if converstion is finished
+	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+    // Store ADC Value in ADC_Reading
     ADC_READING = HAL_ADC_GetValue(&hadc1);
+    HAL_ADC_Stop(&hadc1);
+
+    // Print ADC value through UART
+	printf("EH: %d\r\n", ADC_READING);
+
+	// READ REF
+	// Switch ADC channel to REF
+	ADC_Select_REF();
+	//Start ADC Conversion
+	HAL_ADC_Start(&hadc1);
+	// Pole to see if converstion is finished
+	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+	// Store ADC Value in ADC_Reading
+	ADC_READING = HAL_ADC_GetValue(&hadc1);
+	HAL_ADC_Stop(&hadc1);
+
+	// Print ADC value through UART
+	printf("REF: %d\r\n", ADC_READING);
+
+	// READ TEMP
+	// Switch ADC channel to TEMP
+	ADC_Select_TEMP();
+	//Start ADC Conversion
+	HAL_ADC_Start(&hadc1);
+	// Pole to see if converstion is finished
+	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+	// Store ADC Value in ADC_Reading
+	ADC_READING = HAL_ADC_GetValue(&hadc1);
+	HAL_ADC_Stop(&hadc1);
+
+	// Print ADC value through UART
+	printf("TEMP: %d\r\n", ADC_READING);
+
+
 
     // Enter sleep mode using RTC wakeup functions
     // enterSleepMode(3); // Parameter depicts how long the sleep cycle is (currently its set to 3 seconds)
@@ -241,7 +340,7 @@ void PeriphCommonClock_Config(void)
   PeriphClkInit.PLLSAI1.PLLSAI1P = RCC_PLLP_DIV2;
   PeriphClkInit.PLLSAI1.PLLSAI1Q = RCC_PLLQ_DIV2;
   PeriphClkInit.PLLSAI1.PLLSAI1R = RCC_PLLR_DIV2;
-  PeriphClkInit.PLLSAI1.PLLSAI1ClockOut = RCC_PLLSAI1_48M2CLK|RCC_PLLSAI1_ADC1CLK;
+  PeriphClkInit.PLLSAI1.PLLSAI1ClockOut = RCC_PLLSAI1_48M2CLK;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -269,7 +368,7 @@ static void MX_ADC1_Init(void)
   /** Common config
   */
   hadc1.Instance = ADC1;
-  hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
@@ -296,7 +395,7 @@ static void MX_ADC1_Init(void)
   }
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_16;
+  sConfig.Channel = ADC_CHANNEL_5;
   sConfig.Rank = ADC_REGULAR_RANK_1;
   sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
   sConfig.SingleDiff = ADC_SINGLE_ENDED;
@@ -328,7 +427,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 9600;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -382,7 +481,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|Charge_Enable_Pin|Enable_1V_Pin|Reset_5V_Pin
-                          |_5V_SHDN_Pin, GPIO_PIN_RESET);
+                          |_5V_SHDN_Pin|GPIO_PIN_4, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PC13 PC14 */
   GPIO_InitStruct.Pin = GPIO_PIN_13|GPIO_PIN_14;
@@ -399,9 +498,9 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB0 Charge_Enable_Pin Enable_1V_Pin Reset_5V_Pin
-                           _5V_SHDN_Pin */
+                           _5V_SHDN_Pin PB4 */
   GPIO_InitStruct.Pin = GPIO_PIN_0|Charge_Enable_Pin|Enable_1V_Pin|Reset_5V_Pin
-                          |_5V_SHDN_Pin;
+                          |_5V_SHDN_Pin|GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
